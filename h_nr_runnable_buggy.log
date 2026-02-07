@@ -1,0 +1,72 @@
+c[?7l[2J[0mSeaBIOS (version 1.16.3-debian-1.16.3-2)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+0EFCAD00+0EF0AD00 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from ROM...
+c[?7l[2JACPI Error: AE_BAD_PARAMETER, During Region initialization (20240827/tbxfload-52)
+ACPI: Unable to load the System Description Tables
+ACPI Error: Could not remove SCI handler (20240827/evmisc-251)
+Loading kmod.ko with params: driver=h_nr_runnable isolcpus=nohz,managed_irq,1,2 rcu_nocbs=1,2 nohz_full=1,2 
+[92mLinux version: 6.13.0-h_nr_runnable_buggy[0m
+[92m- name                : h_nr_runnable[0m
+[92m- step_interval_us    : 1000[0m
+[92m- print_rq            : 0[0m
+[92m- print_tasks         : 0[0m
+[92m- print_load_balance  : 0[0m
+[92mDisabled workqueue on CPU 1[0m
+[92mMoved kthreads to CPU 0[0m
+[92mWriting /sys/fs/cgroup//cgroup.subtree_control: +cpu +cpuset[0m
+[92mCreated directory /sys/fs/cgroup/g0[0m
+[92mWriting /sys/fs/cgroup/g0/cgroup.subtree_control: +cpu +cpuset[0m
+[92mCreated directory /sys/fs/cgroup/g1[0m
+[92mWriting /sys/fs/cgroup/g1/cgroup.subtree_control: +cpu +cpuset[0m
+[92mTask created with pid 40[0m
+[92mWaiting for task 40 to start[0m
+[92mTask created with pid 41[0m
+[92mWriting /sys/fs/cgroup/g0/cgroup.procs: 40[0m
+[92mWriting /sys/fs/cgroup/g1/cgroup.procs: 41[0m
+Topology levels:
+- SMT  |    0 |    1 | SHARE_CPUCAPACITY, SHARE_LLC
+- CLS  |    0 |    1 | CLUSTER, SHARE_LLC
+- MC   |  0-1 |  0-1 | SHARE_LLC
+- PKG  |  0-1 |  0-1 | 
+- NODE |  0-1 |  0-1 | 
+Sched domains:
+- MC[0]: mask=0-1, groups={0: 1024, 1: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_LLC, PREFER_SIBLING
+- MC[1]: mask=0-1, groups={1: 1024, 0: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_LLC, PREFER_SIBLING
+[92mDisabled timer ticks on CPU 1[0m
+[92mDisabled jiffies update[0m
+[92mMocked sched clock[0m
+[92mReset runqueues state[0m
+[92mReset cpumask[0m
+[92mReset tasks state[0m
+[92mPatched init_tg_cfs_entry to set min vruntime[0m
+[92mWriting /sys/module/printk/parameters/time: 1[0m
+[   10.000000] [92mRunning driver h_nr_runnable[0m
+[   10.000000] [92mWaked up task 40[0m
+[   10.000000] [92mWaked up task 41[0m
+[   10.000000] rq: {"runnable_avg": 0}
+[   10.001000] rq: {"runnable_avg": 0}
+[   10.002000] rq: {"runnable_avg": 82}
+[   10.003000] rq: {"runnable_avg": 123}
+[   10.004000] rq: {"runnable_avg": 162}
+[   10.005000] [92mPaused task 40[0m
+[   10.005000] [92mh_nr_runnable == 2[0m
+[   10.005000] [92mh_nr_runnable accounted incorrectly[0m
+[   10.005000] rq: {"runnable_avg": 201}
+[   10.006000] rq: {"runnable_avg": 196}
+[   10.007000] rq: {"runnable_avg": 192}
+[   10.008000] rq: {"runnable_avg": 209}
+[   10.009000] rq: {"runnable_avg": 226}
+[   10.010000] rq: {"runnable_avg": 242}
+[   10.011000] rq: {"runnable_avg": 258}
+[   10.012000] rq: {"runnable_avg": 274}
+[   10.013000] rq: {"runnable_avg": 289}
+[   10.014000] rq: {"runnable_avg": 304}
+[   10.015000] rq: {"runnable_avg": 319}
+[   10.016000] [92mExiting driver h_nr_runnable on Linux 6.13.0-h_nr_runnable_buggy[0m
+[   10.016000] reboot: Restarting system
+[   10.016000] reboot: machine restart

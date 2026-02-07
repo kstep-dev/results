@@ -1,0 +1,61 @@
+c[?7l[2J[0mSeaBIOS (version 1.16.3-debian-1.16.3-2)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+0EFCAD00+0EF0AD00 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from ROM...
+c[?7l[2JSpectre V2 : Kernel not compiled with retpoline; no mitigation available!
+ACPI Error: AE_BAD_PARAMETER, During Region initialization (20230628/tbxfload-52)
+ACPI: Unable to load the System Description Tables
+ACPI Error: Could not remove SCI handler (20230628/evmisc-251)
+Loading kmod.ko with params: driver=lag_vruntime isolcpus=nohz,managed_irq,1,2 rcu_nocbs=1,2 nohz_full=1,2 
+[92mLinux version: 6.7.0-rc1-lag_vruntime_fixed[0m
+[92m- name                : lag_vruntime[0m
+[92m- step_interval_us    : 10000[0m
+[92m- print_rq            : 1[0m
+[92m- print_tasks         : 0[0m
+[92m- print_load_balance  : 0[0m
+[92mDisabled workqueue on CPU 1[0m
+[92mMoved kthreads to CPU 0[0m
+[92mTask created with pid 38[0m
+[92mWriting /sys/fs/cgroup//cgroup.subtree_control: +cpu +cpuset[0m
+[92mCreated directory /sys/fs/cgroup/g0[0m
+[92mWriting /sys/fs/cgroup/g0/cgroup.subtree_control: +cpu +cpuset[0m
+[92mWriting /sys/fs/cgroup/g0/cgroup.procs: 38[0m
+[92mTask created with pid 39[0m
+Topology levels:
+- SMT  |    0 |    1 | SHARE_CPUCAPACITY, SHARE_PKG_RESOURCES
+- CLS  |    0 |    1 | CLUSTER, SHARE_PKG_RESOURCES
+- MC   |  0-1 |  0-1 | SHARE_PKG_RESOURCES
+- PKG  |  0-1 |  0-1 | 
+- NODE |  0-1 |  0-1 | 
+Sched domains:
+- MC[0]: mask=0-1, groups={0: 1024, 1: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_PKG_RESOURCES, PREFER_SIBLING
+- MC[1]: mask=0-1, groups={1: 1024, 0: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_PKG_RESOURCES, PREFER_SIBLING
+[92mDisabled timer ticks on CPU 1[0m
+[92mDisabled jiffies update[0m
+[92mMocked sched clock[0m
+[92mReset runqueues state[0m
+[92mReset cpumask[0m
+[92mReset tasks state[0m
+[92mPatched init_tg_cfs_entry to set min vruntime[0m
+[92mWriting /sys/module/printk/parameters/time: 1[0m
+[   10.000000] [92mRunning driver lag_vruntime[0m
+[   10.000000] [92mSet priority of task 39 to 19[0m
+[   10.000000] [92mWaked up task 38[0m
+[   10.000000] rq: {"cpu": 1, "running":  2, "queued":  2, "avg_load": 1024, "avg_util":    0, "min_vruntime":            0, "avg_vruntime":            0}
+[   10.001000] rq: {"cpu": 1, "running":  2, "queued":  2, "avg_load": 1024, "avg_util":    0, "min_vruntime":            0, "avg_vruntime":       985563}
+[   10.002000] rq: {"cpu": 1, "running":  2, "queued":  2, "avg_load":   15, "avg_util":   41, "min_vruntime":            0, "avg_vruntime":      1971126}
+[   10.003000] rq: {"cpu": 1, "running":  2, "queued":  2, "avg_load":   15, "avg_util":   61, "min_vruntime":      1000000, "avg_vruntime":      2956689}
+[   10.004000] rq: {"cpu": 1, "running":  2, "queued":  2, "avg_load":   15, "avg_util":   81, "min_vruntime":      2000000, "avg_vruntime":      3942252}
+[   10.005000] [92mWriting /sys/fs/cgroup/g0/cpu.weight: 10000[0m
+[   10.005000] rq: {"cpu": 1, "running":  2, "queued":  2, "avg_load":   15, "avg_util":  100, "min_vruntime":      4908537, "avg_vruntime":      4927815}
+[   10.006000] rq: {"cpu": 1, "running":  2, "queued":  2, "avg_load":   15, "avg_util":  119, "min_vruntime":      4918536, "avg_vruntime":      4937812}
+[   10.007000] rq: {"cpu": 1, "running":  2, "queued":  2, "avg_load":   15, "avg_util":  137, "min_vruntime":      4928535, "avg_vruntime":      4947810}
+[   10.008000] rq: {"cpu": 1, "running":  2, "queued":  2, "avg_load":   15, "avg_util":  156, "min_vruntime":      4938534, "avg_vruntime":      4957807}
+[   10.009000] rq: {"cpu": 1, "running":  2, "queued":  2, "avg_load":   15, "avg_util":  173, "min_vruntime":      4948533, "avg_vruntime":      4967805}
+[   10.010000] [92mExiting driver lag_vruntime on Linux 6.7.0-rc1-lag_vruntime_fixed[0m
+[   10.010000] reboot: Restarting system
+[   10.010000] reboot: machine restart

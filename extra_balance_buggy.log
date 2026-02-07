@@ -1,0 +1,1827 @@
+c[?7l[2J[0mSeaBIOS (version 1.16.3-debian-1.16.3-2)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+0EFCAD00+0EF0AD00 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from ROM...
+c[?7l[2JSpectre V2 : Kernel not compiled with retpoline; no mitigation available!
+ACPI Error: AE_BAD_PARAMETER, During Region initialization (20230628/tbxfload-52)
+ACPI: Unable to load the System Description Tables
+ACPI Error: Could not remove SCI handler (20230628/evmisc-251)
+Loading kmod.ko with params: driver=extra_balance isolcpus=nohz,managed_irq,1,2 rcu_nocbs=1,2 nohz_full=1,2 
+[92mLinux version: 6.7.0-rc1-extra_balance_buggy[0m
+[92m- name                : extra_balance[0m
+[92m- step_interval_us    : 1000[0m
+[92m- print_rq            : 0[0m
+[92m- print_tasks         : 0[0m
+[92m- print_load_balance  : 1[0m
+[92mDisabled workqueue on CPU 1[0m
+[92mDisabled workqueue on CPU 2[0m
+[92mDisabled workqueue on CPU 3[0m
+[92mDisabled workqueue on CPU 4[0m
+[92mDisabled workqueue on CPU 5[0m
+[92mDisabled workqueue on CPU 6[0m
+[92mDisabled workqueue on CPU 7[0m
+[92mMoved kthreads to CPU 0[0m
+[92mTask created with pid 106[0m
+[92mTask created with pid 107[0m
+[92mTask created with pid 108[0m
+[92mTask created with pid 109[0m
+[92mTask created with pid 110[0m
+Topology levels:
+- SMT  |  0-1 |  0-1 |  2-3 |  2-3 |  4-5 |  4-5 |  6-7 |  6-7 | SHARE_CPUCAPACITY, SHARE_PKG_RESOURCES
+- CLS  |  0-1 |  0-1 |  2-3 |  2-3 |  4-5 |  4-5 |  6-7 |  6-7 | CLUSTER, SHARE_PKG_RESOURCES
+- MC   |  0-3 |  0-3 |  0-3 |  0-3 |  4-7 |  4-7 |  4-7 |  4-7 | SHARE_PKG_RESOURCES
+- PKG  |  0-7 |  0-7 |  0-7 |  0-7 |  0-7 |  0-7 |  0-7 |  0-7 | 
+- NODE |  0-7 |  0-7 |  0-7 |  0-7 |  0-7 |  0-7 |  0-7 |  0-7 | 
+Sched domains:
+- SMT[0]: mask=0-1, groups={0: 1024, 1: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_CPUCAPACITY, SHARE_PKG_RESOURCES, PREFER_SIBLING
+- SMT[1]: mask=0-1, groups={1: 1024, 0: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_CPUCAPACITY, SHARE_PKG_RESOURCES, PREFER_SIBLING
+- SMT[2]: mask=2-3, groups={2: 1024, 3: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_CPUCAPACITY, SHARE_PKG_RESOURCES, PREFER_SIBLING
+- SMT[3]: mask=2-3, groups={3: 1024, 2: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_CPUCAPACITY, SHARE_PKG_RESOURCES, PREFER_SIBLING
+- SMT[4]: mask=4-5, groups={4: 1024, 5: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_CPUCAPACITY, SHARE_PKG_RESOURCES, PREFER_SIBLING
+- SMT[5]: mask=4-5, groups={5: 1024, 4: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_CPUCAPACITY, SHARE_PKG_RESOURCES, PREFER_SIBLING
+- SMT[6]: mask=6-7, groups={6: 1024, 7: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_CPUCAPACITY, SHARE_PKG_RESOURCES, PREFER_SIBLING
+- SMT[7]: mask=6-7, groups={7: 1024, 6: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_CPUCAPACITY, SHARE_PKG_RESOURCES, PREFER_SIBLING
+- MC[0]: mask=0-3, groups={0-1: 2048, 2-3: 2048}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_PKG_RESOURCES, PREFER_SIBLING
+- MC[1]: mask=0-3, groups={0-1: 2048, 2-3: 2048}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_PKG_RESOURCES, PREFER_SIBLING
+- MC[2]: mask=0-3, groups={2-3: 2048, 0-1: 2048}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_PKG_RESOURCES, PREFER_SIBLING
+- MC[3]: mask=0-3, groups={2-3: 2048, 0-1: 2048}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_PKG_RESOURCES, PREFER_SIBLING
+- MC[4]: mask=4-7, groups={4-5: 2048, 6-7: 2048}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_PKG_RESOURCES, PREFER_SIBLING
+- MC[5]: mask=4-7, groups={4-5: 2048, 6-7: 2048}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_PKG_RESOURCES, PREFER_SIBLING
+- MC[6]: mask=4-7, groups={6-7: 2048, 4-5: 2048}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_PKG_RESOURCES, PREFER_SIBLING
+- MC[7]: mask=4-7, groups={6-7: 2048, 4-5: 2048}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_PKG_RESOURCES, PREFER_SIBLING
+- PKG[0]: mask=0-7, groups={0-3: 4096, 4-7: 4096}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, PREFER_SIBLING
+- PKG[1]: mask=0-7, groups={0-3: 4096, 4-7: 4096}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, PREFER_SIBLING
+- PKG[2]: mask=0-7, groups={0-3: 4096, 4-7: 4096}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, PREFER_SIBLING
+- PKG[3]: mask=0-7, groups={0-3: 4096, 4-7: 4096}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, PREFER_SIBLING
+- PKG[4]: mask=0-7, groups={4-7: 4096, 0-3: 4096}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, PREFER_SIBLING
+- PKG[5]: mask=0-7, groups={4-7: 4096, 0-3: 4096}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, PREFER_SIBLING
+- PKG[6]: mask=0-7, groups={4-7: 4096, 0-3: 4096}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, PREFER_SIBLING
+- PKG[7]: mask=0-7, groups={4-7: 4096, 0-3: 4096}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, PREFER_SIBLING
+[92mDisabled timer ticks on CPU 1[0m
+[92mDisabled timer ticks on CPU 2[0m
+[92mDisabled timer ticks on CPU 3[0m
+[92mDisabled timer ticks on CPU 4[0m
+[92mDisabled timer ticks on CPU 5[0m
+[92mDisabled timer ticks on CPU 6[0m
+[92mDisabled timer ticks on CPU 7[0m
+[92mDisabled jiffies update[0m
+[92mMocked sched clock[0m
+[92mReset runqueues state[0m
+[92mReset cpumask[0m
+[92mReset tasks state[0m
+[92mPatched init_tg_cfs_entry to set min vruntime[0m
+[92mTraced find_busiest_group for load balancing[0m
+[92mWriting /sys/module/printk/parameters/time: 1[0m
+[   10.000000] [92mRunning driver extra_balance[0m
+[   10.000000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.000000] [92mPinned task 106 to CPUs 4-4[0m
+[   10.000000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.000000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.000000] [92mPinned task 107 to CPUs 6-6[0m
+[   10.000000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.000000] load_balance: {"dst_cpu": 3, "span": "0-3", "name": "MC"}
+[   10.000000] load_balance: {"dst_cpu": 3, "span": "0-7", "name": "PKG"}
+[   10.000000] load_balance: {"dst_cpu": 3, "span": "0-7", "name": "PKG"}
+[   10.000000] load_balance: {"dst_cpu": 1, "span": "0-7", "name": "PKG"}
+[   10.000000] [92mPinned task 108 to CPUs 6-6[0m
+[   10.000000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.000000] load_balance: {"dst_cpu": 5, "span": "4-7", "name": "MC"}
+[   10.000000] load_balance: {"dst_cpu": 5, "span": "4-7", "name": "MC"}
+[   10.000000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.000000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.000000] [92mPinned task 109 to CPUs 6-6[0m
+[   10.000000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.000000] load_balance: {"dst_cpu": 5, "span": "4-7", "name": "MC"}
+[   10.000000] load_balance: {"dst_cpu": 5, "span": "4-7", "name": "MC"}
+[   10.000000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.000000] [92mPinned task 110 to CPUs 7-7[0m
+[   10.000000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.001000] load_balance: {"dst_cpu": 1, "span": "0-7", "name": "PKG"}
+[   10.001000] load_balance: {"dst_cpu": 2, "span": "0-7", "name": "PKG"}
+[   10.001000] load_balance: {"dst_cpu": 2, "span": "0-7", "name": "PKG"}
+[   10.001000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.002000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.002000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.002000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.002000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.002000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.003000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.004000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.004000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.004000] load_balance: {"dst_cpu": 5, "span": "4-7", "name": "MC"}
+[   10.004000] load_balance: {"dst_cpu": 5, "span": "4-7", "name": "MC"}
+[   10.004000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.005000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.006000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.006000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.006000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.006000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.006000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.007000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.008000] load_balance: {"dst_cpu": 2, "span": "0-7", "name": "PKG"}
+[   10.008000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.008000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.009000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.010000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.010000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.010000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.010000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.010000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.011000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.012000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.012000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.012000] load_balance: {"dst_cpu": 5, "span": "4-7", "name": "MC"}
+[   10.012000] load_balance: {"dst_cpu": 5, "span": "4-7", "name": "MC"}
+[   10.012000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.013000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.014000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.014000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.014000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.014000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.014000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.015000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.016000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.017000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.018000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.018000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.018000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.018000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.018000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.019000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.020000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.020000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.020000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.021000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.022000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.022000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.022000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.022000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.022000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.023000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.024000] load_balance: {"dst_cpu": 2, "span": "0-7", "name": "PKG"}
+[   10.024000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.024000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.025000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.026000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.026000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.026000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.026000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.026000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.027000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.028000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.028000] load_balance: {"dst_cpu": 5, "span": "4-7", "name": "MC"}
+[   10.028000] load_balance: {"dst_cpu": 5, "span": "4-7", "name": "MC"}
+[   10.028000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.029000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.030000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.030000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.030000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.030000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.030000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.031000] load_balance: {"dst_cpu": 4, "span": "4-5", "name": "SMT"}
+[   10.031000] load_balance: {"dst_cpu": 6, "span": "6-7", "name": "SMT"}
+[   10.031000] load_balance: {"dst_cpu": 7, "span": "6-7", "name": "SMT"}
+[   10.031000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.032000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.033000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.034000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.034000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.034000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.034000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.034000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.035000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.036000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.036000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.036000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.037000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.038000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.038000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.038000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.038000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.038000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.039000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.040000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.040000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.041000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.042000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.042000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.042000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.042000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.042000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.043000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.044000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.044000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.044000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.045000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.046000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.046000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.046000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.046000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.046000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.047000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.048000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.049000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.050000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.050000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.050000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.050000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.050000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.051000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.052000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.052000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.052000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.053000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.054000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.054000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.054000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.054000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.054000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.055000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.056000] load_balance: {"dst_cpu": 2, "span": "0-7", "name": "PKG"}
+[   10.056000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.056000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.057000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.058000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.058000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.058000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.058000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.058000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.059000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.060000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.060000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.060000] load_balance: {"dst_cpu": 5, "span": "4-7", "name": "MC"}
+[   10.060000] load_balance: {"dst_cpu": 5, "span": "4-7", "name": "MC"}
+[   10.060000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.061000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.062000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.062000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.062000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.062000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.062000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.063000] load_balance: {"dst_cpu": 4, "span": "4-7", "name": "MC"}
+[   10.063000] load_balance: {"dst_cpu": 6, "span": "4-7", "name": "MC"}
+[   10.063000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.064000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.065000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.066000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.066000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.066000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.066000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.066000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.067000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.068000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.068000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.068000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.069000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.070000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.070000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.070000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.070000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.070000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.071000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.072000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.072000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.073000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.074000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.074000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.074000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.074000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.074000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.075000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.076000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.076000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.076000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.077000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.078000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.078000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.078000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.078000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.078000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.079000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.080000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.081000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.082000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.082000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.082000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.082000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.082000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.083000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.084000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.084000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.084000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.085000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.086000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.086000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.086000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.086000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.086000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.087000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.088000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.088000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.089000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.090000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.090000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.090000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.090000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.090000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.091000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.092000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.092000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.092000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.093000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.094000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.094000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.094000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.094000] load_balance: {"dst_cpu": 4, "span": "4-5", "name": "SMT"}
+[   10.094000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.094000] load_balance: {"dst_cpu": 6, "span": "6-7", "name": "SMT"}
+[   10.094000] load_balance: {"dst_cpu": 7, "span": "6-7", "name": "SMT"}
+[   10.094000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.095000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.096000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.097000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.098000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.098000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.098000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.098000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.098000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.099000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.100000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.100000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.100000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.101000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.102000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.102000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.102000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.102000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.102000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.103000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.104000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.104000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.105000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.106000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.106000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.106000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.106000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.106000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.107000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.108000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.108000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.108000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.109000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.110000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.110000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.110000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.110000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.110000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.111000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.112000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.113000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.114000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.114000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.114000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.114000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.114000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.115000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.116000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.116000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.116000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.117000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.118000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.118000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.118000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.118000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.118000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.119000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.120000] load_balance: {"dst_cpu": 2, "span": "0-7", "name": "PKG"}
+[   10.120000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.120000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.121000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.122000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.122000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.122000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.122000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.122000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.123000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.124000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.124000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.124000] load_balance: {"dst_cpu": 5, "span": "4-7", "name": "MC"}
+[   10.124000] load_balance: {"dst_cpu": 5, "span": "4-7", "name": "MC"}
+[   10.124000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.125000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.126000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.126000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.126000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.126000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.126000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.127000] load_balance: {"dst_cpu": 4, "span": "0-7", "name": "PKG"}
+[   10.127000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.128000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.129000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.130000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.130000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.130000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.130000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.130000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.131000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.132000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.132000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.132000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.133000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.134000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.134000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.134000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.134000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.134000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.135000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.136000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.136000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.137000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.138000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.138000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.138000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.138000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.138000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.139000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.140000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.140000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.140000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.141000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.142000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.142000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.142000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.142000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.142000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.143000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.144000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.145000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.146000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.146000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.146000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.146000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.146000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.147000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.148000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.148000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.148000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.149000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.150000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.150000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.150000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.150000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.150000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.151000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.152000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.152000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.153000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.154000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.154000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.154000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.154000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.154000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.155000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.156000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.156000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.156000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.157000] load_balance: {"dst_cpu": 4, "span": "4-5", "name": "SMT"}
+[   10.157000] load_balance: {"dst_cpu": 6, "span": "6-7", "name": "SMT"}
+[   10.157000] load_balance: {"dst_cpu": 7, "span": "6-7", "name": "SMT"}
+[   10.157000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.158000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.158000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.158000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.158000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.158000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.159000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.160000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.161000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.162000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.162000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.162000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.162000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.162000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.163000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.164000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.164000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.164000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.165000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.166000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.166000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.166000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.166000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.166000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.167000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.168000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.168000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.169000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.170000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.170000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.170000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.170000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.170000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.171000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.172000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.172000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.172000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.173000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.174000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.174000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.174000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.174000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.174000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.175000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.176000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.177000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.178000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.178000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.178000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.178000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.178000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.179000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.180000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.180000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.180000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.181000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.182000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.182000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.182000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.182000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.182000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.183000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.184000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.184000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.185000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.186000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.186000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.186000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.186000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.186000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.187000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.188000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.188000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.188000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.189000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.190000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.190000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.190000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.190000] load_balance: {"dst_cpu": 4, "span": "4-7", "name": "MC"}
+[   10.190000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.190000] load_balance: {"dst_cpu": 6, "span": "4-7", "name": "MC"}
+[   10.190000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.191000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.192000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.193000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.194000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.194000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.194000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.194000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.194000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.195000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.196000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.196000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.196000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.197000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.198000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.198000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.198000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.198000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.198000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.199000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.200000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.200000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.201000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.202000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.202000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.202000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.202000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.202000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.203000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.204000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.204000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.204000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.205000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.206000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.206000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.206000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.206000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.206000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.207000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.208000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.209000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.210000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.210000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.210000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.210000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.210000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.211000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.212000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.212000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.212000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.213000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.214000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.214000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.214000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.214000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.214000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.215000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.216000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.216000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.217000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.218000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.218000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.218000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.218000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.218000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.219000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.220000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.220000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.220000] load_balance: {"dst_cpu": 4, "span": "4-5", "name": "SMT"}
+[   10.220000] load_balance: {"dst_cpu": 6, "span": "6-7", "name": "SMT"}
+[   10.220000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.221000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.222000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.222000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.222000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.222000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.222000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.223000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.224000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.225000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.226000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.226000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.226000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.226000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.226000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.227000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.228000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.228000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.228000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.229000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.230000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.230000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.230000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.230000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.230000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.231000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.232000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.232000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.233000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.234000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.234000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.234000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.234000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.234000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.235000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.236000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.236000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.236000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.237000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.238000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.238000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.238000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.238000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.238000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.239000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.240000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.241000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.242000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.242000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.242000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.242000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.242000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.243000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.244000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.244000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.244000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.245000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.246000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.246000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.246000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.246000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.246000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.247000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.248000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.248000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.249000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.250000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.250000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.250000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.250000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.250000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.251000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.252000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.252000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.252000] load_balance: {"dst_cpu": 5, "span": "4-7", "name": "MC"}
+[   10.252000] load_balance: {"dst_cpu": 5, "span": "4-7", "name": "MC"}
+[   10.252000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.253000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.254000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.254000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.254000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.254000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.254000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.255000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.256000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.257000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.258000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.258000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.258000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.258000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.258000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.259000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.260000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.260000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.260000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.261000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.262000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.262000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.262000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.262000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.262000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.263000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.264000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.264000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.265000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.266000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.266000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.266000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.266000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.266000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.267000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.268000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.268000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.268000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.269000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.270000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.270000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.270000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.270000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.270000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.271000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.272000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.273000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.274000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.274000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.274000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.274000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.274000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.275000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.276000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.276000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.276000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.277000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.278000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.278000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.278000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.278000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.278000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.279000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.280000] load_balance: {"dst_cpu": 1, "span": "0-7", "name": "PKG"}
+[   10.280000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.280000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.281000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.282000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.282000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.282000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.282000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.282000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.283000] load_balance: {"dst_cpu": 4, "span": "4-5", "name": "SMT"}
+[   10.283000] load_balance: {"dst_cpu": 6, "span": "6-7", "name": "SMT"}
+[   10.283000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.284000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.284000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.284000] load_balance: {"dst_cpu": 7, "span": "6-7", "name": "SMT"}
+[   10.284000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.285000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.286000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.286000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.286000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.286000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.286000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.287000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.288000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.289000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.290000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.290000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.290000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.290000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.290000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.291000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.292000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.292000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.292000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.293000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.294000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.294000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.294000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.294000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.294000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.295000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.296000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.296000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.297000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.298000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.298000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.298000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.298000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.298000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.299000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.300000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.300000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.300000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.301000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.302000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.302000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.302000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.302000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.302000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.303000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.304000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.305000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.306000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.306000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.306000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.306000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.306000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.307000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.308000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.308000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.308000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.309000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.310000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.310000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.310000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.310000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.310000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.311000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.312000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.312000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.313000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.314000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.314000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.314000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.314000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.314000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.315000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.316000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.316000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.316000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.317000] load_balance: {"dst_cpu": 4, "span": "4-7", "name": "MC"}
+[   10.317000] load_balance: {"dst_cpu": 6, "span": "4-7", "name": "MC"}
+[   10.317000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.318000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.318000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.318000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.318000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.318000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.319000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.320000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.321000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.322000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.322000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.322000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.322000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.322000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.323000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.324000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.324000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.324000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.325000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.326000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.326000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.326000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.326000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.326000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.327000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.328000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.328000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.329000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.330000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.330000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.330000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.330000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.330000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.331000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.332000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.332000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.332000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.333000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.334000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.334000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.334000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.334000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.334000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.335000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.336000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.337000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.338000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.338000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.338000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.338000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.338000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.339000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.340000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.340000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.340000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.341000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.342000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.342000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.342000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.342000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.342000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.343000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.344000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.344000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.345000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.346000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.346000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.346000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.346000] load_balance: {"dst_cpu": 4, "span": "4-5", "name": "SMT"}
+[   10.346000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.346000] load_balance: {"dst_cpu": 6, "span": "6-7", "name": "SMT"}
+[   10.346000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.347000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.348000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.348000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.348000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.349000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.350000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.350000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.350000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.350000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.350000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.351000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.352000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.353000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.354000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.354000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.354000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.354000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.354000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.355000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.356000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.356000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.356000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.357000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.358000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.358000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.358000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.358000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.358000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.359000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.360000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.360000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.361000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.362000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.362000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.362000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.362000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.362000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.363000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.364000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.364000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.364000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.365000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.366000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.366000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.366000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.366000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.366000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.367000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.368000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.369000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.370000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.370000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.370000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.370000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.370000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.371000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.372000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.372000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.372000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.373000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.374000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.374000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.374000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.374000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.374000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.375000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.376000] load_balance: {"dst_cpu": 1, "span": "0-7", "name": "PKG"}
+[   10.376000] load_balance: {"dst_cpu": 2, "span": "0-7", "name": "PKG"}
+[   10.376000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.376000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.377000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.378000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.378000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.378000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.378000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.378000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.379000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.380000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.380000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.380000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.381000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.382000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.382000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.382000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.382000] load_balance: {"dst_cpu": 4, "span": "0-7", "name": "PKG"}
+[   10.382000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.382000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.383000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.384000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.385000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.386000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.386000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.386000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.386000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.386000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.387000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.388000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.388000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.389000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.390000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.390000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.390000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.390000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.390000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.391000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.392000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.392000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.393000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.394000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.394000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.394000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.394000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.394000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.395000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.396000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.396000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.397000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.398000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.398000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.398000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.398000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.398000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.399000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.400000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.401000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.402000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.402000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.402000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.402000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.402000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.403000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.404000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.404000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.404000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.405000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.406000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.406000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.406000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.406000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.406000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.407000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.408000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.408000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.409000] load_balance: {"dst_cpu": 4, "span": "4-5", "name": "SMT"}
+[   10.409000] load_balance: {"dst_cpu": 6, "span": "6-7", "name": "SMT"}
+[   10.409000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.410000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.410000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.410000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.410000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.410000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.411000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.412000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.412000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.412000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.413000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.414000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.414000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.414000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.414000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.414000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.415000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.416000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.417000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.418000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.418000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.418000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.418000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.418000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.419000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.420000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.420000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.420000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.421000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.422000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.422000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.422000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.422000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.422000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.423000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.424000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.424000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.425000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.426000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.426000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.426000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.426000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.426000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.427000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.428000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.428000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.428000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.429000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.430000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.430000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.430000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.430000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.430000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.431000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.432000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.433000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.434000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.434000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.434000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.434000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.434000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.435000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.436000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.436000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.437000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.438000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.438000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.438000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.438000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.438000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.439000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.440000] load_balance: {"dst_cpu": 1, "span": "0-7", "name": "PKG"}
+[   10.440000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.440000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.441000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.442000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.442000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.442000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.442000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.442000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.443000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.444000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.444000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.444000] load_balance: {"dst_cpu": 4, "span": "4-7", "name": "MC"}
+[   10.444000] load_balance: {"dst_cpu": 6, "span": "4-7", "name": "MC"}
+[   10.444000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.445000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.446000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.446000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.446000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.446000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.446000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.447000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.448000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.449000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.450000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.450000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.450000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.450000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.450000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.451000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.452000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.452000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.453000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.454000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.454000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.454000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.454000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.454000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.455000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.456000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.456000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.457000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.458000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.458000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.458000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.458000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.458000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.459000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.460000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.460000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.460000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.461000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.462000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.462000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.462000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.462000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.462000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.463000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.464000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.465000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.466000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.466000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.466000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.466000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.466000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.467000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.468000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.468000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.468000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.469000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.470000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.470000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.470000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.470000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.470000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.471000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.472000] load_balance: {"dst_cpu": 4, "span": "4-5", "name": "SMT"}
+[   10.472000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.472000] load_balance: {"dst_cpu": 6, "span": "6-7", "name": "SMT"}
+[   10.472000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.473000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.474000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.474000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.474000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.474000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.474000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.475000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.476000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.476000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.477000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.478000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.478000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.478000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.478000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.478000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.479000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.480000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.481000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.482000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.482000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.482000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.482000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.482000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.483000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.484000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.484000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.484000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.485000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.486000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.486000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.486000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.486000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.486000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.487000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.488000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.488000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.489000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.490000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.490000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.490000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.490000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.490000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.491000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.492000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.492000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.492000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.493000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.494000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.494000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.494000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.494000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.494000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.495000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.496000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.497000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.498000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.498000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.498000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.498000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.498000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.499000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.500000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.500000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.500000] [92mPinned task 107 to CPUs 4-6[0m
+[   10.500000] [92mPinned task 108 to CPUs 4-6[0m
+[   10.500000] [92mPinned task 109 to CPUs 4-6[0m
+[   10.500000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.501000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.502000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.502000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.502000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.502000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.502000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.503000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.504000] load_balance: {"dst_cpu": 5, "span": "0-7", "name": "PKG"}
+[   10.504000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.505000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.506000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.506000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.506000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.506000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.506000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.507000] nr_running: {"cpu4": 1, "cpu5": 0, "cpu6": 3, "cpu7": 1}
+[   10.508000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.508000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.508000] load_balance: {"dst_cpu": 5, "span": "4-7", "name": "MC"}
+[   10.508000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.509000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.510000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.510000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.510000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.510000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.511000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.512000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.513000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.514000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.514000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.514000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.514000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.515000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.516000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.516000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.517000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.518000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.518000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.518000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.518000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.519000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.520000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.521000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.522000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.522000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.522000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.522000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.523000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.524000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.524000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.524000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.525000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.526000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.526000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.526000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.526000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.527000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.528000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.529000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.530000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.530000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.530000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.530000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.531000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.532000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.532000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.532000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.533000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.534000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.534000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.534000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.534000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.535000] load_balance: {"dst_cpu": 4, "span": "4-5", "name": "SMT"}
+[   10.535000] load_balance: {"dst_cpu": 6, "span": "6-7", "name": "SMT"}
+[   10.535000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.536000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.537000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.538000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.538000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.538000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.538000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.539000] load_balance: {"dst_cpu": 7, "span": "6-7", "name": "SMT"}
+[   10.539000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.540000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.540000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.541000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.542000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.542000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.542000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.542000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.543000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.544000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.545000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.546000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.546000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.546000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.546000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.547000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.548000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.548000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.548000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.549000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.550000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.550000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.550000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.550000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.551000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.552000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.553000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.554000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.554000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.554000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.554000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.555000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.556000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.556000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.556000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.557000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.558000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.558000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.558000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.558000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.559000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.560000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.561000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.562000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.562000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.562000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.562000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.563000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.564000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.564000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.564000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.565000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.566000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.566000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.566000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.566000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.567000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.568000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.569000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.569000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.570000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.570000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.570000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.570000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.571000] load_balance: {"dst_cpu": 4, "span": "4-7", "name": "MC"}
+[   10.571000] load_balance: {"dst_cpu": 6, "span": "4-7", "name": "MC"}
+[   10.571000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.572000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.572000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.572000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.573000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.574000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.574000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.574000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.574000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.575000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.576000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.577000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.578000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.578000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.578000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.578000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.579000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.580000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.580000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.580000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.581000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.582000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.582000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.582000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.582000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.583000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.584000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.585000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.586000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.586000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.586000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.586000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.587000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.588000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.588000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.588000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.589000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.590000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.590000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.590000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.590000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.591000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.592000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.593000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.594000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.594000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.594000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.594000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.595000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.596000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.596000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.596000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.597000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.598000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.598000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.598000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.598000] load_balance: {"dst_cpu": 4, "span": "4-5", "name": "SMT"}
+[   10.598000] load_balance: {"dst_cpu": 6, "span": "6-7", "name": "SMT"}
+[   10.598000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.599000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.600000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.601000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.602000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.602000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.602000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.602000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.603000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.604000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.604000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.604000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.605000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.606000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.606000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.606000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.606000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.607000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.608000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.609000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.610000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.610000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.610000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.610000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.611000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.612000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.612000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.612000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.613000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.614000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.614000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.614000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.614000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.615000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.616000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.617000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.618000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.618000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.618000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.618000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.619000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.620000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.620000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.620000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.621000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.622000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.622000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.622000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.622000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.623000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.624000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.625000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.626000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.626000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.626000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.626000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.627000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.628000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.628000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.628000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.629000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.630000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.630000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.630000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.630000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.631000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.632000] load_balance: {"dst_cpu": 2, "span": "0-7", "name": "PKG"}
+[   10.632000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.632000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.633000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.634000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.634000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.634000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.634000] load_balance: {"dst_cpu": 4, "span": "4-7", "name": "MC"}
+[   10.634000] nr_running: {"cpu4": 1, "cpu5": 1, "cpu6": 2, "cpu7": 1}
+[   10.635000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.636000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.636000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.636000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.637000] load_balance: {"dst_cpu": 4, "span": "0-7", "name": "PKG"}
+[   10.637000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.638000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.638000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.638000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.638000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.639000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.640000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.641000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.642000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.642000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.642000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.642000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.643000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.644000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.644000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.644000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.645000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.646000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.646000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.646000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.646000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.647000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.648000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.649000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.650000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.650000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.650000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.650000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.651000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.652000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.652000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.652000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.653000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.654000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.654000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.654000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.654000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.655000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.656000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.657000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.658000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.658000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.658000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.658000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.659000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.660000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.660000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.661000] load_balance: {"dst_cpu": 4, "span": "4-5", "name": "SMT"}
+[   10.661000] load_balance: {"dst_cpu": 6, "span": "6-7", "name": "SMT"}
+[   10.661000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.662000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.662000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.662000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.662000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.663000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.664000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.665000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.666000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.666000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.666000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.666000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.667000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.668000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.668000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.669000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.670000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.670000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.670000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.670000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.671000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.672000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.673000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.674000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.674000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.674000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.674000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.675000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.676000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.676000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.677000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.678000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.678000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.678000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.678000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.679000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.680000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.681000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.682000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.682000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.682000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.682000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.683000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.684000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.684000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.685000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.686000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.686000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.686000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.686000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.687000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.688000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.689000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.690000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.690000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.690000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.690000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.691000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.692000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.692000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.692000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.693000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.694000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.694000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.694000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.694000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.695000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.695000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.696000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.697000] load_balance: {"dst_cpu": 4, "span": "4-7", "name": "MC"}
+[   10.697000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.698000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.698000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.698000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.698000] load_balance: {"dst_cpu": 6, "span": "4-7", "name": "MC"}
+[   10.698000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.699000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.700000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.700000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.701000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.702000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.702000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.702000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.702000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.703000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.704000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.705000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.706000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.706000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.706000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.706000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.707000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.708000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.708000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.709000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.710000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.710000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.710000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.710000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.711000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.712000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.713000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.714000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.714000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.714000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.714000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.715000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.716000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.716000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.717000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.718000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.718000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.718000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.718000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.719000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.720000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.721000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.722000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.722000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.722000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.722000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.723000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.724000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.724000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.724000] load_balance: {"dst_cpu": 4, "span": "4-5", "name": "SMT"}
+[   10.724000] load_balance: {"dst_cpu": 6, "span": "6-7", "name": "SMT"}
+[   10.724000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.725000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.726000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.726000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.726000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.726000] load_balance: {"dst_cpu": 5, "span": "4-5", "name": "SMT"}
+[   10.726000] nr_running: {"cpu4": 2, "cpu5": 1, "cpu6": 1, "cpu7": 1}
+[   10.727000] nr_running: {"cpu4": 1, "cpu5": 2, "cpu6": 1, "cpu7": 1}
+[   10.728000] nr_running: {"cpu4": 1, "cpu5": 2, "cpu6": 1, "cpu7": 1}
+[   10.729000] nr_running: {"cpu4": 1, "cpu5": 2, "cpu6": 1, "cpu7": 1}
+[   10.730000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.730000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.730000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.730000] nr_running: {"cpu4": 1, "cpu5": 2, "cpu6": 1, "cpu7": 1}
+[   10.731000] nr_running: {"cpu4": 1, "cpu5": 2, "cpu6": 1, "cpu7": 1}
+[   10.732000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.732000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.732000] nr_running: {"cpu4": 1, "cpu5": 2, "cpu6": 1, "cpu7": 1}
+[   10.733000] nr_running: {"cpu4": 1, "cpu5": 2, "cpu6": 1, "cpu7": 1}
+[   10.734000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.734000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.734000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.734000] nr_running: {"cpu4": 1, "cpu5": 2, "cpu6": 1, "cpu7": 1}
+[   10.735000] nr_running: {"cpu4": 1, "cpu5": 2, "cpu6": 1, "cpu7": 1}
+[   10.736000] nr_running: {"cpu4": 1, "cpu5": 2, "cpu6": 1, "cpu7": 1}
+[   10.737000] nr_running: {"cpu4": 1, "cpu5": 2, "cpu6": 1, "cpu7": 1}
+[   10.738000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.738000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.738000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.738000] nr_running: {"cpu4": 1, "cpu5": 2, "cpu6": 1, "cpu7": 1}
+[   10.739000] nr_running: {"cpu4": 1, "cpu5": 2, "cpu6": 1, "cpu7": 1}
+[   10.740000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.740000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.740000] nr_running: {"cpu4": 1, "cpu5": 2, "cpu6": 1, "cpu7": 1}
+[   10.741000] nr_running: {"cpu4": 1, "cpu5": 2, "cpu6": 1, "cpu7": 1}
+[   10.742000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.742000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.742000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.742000] nr_running: {"cpu4": 1, "cpu5": 2, "cpu6": 1, "cpu7": 1}
+[   10.743000] nr_running: {"cpu4": 1, "cpu5": 2, "cpu6": 1, "cpu7": 1}
+[   10.744000] nr_running: {"cpu4": 1, "cpu5": 2, "cpu6": 1, "cpu7": 1}
+[   10.745000] nr_running: {"cpu4": 1, "cpu5": 2, "cpu6": 1, "cpu7": 1}
+[   10.746000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.746000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.746000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.746000] nr_running: {"cpu4": 1, "cpu5": 2, "cpu6": 1, "cpu7": 1}
+[   10.747000] nr_running: {"cpu4": 1, "cpu5": 2, "cpu6": 1, "cpu7": 1}
+[   10.748000] load_balance: {"dst_cpu": 1, "span": "0-3", "name": "MC"}
+[   10.748000] load_balance: {"dst_cpu": 2, "span": "0-3", "name": "MC"}
+[   10.748000] nr_running: {"cpu4": 1, "cpu5": 2, "cpu6": 1, "cpu7": 1}
+[   10.749000] nr_running: {"cpu4": 1, "cpu5": 2, "cpu6": 1, "cpu7": 1}
+[   10.750000] load_balance: {"dst_cpu": 1, "span": "0-1", "name": "SMT"}
+[   10.750000] load_balance: {"dst_cpu": 2, "span": "2-3", "name": "SMT"}
+[   10.750000] load_balance: {"dst_cpu": 3, "span": "2-3", "name": "SMT"}
+[   10.750000] [92mExiting driver extra_balance on Linux 6.7.0-rc1-extra_balance_buggy[0m
+[   10.750000] reboot: Restarting system
+[   10.750000] reboot: machine restart

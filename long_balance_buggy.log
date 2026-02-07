@@ -1,0 +1,109 @@
+c[?7l[2J[0mSeaBIOS (version 1.16.3-debian-1.16.3-2)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+BEFCAD00+BEF0AD00 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from ROM..c[?7l[2JACPI Error: AE_BAD_PARAMETER, During Region initialization (20240322/tbxfload-52)
+ACPI: Unable to load the System Description Tables
+ACPI Error: Could not remove SCI handler (20240322/evmisc-251)
+Loading kmod.ko with params: driver=long_balance isolcpus=nohz,managed_irq,1,2 rcu_nocbs=1,2 nohz_full=1,2 
+[92mLinux version: 6.10.0-rc5-long_balance_buggy[0m
+[92m- name                : long_balance[0m
+[92m- step_interval_us    : 10000[0m
+[92m- print_rq            : 0[0m
+[92m- print_tasks         : 0[0m
+[92m- print_load_balance  : 0[0m
+[92mDisabled workqueue on CPU 1[0m
+[92mDisabled workqueue on CPU 2[0m
+[92mMoved kthreads to CPU 0[0m
+[92mTracing sched_softirq latency[0m
+[92mTask created with pid 51[0m
+sched_softirq: {"cpu": 1, "lat_us": 4.017}
+sched_softirq: {"cpu": 1, "lat_us": 3.305}
+sched_softirq: {"cpu": 2, "lat_us": 3.498}
+Topology levels:
+- SMT  |    0 |    1 |    2 | SHARE_CPUCAPACITY, SHARE_LLC
+- CLS  |    0 |    1 |    2 | CLUSTER, SHARE_LLC
+sched_softirq: {"cpu": 1, "lat_us": 3.769}
+- MC   |  0-2 |  0-2 |  0-2 | SHARE_LLC
+- PKG  |  0-2 |  0-2 |  0-2 | 
+- NODE |  0-2 |  0-2 |  0-2 | 
+Sched domains:
+- MC[0]: mask=0-2, groups={0: 1024, 1: 1024, 2: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_LLC, PREFER_SIBLING
+- MC[1]: mask=0-2, groups={1: 1024, 2: 1024, 0: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_LLC, PREFER_SIBLING
+sched_softirq: {"cpu": 1, "lat_us": 4.030}
+- MC[2]: mask=0-2, groups={2: 1024, 
+sched_softirq: {"cpu": 2, "lat_us": 3.786}
+0: 1024, 1: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_LLC, PREFER_SIBLING
+sched_softirq: {"cpu": 1, "lat_us": 3.024}
+[92mDisabled timer ticks on CPU 1[0m
+[92mDisabled timer ticks on CPU 2[0m
+[92mDisabled jiffies update[0m
+[92mMocked sched clock[0m
+[92mReset runqueues state[0m
+[92mReset cpumask[0m
+[92mReset tasks state[0m
+[92mPatched init_tg_cfs_entry to set min vruntime[0m
+[92mWriting /sys/module/printk/parameters/time: 1[0m
+[   10.000000] [92mRunning driver long_balance[0m
+[   10.000000] [92mPinned task 51 to CPUs 1-1[0m
+[   10.000000] [92mForked task 51 20000 times[0m
+[   10.001000] sched_softirq: {"cpu": 1, "lat_us": 1.968}
+[   10.001000] sched_softirq: {"cpu": 2, "lat_us": 1.877}
+[   10.003000] sched_softirq: {"cpu": 2, "lat_us": 2870.570}
+[   10.009000] sched_softirq: {"cpu": 2, "lat_us": 2606.107}
+[   10.021000] sched_softirq: {"cpu": 2, "lat_us": 2735.612}
+[   10.045000] sched_softirq: {"cpu": 2, "lat_us": 2608.717}
+[   10.047000] sched_softirq: {"cpu": 1, "lat_us": 1.657}
+[   10.093000] sched_softirq: {"cpu": 2, "lat_us": 2726.868}
+[   10.142000] sched_softirq: {"cpu": 1, "lat_us": 1.486}
+[   10.189000] sched_softirq: {"cpu": 2, "lat_us": 2836.519}
+[   10.237000] sched_softirq: {"cpu": 1, "lat_us": 2.315}
+[   10.332000] sched_softirq: {"cpu": 1, "lat_us": 1.433}
+[   10.381000] sched_softirq: {"cpu": 2, "lat_us": 3404.976}
+[   10.427000] sched_softirq: {"cpu": 1, "lat_us": 2.255}
+[   10.522000] sched_softirq: {"cpu": 1, "lat_us": 7.924}
+[   10.581000] sched_softirq: {"cpu": 2, "lat_us": 3090.626}
+[   10.617000] sched_softirq: {"cpu": 1, "lat_us": 1.501}
+[   10.712000] sched_softirq: {"cpu": 1, "lat_us": 1.779}
+[   10.781000] sched_softirq: {"cpu": 2, "lat_us": 3117.067}
+[   10.807000] sched_softirq: {"cpu": 1, "lat_us": 1.475}
+[   10.902000] sched_softirq: {"cpu": 1, "lat_us": 1.419}
+[   10.981000] sched_softirq: {"cpu": 2, "lat_us": 3194.887}
+[   10.997000] sched_softirq: {"cpu": 1, "lat_us": 1.655}
+[   11.092000] sched_softirq: {"cpu": 1, "lat_us": 7.960}
+[   11.181000] sched_softirq: {"cpu": 2, "lat_us": 2980.775}
+[   11.187000] sched_softirq: {"cpu": 1, "lat_us": 1.502}
+[   11.282000] sched_softirq: {"cpu": 1, "lat_us": 1.840}
+[   11.377000] sched_softirq: {"cpu": 1, "lat_us": 2.429}
+[   11.381000] sched_softirq: {"cpu": 2, "lat_us": 2766.974}
+[   11.472000] sched_softirq: {"cpu": 1, "lat_us": 2.560}
+[   11.567000] sched_softirq: {"cpu": 1, "lat_us": 2.190}
+[   11.581000] sched_softirq: {"cpu": 2, "lat_us": 3187.861}
+[   11.662000] sched_softirq: {"cpu": 1, "lat_us": 1.506}
+[   11.757000] sched_softirq: {"cpu": 1, "lat_us": 1.950}
+[   11.781000] sched_softirq: {"cpu": 2, "lat_us": 3057.764}
+[   11.852000] sched_softirq: {"cpu": 1, "lat_us": 1.456}
+[   11.947000] sched_softirq: {"cpu": 1, "lat_us": 1.549}
+[   11.981000] sched_softirq: {"cpu": 2, "lat_us": 3025.336}
+[   12.042000] sched_softirq: {"cpu": 1, "lat_us": 1.534}
+[   12.137000] sched_softirq: {"cpu": 1, "lat_us": 1.523}
+[   12.181000] sched_softirq: {"cpu": 2, "lat_us": 3060.748}
+[   12.232000] sched_softirq: {"cpu": 1, "lat_us": 1.480}
+[   12.327000] sched_softirq: {"cpu": 1, "lat_us": 1.363}
+[   12.381000] sched_softirq: {"cpu": 2, "lat_us": 3043.349}
+[   12.422000] sched_softirq: {"cpu": 1, "lat_us": 1.428}
+[   12.517000] sched_softirq: {"cpu": 1, "lat_us": 1.333}
+[   12.581000] sched_softirq: {"cpu": 2, "lat_us": 2895.885}
+[   12.612000] sched_softirq: {"cpu": 1, "lat_us": 1.389}
+[   12.707000] sched_softirq: {"cpu": 1, "lat_us": 1.735}
+[   12.781000] sched_softirq: {"cpu": 2, "lat_us": 3041.545}
+[   12.802000] sched_softirq: {"cpu": 1, "lat_us": 1.728}
+[   12.897000] sched_softirq: {"cpu": 1, "lat_us": 1.349}
+[   12.981000] sched_softirq: {"cpu": 2, "lat_us": 2951.846}
+[   12.992000] sched_softirq: {"cpu": 1, "lat_us": 1.543}
+[   13.000000] [92mExiting driver long_balance on Linux 6.10.0-rc5-long_balance_buggy[0m
+[   13.000000] reboot: Restarting system
+[   13.000000] reboot: machine restart

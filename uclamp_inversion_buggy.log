@@ -1,0 +1,153 @@
+c[?7l[2J[0mSeaBIOS (version 1.16.3-debian-1.16.3-2)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+0EFCAD00+0EF0AD00 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from ROM...
+c[?7l[2JSpectre V2 : Spectre mitigation: kernel not compiled with retpoline; no mitigation available!
+ACPI Error: AE_BAD_PARAMETER, During Region initialization (20210331/tbxfload-52)
+ACPI: Unable to load the System Description Tables
+ACPI Error: Could not remove SCI handler (20210331/evmisc-251)
+Loading kmod.ko with params: driver=uclamp_inversion isolcpus=nohz,managed_irq,1,2 rcu_nocbs=1,2 nohz_full=1,2 
+[92mLinux version: 5.13.0-rc6-uclamp_inversion_buggy[0m
+[92m- name                : uclamp_inversion[0m
+[92m- step_interval_us    : 1000[0m
+[92m- print_rq            : 0[0m
+[92m- print_tasks         : 0[0m
+[92m- print_load_balance  : 0[0m
+[92mDisabled workqueue on CPU 1[0m
+[92mMoved kthreads to CPU 0[0m
+[92mTask created with pid 36[0m
+[92mWriting /sys/fs/cgroup//cgroup.subtree_control: +cpu +cpuset[0m
+[92mCreated directory /sys/fs/cgroup/uclamp[0m
+[92mWriting /sys/fs/cgroup/uclamp/cgroup.subtree_control: +cpu +cpuset[0m
+[92mWriting /sys/fs/cgroup/uclamp/cpu.uclamp.min: 0.00[0m
+[92mWriting /sys/fs/cgroup/uclamp/cpu.uclamp.max: 20.00[0m
+[92mWriting /sys/fs/cgroup/uclamp/cgroup.procs: 36[0m
+Topology levels:
+- SMT  |    0 |    1 | SHARE_CPUCAPACITY, SHARE_PKG_RESOURCES
+- MC   |  0-1 |  0-1 | SHARE_PKG_RESOURCES
+- DIE  |  0-1 |  0-1 | 
+- NODE |  0-1 |  0-1 | 
+Sched domains:
+- MC[0]: mask=0-1, groups={0: 1024, 1: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_PKG_RESOURCES, PREFER_SIBLING
+- MC[1]: mask=0-1, groups={1: 1024, 0: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_PKG_RESOURCES, PREFER_SIBLING
+[92mDisabled timer ticks on CPU 1[0m
+[92mDisabled jiffies update[0m
+[92mMocked sched clock[0m
+[92mReset runqueues state[0m
+[92mReset cpumask[0m
+[92mReset tasks state[0m
+[92mPatched init_tg_cfs_entry to set min vruntime[0m
+[92mWriting /sys/module/printk/parameters/time: 1[0m
+[   10.000000] [92mRunning driver uclamp_inversion[0m
+[   10.000000] [92mWaked up task 36[0m
+[   10.000000] [92muclamp inversion detected: min=819 max=205[0m
+[   10.000000] rq: {"effective_util": 819}
+[   10.001000] rq: {"effective_util": 819}
+[   10.002000] rq: {"effective_util": 819}
+[   10.003000] rq: {"effective_util": 819}
+[   10.004000] rq: {"effective_util": 819}
+[   10.005000] rq: {"effective_util": 819}
+[   10.006000] rq: {"effective_util": 819}
+[   10.007000] rq: {"effective_util": 819}
+[   10.008000] rq: {"effective_util": 819}
+[   10.009000] rq: {"effective_util": 819}
+[   10.010000] rq: {"effective_util": 819}
+[   10.011000] rq: {"effective_util": 819}
+[   10.012000] rq: {"effective_util": 819}
+[   10.013000] rq: {"effective_util": 819}
+[   10.014000] rq: {"effective_util": 819}
+[   10.015000] rq: {"effective_util": 819}
+[   10.016000] rq: {"effective_util": 819}
+[   10.017000] rq: {"effective_util": 819}
+[   10.018000] rq: {"effective_util": 819}
+[   10.019000] rq: {"effective_util": 819}
+[   10.020000] rq: {"effective_util": 819}
+[   10.021000] rq: {"effective_util": 819}
+[   10.022000] rq: {"effective_util": 819}
+[   10.023000] rq: {"effective_util": 819}
+[   10.024000] rq: {"effective_util": 819}
+[   10.025000] rq: {"effective_util": 819}
+[   10.026000] rq: {"effective_util": 819}
+[   10.027000] rq: {"effective_util": 819}
+[   10.028000] rq: {"effective_util": 819}
+[   10.029000] rq: {"effective_util": 819}
+[   10.030000] rq: {"effective_util": 819}
+[   10.031000] rq: {"effective_util": 819}
+[   10.032000] rq: {"effective_util": 819}
+[   10.033000] rq: {"effective_util": 819}
+[   10.034000] rq: {"effective_util": 819}
+[   10.035000] rq: {"effective_util": 819}
+[   10.036000] rq: {"effective_util": 819}
+[   10.037000] rq: {"effective_util": 819}
+[   10.038000] rq: {"effective_util": 819}
+[   10.039000] rq: {"effective_util": 819}
+[   10.040000] rq: {"effective_util": 819}
+[   10.041000] rq: {"effective_util": 819}
+[   10.042000] rq: {"effective_util": 819}
+[   10.043000] rq: {"effective_util": 819}
+[   10.044000] rq: {"effective_util": 819}
+[   10.045000] rq: {"effective_util": 819}
+[   10.046000] rq: {"effective_util": 819}
+[   10.047000] rq: {"effective_util": 819}
+[   10.048000] rq: {"effective_util": 819}
+[   10.049000] rq: {"effective_util": 819}
+[   10.050000] rq: {"effective_util": 819}
+[   10.051000] rq: {"effective_util": 819}
+[   10.052000] rq: {"effective_util": 819}
+[   10.053000] rq: {"effective_util": 819}
+[   10.054000] rq: {"effective_util": 819}
+[   10.055000] rq: {"effective_util": 819}
+[   10.056000] rq: {"effective_util": 819}
+[   10.057000] rq: {"effective_util": 819}
+[   10.058000] rq: {"effective_util": 819}
+[   10.059000] rq: {"effective_util": 819}
+[   10.060000] rq: {"effective_util": 819}
+[   10.061000] rq: {"effective_util": 819}
+[   10.062000] rq: {"effective_util": 819}
+[   10.063000] rq: {"effective_util": 819}
+[   10.064000] rq: {"effective_util": 819}
+[   10.065000] rq: {"effective_util": 819}
+[   10.066000] rq: {"effective_util": 819}
+[   10.067000] rq: {"effective_util": 819}
+[   10.068000] rq: {"effective_util": 819}
+[   10.069000] rq: {"effective_util": 819}
+[   10.070000] rq: {"effective_util": 819}
+[   10.071000] rq: {"effective_util": 819}
+[   10.072000] rq: {"effective_util": 819}
+[   10.073000] rq: {"effective_util": 819}
+[   10.074000] rq: {"effective_util": 819}
+[   10.075000] rq: {"effective_util": 819}
+[   10.076000] rq: {"effective_util": 819}
+[   10.077000] rq: {"effective_util": 819}
+[   10.078000] rq: {"effective_util": 819}
+[   10.079000] rq: {"effective_util": 824}
+[   10.080000] rq: {"effective_util": 828}
+[   10.081000] rq: {"effective_util": 832}
+[   10.082000] rq: {"effective_util": 836}
+[   10.083000] rq: {"effective_util": 839}
+[   10.084000] rq: {"effective_util": 843}
+[   10.085000] rq: {"effective_util": 847}
+[   10.086000] rq: {"effective_util": 851}
+[   10.087000] rq: {"effective_util": 851}
+[   10.088000] rq: {"effective_util": 858}
+[   10.089000] rq: {"effective_util": 861}
+[   10.090000] rq: {"effective_util": 864}
+[   10.091000] rq: {"effective_util": 868}
+[   10.092000] rq: {"effective_util": 871}
+[   10.093000] rq: {"effective_util": 874}
+[   10.094000] rq: {"effective_util": 877}
+[   10.095000] rq: {"effective_util": 880}
+[   10.096000] rq: {"effective_util": 883}
+[   10.097000] rq: {"effective_util": 886}
+[   10.098000] rq: {"effective_util": 889}
+[   10.099000] rq: {"effective_util": 891}
+[   10.100000] rq: {"effective_util": 894}
+[   10.101000] [92mExiting driver uclamp_inversion on Linux 5.13.0-rc6-uclamp_inversion_buggy[0m
+[   10.101000] kvm-guest: disable async PF for cpu 0
+[   10.101000] kvm-guest: disable async PF for cpu 1
+[   10.101000] reboot: Restarting system
+[   10.101000] reboot: machine restart

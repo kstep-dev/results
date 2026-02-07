@@ -1,0 +1,410 @@
+c[?7l[2J[0mSeaBIOS (version 1.16.3-debian-1.16.3-2)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+0EFCAD00+0EF0AD00 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from ROM..c[?7l[2JACPI Error: AE_BAD_PARAMETER, During Region initialization (20250404/tbxfload-52)
+ACPI: Unable to load the System Description Tables
+ACPI Error: Could not remove SCI handler (20250404/evmisc-251)
+Loading kmod.ko with params: driver=even_idle_cpu isolcpus=nohz,managed_irq,1,2 rcu_nocbs=1,2 nohz_full=1,2 
+[92mLinux version: 6.17.0-even_idle_cpu_fixed[0m
+[92m- name                : even_idle_cpu[0m
+[92m- step_interval_us    : 1000[0m
+[92m- print_rq            : 0[0m
+[92m- print_tasks         : 0[0m
+[92m- print_load_balance  : 1[0m
+[92mDisabled workqueue on CPU 1[0m
+[92mDisabled workqueue on CPU 2[0m
+[92mDisabled workqueue on CPU 3[0m
+[92mDisabled workqueue on CPU 4[0m
+[92mMoved kthreads to CPU 0[0m
+Hybrid CPU capacity scaling enabled
+root domain span: 0-4
+[92mTask created with pid 74[0m
+[92mTask created with pid 75[0m
+[92mTask created with pid 76[0m
+[92mTask created with pid 77[0m
+Topology levels:
+- CLS  |    0 |  1-2 |  1-2 |  3-4 |  3-4 | CLUSTER, SHARE_LLC
+- MC   |  0-4 |  0-4 |  0-4 |  0-4 |  0-4 | SHARE_LLC
+- PKG  |  0-4 |  0-4 |  0-4 |  0-4 |  0-4 | 
+- NODE |  0-4 |  0-4 |  0-4 |  0-4 |  0-4 | 
+Sched domains:
+- CLS[1]: mask=1-2, groups={1: 1024, 2: 512}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, ASYM_CPUCAPACITY, ASYM_CPUCAPACITY_FULL, CLUSTER, SHARE_LLC
+- CLS[2]: mask=1-2, groups={2: 512, 1: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, ASYM_CPUCAPACITY, ASYM_CPUCAPACITY_FULL, CLUSTER, SHARE_LLC
+- CLS[3]: mask=3-4, groups={3: 1024, 4: 512}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, ASYM_CPUCAPACITY, ASYM_CPUCAPACITY_FULL, CLUSTER, SHARE_LLC
+- CLS[4]: mask=3-4, groups={4: 512, 3: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, ASYM_CPUCAPACITY, ASYM_CPUCAPACITY_FULL, CLUSTER, SHARE_LLC
+- MC[0]: mask=0-4, groups={0: 1024, 1-2: 1536, 3-4: 1536}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, ASYM_CPUCAPACITY, ASYM_CPUCAPACITY_FULL, SHARE_LLC, PREFER_SIBLING
+- MC[1]: mask=0-4, groups={1-2: 1536, 3-4: 1536, 0: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, ASYM_CPUCAPACITY, ASYM_CPUCAPACITY_FULL, SHARE_LLC, PREFER_SIBLING
+- MC[2]: mask=0-4, groups={1-2: 1536, 3-4: 1536, 0: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, ASYM_CPUCAPACITY, ASYM_CPUCAPACITY_FULL, SHARE_LLC, PREFER_SIBLING
+- MC[3]: mask=0-4, groups={3-4: 1536, 0: 1024, 1-2: 1536}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, ASYM_CPUCAPACITY, ASYM_CPUCAPACITY_FULL, SHARE_LLC, PREFER_SIBLING
+- MC[4]: mask=0-4, groups={3-4: 1536, 0: 1024, 1-2: 1536}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, ASYM_CPUCAPACITY, ASYM_CPUCAPACITY_FULL, SHARE_LLC, PREFER_SIBLING
+[92mDisabled timer ticks on CPU 1[0m
+[92mDisabled timer ticks on CPU 2[0m
+[92mDisabled timer ticks on CPU 3[0m
+[92mDisabled timer ticks on CPU 4[0m
+[92mDisabled jiffies update[0m
+[92mMocked sched clock[0m
+[92mReset runqueues state[0m
+[92mReset cpumask[0m
+[92mReset tasks state[0m
+[92mPatched init_tg_cfs_entry to set min vruntime[0m
+[92mTraced sched_balance_find_src_group for load balancing[0m
+[92mWriting /sys/module/printk/parameters/time: 1[0m
+[   10.000000] [92mRunning driver even_idle_cpu[0m
+[   10.000000] [92mPinned task 74 to CPUs 1-1[0m
+[   10.000000] load_balance: {"dst_cpu": 2, "span": "1-2", "name": "CLS"}
+[   10.000000] [92mPinned task 75 to CPUs 3-3[0m
+[   10.000000] load_balance: {"dst_cpu": 2, "span": "0-4", "name": "MC"}
+[   10.000000] load_balance: {"dst_cpu": 4, "span": "3-4", "name": "CLS"}
+[   10.000000] [92mPinned task 76 to CPUs 3-3[0m
+[   10.000000] [92mPinned task 77 to CPUs 4-4[0m
+[   10.000000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 0}
+[   10.001000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.002000] load_balance: {"dst_cpu": 2, "span": "1-2", "name": "CLS"}
+[   10.002000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.003000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.004000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.005000] load_balance: {"dst_cpu": 2, "span": "0-4", "name": "MC"}
+[   10.005000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.006000] load_balance: {"dst_cpu": 2, "span": "1-2", "name": "CLS"}
+[   10.006000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.007000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.008000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.009000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.010000] load_balance: {"dst_cpu": 2, "span": "1-2", "name": "CLS"}
+[   10.010000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.011000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.012000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.013000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.014000] load_balance: {"dst_cpu": 2, "span": "1-2", "name": "CLS"}
+[   10.014000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.015000] load_balance: {"dst_cpu": 2, "span": "0-4", "name": "MC"}
+[   10.015000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.016000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.017000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.018000] load_balance: {"dst_cpu": 2, "span": "1-2", "name": "CLS"}
+[   10.018000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.019000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.020000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.021000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.022000] load_balance: {"dst_cpu": 2, "span": "1-2", "name": "CLS"}
+[   10.022000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.023000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.024000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.025000] load_balance: {"dst_cpu": 2, "span": "0-4", "name": "MC"}
+[   10.025000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.026000] load_balance: {"dst_cpu": 2, "span": "1-2", "name": "CLS"}
+[   10.026000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.027000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.028000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.029000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.030000] load_balance: {"dst_cpu": 2, "span": "1-2", "name": "CLS"}
+[   10.030000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.031000] load_balance: {"dst_cpu": 1, "span": "1-2", "name": "CLS"}
+[   10.031000] load_balance: {"dst_cpu": 3, "span": "3-4", "name": "CLS"}
+[   10.031000] load_balance: {"dst_cpu": 4, "span": "3-4", "name": "CLS"}
+[   10.031000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.032000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.033000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.034000] load_balance: {"dst_cpu": 2, "span": "1-2", "name": "CLS"}
+[   10.034000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.035000] load_balance: {"dst_cpu": 2, "span": "0-4", "name": "MC"}
+[   10.035000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.036000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.037000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.038000] load_balance: {"dst_cpu": 2, "span": "1-2", "name": "CLS"}
+[   10.038000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.039000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.040000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.041000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.042000] load_balance: {"dst_cpu": 2, "span": "1-2", "name": "CLS"}
+[   10.042000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.043000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.044000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.045000] load_balance: {"dst_cpu": 2, "span": "0-4", "name": "MC"}
+[   10.045000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.046000] load_balance: {"dst_cpu": 2, "span": "1-2", "name": "CLS"}
+[   10.046000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.047000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.048000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.049000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.050000] load_balance: {"dst_cpu": 2, "span": "1-2", "name": "CLS"}
+[   10.050000] [92mPinned task 75 to CPUs 2-3[0m
+[   10.050000] [92mPinned task 76 to CPUs 2-3[0m
+[   10.050000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.051000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.052000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.053000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.054000] load_balance: {"dst_cpu": 2, "span": "1-2", "name": "CLS"}
+[   10.054000] nr_running: {"cpu1": 1, "cpu2": 0, "cpu3": 2, "cpu4": 1}
+[   10.055000] load_balance: {"dst_cpu": 2, "span": "0-4", "name": "MC"}
+[   10.055000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.056000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.057000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.058000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.059000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.060000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.061000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.062000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.063000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.064000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.065000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.066000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.067000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.068000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.069000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.070000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.071000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.072000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.073000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.074000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.075000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.076000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.077000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.078000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.079000] load_balance: {"dst_cpu": 1, "span": "0-4", "name": "MC"}
+[   10.079000] load_balance: {"dst_cpu": 3, "span": "0-4", "name": "MC"}
+[   10.079000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.080000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.081000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.082000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.083000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.084000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.085000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.086000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.087000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.088000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.089000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.090000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.091000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.092000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.093000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.094000] load_balance: {"dst_cpu": 1, "span": "1-2", "name": "CLS"}
+[   10.094000] load_balance: {"dst_cpu": 3, "span": "3-4", "name": "CLS"}
+[   10.094000] load_balance: {"dst_cpu": 4, "span": "3-4", "name": "CLS"}
+[   10.094000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.095000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.096000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.097000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.098000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.099000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.100000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.101000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.102000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.103000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.104000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.105000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.106000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.107000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.108000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.109000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.110000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.111000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.112000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.113000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.114000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.115000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.116000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.117000] load_balance: {"dst_cpu": 2, "span": "1-2", "name": "CLS"}
+[   10.117000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.118000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.119000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.120000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.121000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.122000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.123000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.124000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.125000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.126000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.127000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.128000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.129000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.130000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.131000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.132000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.133000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.134000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.135000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.136000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.137000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.138000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.139000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.140000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.141000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.142000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.143000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.144000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.145000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.146000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.147000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.148000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.149000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.150000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.151000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.152000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.153000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.154000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.155000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.156000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.157000] load_balance: {"dst_cpu": 1, "span": "1-2", "name": "CLS"}
+[   10.157000] load_balance: {"dst_cpu": 3, "span": "3-4", "name": "CLS"}
+[   10.157000] load_balance: {"dst_cpu": 4, "span": "3-4", "name": "CLS"}
+[   10.157000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.158000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.159000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.160000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.161000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.162000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.163000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.164000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.165000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.166000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.167000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.168000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.169000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.170000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.171000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.172000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.173000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.174000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.175000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.176000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.177000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.178000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.179000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.180000] load_balance: {"dst_cpu": 2, "span": "1-2", "name": "CLS"}
+[   10.180000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.181000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.182000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.183000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.184000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.185000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.186000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.187000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.188000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.189000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.190000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.191000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.192000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.193000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.194000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.195000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.196000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.197000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.198000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.199000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.200000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.201000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.202000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.203000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.204000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.205000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.206000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.207000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.208000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.209000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.210000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.211000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.212000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.213000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.214000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.215000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.216000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.217000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.218000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.219000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.220000] load_balance: {"dst_cpu": 1, "span": "1-2", "name": "CLS"}
+[   10.220000] load_balance: {"dst_cpu": 3, "span": "3-4", "name": "CLS"}
+[   10.220000] load_balance: {"dst_cpu": 4, "span": "3-4", "name": "CLS"}
+[   10.220000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.221000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.222000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.223000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.224000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.225000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.226000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.227000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.228000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.229000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.230000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.231000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.232000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.233000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.234000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.235000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.236000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.237000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.238000] load_balance: {"dst_cpu": 1, "span": "0-4", "name": "MC"}
+[   10.238000] load_balance: {"dst_cpu": 3, "span": "0-4", "name": "MC"}
+[   10.238000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.239000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.240000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.241000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.242000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.243000] load_balance: {"dst_cpu": 2, "span": "1-2", "name": "CLS"}
+[   10.243000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.244000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.245000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.246000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.247000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.248000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.249000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.250000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.251000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.252000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.253000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.254000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.255000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.256000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.257000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.258000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.259000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.260000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.261000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.262000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.263000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.264000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.265000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.266000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.267000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.268000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.269000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.270000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.271000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.272000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.273000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.274000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.275000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.276000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.277000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.278000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.279000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.280000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.281000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.282000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.283000] load_balance: {"dst_cpu": 1, "span": "1-2", "name": "CLS"}
+[   10.283000] load_balance: {"dst_cpu": 3, "span": "3-4", "name": "CLS"}
+[   10.283000] load_balance: {"dst_cpu": 4, "span": "3-4", "name": "CLS"}
+[   10.283000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.284000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.285000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.286000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.287000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.288000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.289000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.290000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.291000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.292000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.293000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.294000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.295000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.296000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.297000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.298000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.299000] nr_running: {"cpu1": 1, "cpu2": 1, "cpu3": 1, "cpu4": 1}
+[   10.300000] [92mExiting driver even_idle_cpu on Linux 6.17.0-even_idle_cpu_fixed[0m
+[   10.300000] reboot: Restarting system
+[   10.300000] reboot: machine restart

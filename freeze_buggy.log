@@ -1,0 +1,174 @@
+c[?7l[2J[0mSeaBIOS (version 1.16.3-debian-1.16.3-2)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+0EFCAD00+0EF0AD00 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from ROM...
+c[?7l[2JACPI Error: AE_BAD_PARAMETER, During Region initialization (20240827/tbxfload-52)
+ACPI: Unable to load the System Description Tables
+ACPI Error: Could not remove SCI handler (20240827/evmisc-251)
+Loading kmod.ko with params: driver=freeze isolcpus=nohz,managed_irq,1,2 rcu_nocbs=1,2 nohz_full=1,2 
+[92mLinux version: 6.12.0-rc1-freeze_buggy[0m
+[92m- name                : freeze[0m
+[92m- step_interval_us    : 10000[0m
+[92m- print_rq            : 1[0m
+[92m- print_tasks         : 1[0m
+[92m- print_load_balance  : 0[0m
+[92mDisabled workqueue on CPU 1[0m
+[92mMoved kthreads to CPU 0[0m
+[92mTask created with pid 40[0m
+[92mTask created with pid 41[0m
+[92mTask created with pid 42[0m
+Topology levels:
+- SMT  |    0 |    1 | SHARE_CPUCAPACITY, SHARE_LLC
+- CLS  |    0 |    1 | CLUSTER, SHARE_LLC
+- MC   |  0-1 |  0-1 | SHARE_LLC
+- PKG  |  0-1 |  0-1 | 
+- NODE |  0-1 |  0-1 | 
+Sched domains:
+- MC[0]: mask=0-1, groups={0: 1024, 1: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_LLC, PREFER_SIBLING
+- MC[1]: mask=0-1, groups={1: 1024, 0: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_LLC, PREFER_SIBLING
+[92mDisabled timer ticks on CPU 1[0m
+[92mDisabled jiffies update[0m
+[92mMocked sched clock[0m
+[92mReset runqueues state[0m
+[92mReset cpumask[0m
+[92mReset tasks state[0m
+[92mPatched init_tg_cfs_entry to set min vruntime[0m
+[92mWriting /sys/module/printk/parameters/time: 1[0m
+[   10.000000] [92mRunning driver freeze[0m
+[   10.000000] [92mWaked up task 40[0m
+[   10.000000] [92mWaked up task 41[0m
+[   10.000000] [92mWaked up task 42[0m
+[   10.000000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":    0, "min_vruntime":            0, "avg_vruntime":            0}
+[   10.000000] task: {"pid": 40, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10000000000, "sum_exec":            0}
+[   10.000000] task: {"pid": 41, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10000000000, "sum_exec":            0}
+[   10.000000] task: {"pid": 42, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10000000000, "sum_exec":            0}
+[   10.001000] [92mPut task 40 to sleep for 20000 us[0m
+[   10.001000] [92mFreezing task 40[0m
+[   10.001000] [92mWaked up task 40[0m
+[   10.001000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":    0, "min_vruntime":            0, "avg_vruntime":       333333}
+[   10.001000] task: {"pid": 40, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10001000000, "sum_exec":      1000000}
+[   10.001000] task: {"pid": 41, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10000000000, "sum_exec":            0}
+[   10.001000] task: {"pid": 42, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10000000000, "sum_exec":            0}
+[   10.002000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":   41, "min_vruntime":            0, "avg_vruntime":       666666}
+[   10.002000] task: {"pid": 40, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10001000000, "sum_exec":      1000000}
+[   10.002000] task: {"pid": 41, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10001000000, "sum_exec":      1000000}
+[   10.002000] task: {"pid": 42, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10000000000, "sum_exec":            0}
+[   10.003000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":   61, "min_vruntime":            0, "avg_vruntime":      1000000}
+[   10.003000] task: {"pid": 40, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10001000000, "sum_exec":      1000000}
+[   10.003000] task: {"pid": 41, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10002000000, "sum_exec":      2000000}
+[   10.003000] task: {"pid": 42, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10000000000, "sum_exec":            0}
+[   10.004000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":   81, "min_vruntime":      1000000, "avg_vruntime":      1333333}
+[   10.004000] task: {"pid": 40, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10001000000, "sum_exec":      1000000}
+[   10.004000] task: {"pid": 41, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10002000000, "sum_exec":      2000000}
+[   10.004000] task: {"pid": 42, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10001000000, "sum_exec":      1000000}
+[   10.005000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  100, "min_vruntime":      1000000, "avg_vruntime":      1666666}
+[   10.005000] task: {"pid": 40, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10001000000, "sum_exec":      1000000}
+[   10.005000] task: {"pid": 41, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10002000000, "sum_exec":      2000000}
+[   10.005000] task: {"pid": 42, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10002000000, "sum_exec":      2000000}
+[   10.006000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  119, "min_vruntime":      2000000, "avg_vruntime":      2000000}
+[   10.006000] task: {"pid": 40, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10002000000, "sum_exec":      2000000}
+[   10.006000] task: {"pid": 41, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10002000000, "sum_exec":      2000000}
+[   10.006000] task: {"pid": 42, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10002000000, "sum_exec":      2000000}
+[   10.007000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  137, "min_vruntime":      2000000, "avg_vruntime":      2333333}
+[   10.007000] task: {"pid": 40, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10002000000, "sum_exec":      2000000}
+[   10.007000] task: {"pid": 41, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10003000000, "sum_exec":      3000000}
+[   10.007000] task: {"pid": 42, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10002000000, "sum_exec":      2000000}
+[   10.008000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  156, "min_vruntime":      2000000, "avg_vruntime":      2666666}
+[   10.008000] task: {"pid": 40, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10002000000, "sum_exec":      2000000}
+[   10.008000] task: {"pid": 41, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10004000000, "sum_exec":      4000000}
+[   10.008000] task: {"pid": 42, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10002000000, "sum_exec":      2000000}
+[   10.009000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  173, "min_vruntime":      2000000, "avg_vruntime":      3000000}
+[   10.009000] task: {"pid": 40, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10002000000, "sum_exec":      2000000}
+[   10.009000] task: {"pid": 41, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10004000000, "sum_exec":      4000000}
+[   10.009000] task: {"pid": 42, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10003000000, "sum_exec":      3000000}
+[   10.010000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  191, "min_vruntime":      2000000, "avg_vruntime":      3333333}
+[   10.010000] task: {"pid": 40, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10002000000, "sum_exec":      2000000}
+[   10.010000] task: {"pid": 41, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10004000000, "sum_exec":      4000000}
+[   10.010000] task: {"pid": 42, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10004000000, "sum_exec":      4000000}
+[   10.011000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  208, "min_vruntime":      3000000, "avg_vruntime":      3666666}
+[   10.011000] task: {"pid": 40, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10003000000, "sum_exec":      3000000}
+[   10.011000] task: {"pid": 41, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10004000000, "sum_exec":      4000000}
+[   10.011000] task: {"pid": 42, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10004000000, "sum_exec":      4000000}
+[   10.012000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  224, "min_vruntime":      4000000, "avg_vruntime":      4000000}
+[   10.012000] task: {"pid": 40, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10004000000, "sum_exec":      4000000}
+[   10.012000] task: {"pid": 41, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10004000000, "sum_exec":      4000000}
+[   10.012000] task: {"pid": 42, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10004000000, "sum_exec":      4000000}
+[   10.013000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  241, "min_vruntime":      4000000, "avg_vruntime":      4333333}
+[   10.013000] task: {"pid": 40, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10004000000, "sum_exec":      4000000}
+[   10.013000] task: {"pid": 41, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10005000000, "sum_exec":      5000000}
+[   10.013000] task: {"pid": 42, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10004000000, "sum_exec":      4000000}
+[   10.014000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  257, "min_vruntime":      4000000, "avg_vruntime":      4666666}
+[   10.014000] task: {"pid": 40, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10004000000, "sum_exec":      4000000}
+[   10.014000] task: {"pid": 41, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10006000000, "sum_exec":      6000000}
+[   10.014000] task: {"pid": 42, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10004000000, "sum_exec":      4000000}
+[   10.015000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  272, "min_vruntime":      4000000, "avg_vruntime":      5000000}
+[   10.015000] task: {"pid": 40, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10004000000, "sum_exec":      4000000}
+[   10.015000] task: {"pid": 41, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10006000000, "sum_exec":      6000000}
+[   10.015000] task: {"pid": 42, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10005000000, "sum_exec":      5000000}
+[   10.016000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  288, "min_vruntime":      4000000, "avg_vruntime":      5333333}
+[   10.016000] task: {"pid": 40, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10004000000, "sum_exec":      4000000}
+[   10.016000] task: {"pid": 41, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10006000000, "sum_exec":      6000000}
+[   10.016000] task: {"pid": 42, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10006000000, "sum_exec":      6000000}
+[   10.017000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  303, "min_vruntime":      5000000, "avg_vruntime":      5666666}
+[   10.017000] task: {"pid": 40, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10005000000, "sum_exec":      5000000}
+[   10.017000] task: {"pid": 41, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10006000000, "sum_exec":      6000000}
+[   10.017000] task: {"pid": 42, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10006000000, "sum_exec":      6000000}
+[   10.018000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  318, "min_vruntime":      6000000, "avg_vruntime":      6000000}
+[   10.018000] task: {"pid": 40, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10006000000, "sum_exec":      6000000}
+[   10.018000] task: {"pid": 41, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10006000000, "sum_exec":      6000000}
+[   10.018000] task: {"pid": 42, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10006000000, "sum_exec":      6000000}
+[   10.019000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  332, "min_vruntime":      6000000, "avg_vruntime":      6333333}
+[   10.019000] task: {"pid": 40, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10006000000, "sum_exec":      6000000}
+[   10.019000] task: {"pid": 41, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10007000000, "sum_exec":      7000000}
+[   10.019000] task: {"pid": 42, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10006000000, "sum_exec":      6000000}
+[   10.020000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  346, "min_vruntime":      6000000, "avg_vruntime":      6666666}
+[   10.020000] task: {"pid": 40, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10006000000, "sum_exec":      6000000}
+[   10.020000] task: {"pid": 41, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10008000000, "sum_exec":      8000000}
+[   10.020000] task: {"pid": 42, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10006000000, "sum_exec":      6000000}
+[   10.021000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  360, "min_vruntime":      6000000, "avg_vruntime":      7000000}
+[   10.021000] task: {"pid": 40, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10006000000, "sum_exec":      6000000}
+[   10.021000] task: {"pid": 41, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10008000000, "sum_exec":      8000000}
+[   10.021000] task: {"pid": 42, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10007000000, "sum_exec":      7000000}
+[   10.022000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  360, "min_vruntime":      6000000, "avg_vruntime":      7333333}
+[   10.022000] task: {"pid": 40, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10006000000, "sum_exec":      6000000}
+[   10.022000] task: {"pid": 41, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10008000000, "sum_exec":      8000000}
+[   10.022000] task: {"pid": 42, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10008000000, "sum_exec":      8000000}
+[   10.023000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  387, "min_vruntime":      7000000, "avg_vruntime":      7666666}
+[   10.023000] task: {"pid": 40, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10007000000, "sum_exec":      7000000}
+[   10.023000] task: {"pid": 41, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10008000000, "sum_exec":      8000000}
+[   10.023000] task: {"pid": 42, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10008000000, "sum_exec":      8000000}
+[   10.024000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  400, "min_vruntime":      8000000, "avg_vruntime":      8000000}
+[   10.024000] task: {"pid": 40, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10008000000, "sum_exec":      8000000}
+[   10.024000] task: {"pid": 41, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10008000000, "sum_exec":      8000000}
+[   10.024000] task: {"pid": 42, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10008000000, "sum_exec":      8000000}
+[   10.025000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  413, "min_vruntime":      8000000, "avg_vruntime":      8333333}
+[   10.025000] task: {"pid": 40, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10008000000, "sum_exec":      8000000}
+[   10.025000] task: {"pid": 41, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10009000000, "sum_exec":      9000000}
+[   10.025000] task: {"pid": 42, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10008000000, "sum_exec":      8000000}
+[   10.026000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  425, "min_vruntime":      8000000, "avg_vruntime":      8666666}
+[   10.026000] task: {"pid": 40, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10008000000, "sum_exec":      8000000}
+[   10.026000] task: {"pid": 41, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10010000000, "sum_exec":     10000000}
+[   10.026000] task: {"pid": 42, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10008000000, "sum_exec":      8000000}
+[   10.027000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  437, "min_vruntime":      8000000, "avg_vruntime":      9000000}
+[   10.027000] task: {"pid": 40, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10008000000, "sum_exec":      8000000}
+[   10.027000] task: {"pid": 41, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10010000000, "sum_exec":     10000000}
+[   10.027000] task: {"pid": 42, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10009000000, "sum_exec":      9000000}
+[   10.028000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  449, "min_vruntime":      8000000, "avg_vruntime":      9333333}
+[   10.028000] task: {"pid": 40, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10008000000, "sum_exec":      8000000}
+[   10.028000] task: {"pid": 41, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10010000000, "sum_exec":     10000000}
+[   10.028000] task: {"pid": 42, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10010000000, "sum_exec":     10000000}
+[   10.029000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  461, "min_vruntime":      9000000, "avg_vruntime":      9666666}
+[   10.029000] task: {"pid": 40, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10009000000, "sum_exec":      9000000}
+[   10.029000] task: {"pid": 41, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10010000000, "sum_exec":     10000000}
+[   10.029000] task: {"pid": 42, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10010000000, "sum_exec":     10000000}
+[   10.030000] rq: {"cpu": 1, "running":  3, "queued":  3, "avg_load": 2048, "avg_util":  473, "min_vruntime":     10000000, "avg_vruntime":     10000000}
+[   10.030000] task: {"pid": 40, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10010000000, "sum_exec":     10000000}
+[   10.030000] task: {"pid": 41, "on_cpu":  true, "cpu": 1, "state": "R", "vruntime":  10010000000, "sum_exec":     10000000}
+[   10.030000] task: {"pid": 42, "on_cpu": false, "cpu": 1, "state": "R", "vruntime":  10010000000, "sum_exec":     10000000}
+[   10.031000] [92mExiting driver freeze on Linux 6.12.0-rc1-freeze_buggy[0m
+[   10.031000] reboot: Restarting system
+[   10.031000] reboot: machine restart
