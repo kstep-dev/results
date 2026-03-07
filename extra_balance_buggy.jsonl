@@ -1266,4 +1266,3 @@
 {"timestamp":997,"type":"nr_running","cpu1":2,"cpu2":1,"cpu3":1,"cpu4":1}
 {"timestamp":998,"type":"nr_running","cpu1":2,"cpu2":1,"cpu3":1,"cpu4":1}
 {"timestamp":999,"type":"nr_running","cpu1":2,"cpu2":1,"cpu3":1,"cpu4":1}
-{"timestamp":1000,"status":"pass"}

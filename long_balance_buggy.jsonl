@@ -36,4 +36,3 @@
 {"timestamp":1852,"type":"sched_softirq","cpu":1,"lat_us":3.410}
 {"timestamp":1947,"type":"sched_softirq","cpu":1,"lat_us":3.446}
 {"timestamp":1981,"type":"sched_softirq","cpu":2,"lat_us":9610.671}
-{"timestamp":2000,"status":"pass"}

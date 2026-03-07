@@ -29,4 +29,3 @@
 {"timestamp":28,"type":"curr_task","cpu":1,"pid":42}
 {"timestamp":29,"type":"curr_task","cpu":1,"pid":43}
 {"timestamp":30,"type":"curr_task","cpu":1,"pid":43}
-{"timestamp":31,"status":"pass"}
