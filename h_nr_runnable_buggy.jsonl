@@ -1,0 +1,18 @@
+{"timestamp":0,"type":"runnable_avg","val":0}
+{"timestamp":1,"type":"runnable_avg","val":0}
+{"timestamp":2,"type":"runnable_avg","val":82}
+{"timestamp":3,"type":"runnable_avg","val":123}
+{"timestamp":4,"type":"runnable_avg","val":162}
+{"timestamp":5,"status":"fail","message":"h_nr_runnable == 0"}
+{"timestamp":5,"type":"runnable_avg","val":201}
+{"timestamp":6,"type":"runnable_avg","val":196}
+{"timestamp":7,"type":"runnable_avg","val":192}
+{"timestamp":8,"type":"runnable_avg","val":209}
+{"timestamp":9,"type":"runnable_avg","val":226}
+{"timestamp":10,"type":"runnable_avg","val":242}
+{"timestamp":11,"type":"runnable_avg","val":258}
+{"timestamp":12,"type":"runnable_avg","val":274}
+{"timestamp":13,"type":"runnable_avg","val":289}
+{"timestamp":14,"type":"runnable_avg","val":304}
+{"timestamp":15,"type":"runnable_avg","val":319}
+{"timestamp":16,"status":"fail"}

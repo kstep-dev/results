@@ -1,0 +1,11 @@
+{"timestamp":0,"type":"min_vruntime","val":0}
+{"timestamp":1,"type":"min_vruntime","val":0}
+{"timestamp":2,"type":"min_vruntime","val":0}
+{"timestamp":3,"type":"min_vruntime","val":1000000}
+{"timestamp":4,"type":"min_vruntime","val":2000000}
+{"timestamp":5,"type":"min_vruntime","val":3000000}
+{"timestamp":6,"type":"min_vruntime","val":4918536}
+{"timestamp":7,"type":"min_vruntime","val":4928535}
+{"timestamp":8,"type":"min_vruntime","val":4938534}
+{"timestamp":9,"type":"min_vruntime","val":4948533}
+{"timestamp":10,"status":"pass"}
