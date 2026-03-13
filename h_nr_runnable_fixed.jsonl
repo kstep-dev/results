@@ -3,7 +3,7 @@
 {"timestamp":2,"type":"runnable_avg","val":82}
 {"timestamp":3,"type":"runnable_avg","val":123}
 {"timestamp":4,"type":"runnable_avg","val":162}
-{"timestamp":5,"status":"pass"}
+{"timestamp":5,"status":"pass","message":"h_nr_runnable == 1"}
 {"timestamp":5,"type":"runnable_avg","val":201}
 {"timestamp":6,"type":"runnable_avg","val":217}
 {"timestamp":7,"type":"runnable_avg","val":234}
@@ -15,4 +15,3 @@
 {"timestamp":13,"type":"runnable_avg","val":326}
 {"timestamp":14,"type":"runnable_avg","val":340}
 {"timestamp":15,"type":"runnable_avg","val":354}
-{"timestamp":16,"status":"pass"}
