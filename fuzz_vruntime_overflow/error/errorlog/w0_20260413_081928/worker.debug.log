@@ -1,0 +1,192 @@
+2026-04-13 08:19:15,455 SEND OP: 0,0,0,0
+2026-04-13 08:19:15,516 Received task states
+2026-04-13 08:19:15,516 REPLAY 0: op=0,0,0,0 executed_steps=1 task_state={0: 'sleeping'}
+2026-04-13 08:19:15,516 SEND OP: 0,1,0,0
+2026-04-13 08:19:15,579 Received task states
+2026-04-13 08:19:15,579 REPLAY 1: op=0,1,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping'}
+2026-04-13 08:19:15,580 SEND OP: 0,2,0,0
+2026-04-13 08:19:15,645 Received task states
+2026-04-13 08:19:15,645 REPLAY 2: op=0,2,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'}
+2026-04-13 08:19:15,645 SEND OP: 6,2,0,0
+2026-04-13 08:19:15,790 Received task states
+2026-04-13 08:19:15,790 REPLAY 3: op=6,2,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping', 2: 'on_cpu'}
+2026-04-13 08:19:15,790 SEND OP: 0,3,0,0
+2026-04-13 08:19:15,857 Received task states
+2026-04-13 08:19:15,857 REPLAY 4: op=0,3,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping', 2: 'on_cpu', 3: 'sleeping'}
+2026-04-13 08:19:15,857 SEND OP: 9,6,0,0
+2026-04-13 08:19:16,257 Received task states
+2026-04-13 08:19:16,257 MUTATE-GEN 0: op=9,6,0,0 executed_steps=6 task_state={0: 'sleeping', 1: 'sleeping', 2: 'on_cpu', 3: 'sleeping'}
+2026-04-13 08:19:16,257 SEND OP: 10,-1,0,0
+2026-04-13 08:19:16,291 Received task states
+2026-04-13 08:19:16,291 MUTATE-GEN 0: op=10,-1,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping', 2: 'on_cpu', 3: 'sleeping'}
+2026-04-13 08:19:16,291 SEND OP: 9,13,0,0
+2026-04-13 08:19:17,122 Received task states
+2026-04-13 08:19:17,122 MUTATE-GEN 1: op=9,13,0,0 executed_steps=13 task_state={0: 'sleeping', 1: 'sleeping', 2: 'on_cpu', 3: 'sleeping'}
+2026-04-13 08:19:17,122 SEND OP: 5,2,0,0
+2026-04-13 08:19:17,291 Received task states
+2026-04-13 08:19:17,291 MUTATE-GEN 1: op=5,2,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping', 3: 'sleeping'}
+2026-04-13 08:19:17,292 SEND OP: 6,1,0,0
+2026-04-13 08:19:17,441 Received task states
+2026-04-13 08:19:17,441 MUTATE-GEN 2: op=6,1,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'sleeping'}
+2026-04-13 08:19:17,441 SEND OP: 6,2,0,0
+2026-04-13 08:19:17,534 Received task states
+2026-04-13 08:19:17,534 MUTATE-GEN 3: op=6,2,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'runnable', 3: 'sleeping'}
+2026-04-13 08:19:17,534 SEND OP: 0,4,0,0
+2026-04-13 08:19:17,604 Received task states
+2026-04-13 08:19:17,604 MUTATE-GEN 4: op=0,4,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'runnable', 3: 'sleeping', 4: 'sleeping'}
+2026-04-13 08:19:17,604 SEND OP: 9,1,0,0
+2026-04-13 08:19:17,700 Received task states
+2026-04-13 08:19:17,700 MUTATE-GEN 5: op=9,1,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'runnable', 3: 'sleeping', 4: 'sleeping'}
+2026-04-13 08:19:17,700 SEND OP: 6,4,0,0
+2026-04-13 08:19:17,812 Received task states
+2026-04-13 08:19:17,812 MUTATE-GEN 5: op=6,4,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'runnable', 3: 'sleeping', 4: 'runnable'}
+2026-04-13 08:19:17,813 SEND OP: 10,0,1,0
+2026-04-13 08:19:17,849 Received task states
+2026-04-13 08:19:17,849 MUTATE-GEN 6: op=10,0,1,0 executed_steps=1 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'runnable', 3: 'sleeping', 4: 'runnable'}
+2026-04-13 08:19:17,850 SEND OP: 7,1,0,0
+2026-04-13 08:19:17,876 Received task states
+2026-04-13 08:19:17,876 MUTATE-GEN 7: op=7,1,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'runnable', 3: 'sleeping', 4: 'runnable'}
+2026-04-13 08:19:17,876 SEND OP: 5,1,0,0
+2026-04-13 08:19:18,014 Received task states
+2026-04-13 08:19:18,014 MUTATE-GEN 8: op=5,1,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping', 2: 'on_cpu', 3: 'sleeping', 4: 'runnable'}
+2026-04-13 08:19:18,015 SEND OP: 7,2,11,0
+2026-04-13 08:19:18,197 Received task states
+2026-04-13 08:19:18,197 MUTATE-GEN 9: op=7,2,11,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping', 2: 'on_cpu', 3: 'sleeping', 4: 'runnable'}
+2026-04-13 08:19:18,198 SEND OP: 6,1,0,0
+2026-04-13 08:19:18,271 Received task states
+2026-04-13 08:19:18,271 MUTATE-GEN 10: op=6,1,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'runnable', 2: 'on_cpu', 3: 'sleeping', 4: 'runnable'}
+2026-04-13 08:19:18,271 SEND OP: 10,0,2,0
+2026-04-13 08:19:18,309 Received task states
+2026-04-13 08:19:18,309 MUTATE-GEN 11: op=10,0,2,0 executed_steps=1 task_state={0: 'sleeping', 1: 'runnable', 2: 'on_cpu', 3: 'sleeping', 4: 'runnable'}
+2026-04-13 08:19:18,309 SEND OP: 12,1,3415,0
+2026-04-13 08:19:18,340 Received task states
+2026-04-13 08:19:18,340 MUTATE-GEN 12: op=12,1,3415,0 executed_steps=1 task_state={0: 'sleeping', 1: 'runnable', 2: 'on_cpu', 3: 'sleeping', 4: 'runnable'}
+2026-04-13 08:19:18,340 SEND OP: 6,0,0,0
+2026-04-13 08:19:18,454 Received task states
+2026-04-13 08:19:18,454 MUTATE-GEN 13: op=6,0,0,0 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'on_cpu', 3: 'sleeping', 4: 'runnable'}
+2026-04-13 08:19:18,454 SEND OP: 6,3,0,0
+2026-04-13 08:19:18,567 Received task states
+2026-04-13 08:19:18,567 MUTATE-GEN 14: op=6,3,0,0 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'on_cpu', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:18,567 SEND OP: 13,1,4,0
+2026-04-13 08:19:18,598 Received task states
+2026-04-13 08:19:18,598 MUTATE-GEN 15: op=13,1,4,0 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'on_cpu', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:18,599 SEND OP: 17,1,4,0
+2026-04-13 08:19:18,661 Received task states
+2026-04-13 08:19:18,661 MUTATE-GEN 16: op=17,1,4,0 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'on_cpu', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:18,661 SEND OP: 13,1,3,0
+2026-04-13 08:19:18,692 Received task states
+2026-04-13 08:19:18,692 MUTATE-GEN 17: op=13,1,3,0 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'on_cpu', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:18,692 SEND OP: 7,2,12,0
+2026-04-13 08:19:18,888 Received task states
+2026-04-13 08:19:18,888 MUTATE-GEN 18: op=7,2,12,0 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'on_cpu', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:18,888 SEND OP: 13,2,2,0
+2026-04-13 08:19:18,960 Received task states
+2026-04-13 08:19:18,960 MUTATE-GEN 19: op=13,2,2,0 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'on_cpu', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:18,960 SEND OP: 9,5,0,0
+2026-04-13 08:19:19,102 Received task states
+2026-04-13 08:19:19,102 MUTATE-GEN 20: op=9,5,0,0 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'on_cpu', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:19,102 MUTATE-GEN 20: special_pivot=45 ineligible_cgroup_state=1
+2026-04-13 08:19:19,103 SEND OP: 9,1,0,0
+2026-04-13 08:19:19,103 Received task states
+2026-04-13 08:19:19,104 SEND OP: 9,1,0,0
+2026-04-13 08:19:19,105 Received task states
+2026-04-13 08:19:19,105 SEND OP: 5,2,0,0
+2026-04-13 08:19:19,344 Received task states
+2026-04-13 08:19:19,344 MUTATE-GEN 20: op=5,2,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'runnable', 2: 'sleeping', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:19,344 SEND OP: 13,1,4,0
+2026-04-13 08:19:19,375 Received task states
+2026-04-13 08:19:19,375 MUTATE-GEN 21: op=13,1,4,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'runnable', 2: 'sleeping', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:19,376 SEND OP: 7,0,10,0
+2026-04-13 08:19:19,557 Received task states
+2026-04-13 08:19:19,557 MUTATE-GEN 22: op=7,0,10,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'runnable', 2: 'sleeping', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:19,557 SEND OP: 6,2,0,0
+2026-04-13 08:19:19,711 Received task states
+2026-04-13 08:19:19,711 MUTATE-GEN 23: op=6,2,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'runnable', 2: 'runnable', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:19,711 SEND OP: 5,0,0,0
+2026-04-13 08:19:19,847 Received task states
+2026-04-13 08:19:19,847 MUTATE-GEN 24: op=5,0,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'runnable', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:19,847 SEND OP: 6,0,0,0
+2026-04-13 08:19:19,953 Received task states
+2026-04-13 08:19:19,953 MUTATE-GEN 25: op=6,0,0,0 executed_steps=1 task_state={0: 'runnable', 1: 'on_cpu', 2: 'runnable', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:19,953 SEND OP: 17,1,3,0
+2026-04-13 08:19:20,016 Received task states
+2026-04-13 08:19:20,016 MUTATE-GEN 26: op=17,1,3,0 executed_steps=1 task_state={0: 'runnable', 1: 'on_cpu', 2: 'runnable', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:20,016 SEND OP: 13,2,1,0
+2026-04-13 08:19:20,167 Received task states
+2026-04-13 08:19:20,167 MUTATE-GEN 27: op=13,2,1,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'runnable', 2: 'runnable', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:20,167 SEND OP: 13,1,4,0
+2026-04-13 08:19:20,198 Received task states
+2026-04-13 08:19:20,198 MUTATE-GEN 28: op=13,1,4,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'runnable', 2: 'runnable', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:20,198 SEND OP: 9,19,0,0
+2026-04-13 08:19:20,203 Received task states
+2026-04-13 08:19:20,204 SEND OP: 17,2,1,0
+2026-04-13 08:19:20,261 Received task states
+2026-04-13 08:19:20,261 MUTATE-GEN 29: op=17,2,1,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'runnable', 2: 'runnable', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:20,262 SEND OP: 5,0,0,0
+2026-04-13 08:19:20,390 Received task states
+2026-04-13 08:19:20,390 MUTATE-GEN 30: op=5,0,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'runnable', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:20,390 SEND OP: 6,0,0,0
+2026-04-13 08:19:20,501 Received task states
+2026-04-13 08:19:20,501 MUTATE-GEN 31: op=6,0,0,0 executed_steps=1 task_state={0: 'runnable', 1: 'on_cpu', 2: 'runnable', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:20,502 SEND OP: 13,1,2,0
+2026-04-13 08:19:20,533 Received task states
+2026-04-13 08:19:20,533 MUTATE-GEN 32: op=13,1,2,0 executed_steps=1 task_state={0: 'runnable', 1: 'on_cpu', 2: 'runnable', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:20,533 SEND OP: 13,1,1,0
+2026-04-13 08:19:20,686 Received task states
+2026-04-13 08:19:20,686 MUTATE-GEN 33: op=13,1,1,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'runnable', 2: 'runnable', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:20,686 SEND OP: 9,16,0,0
+2026-04-13 08:19:20,691 Received task states
+2026-04-13 08:19:20,691 SEND OP: 9,17,0,0
+2026-04-13 08:19:20,693 Received task states
+2026-04-13 08:19:20,693 SEND OP: 16,1,0,0
+2026-04-13 08:19:20,860 Received task states
+2026-04-13 08:19:20,860 MUTATE-GEN 34: op=16,1,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'runnable', 2: 'runnable', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:20,860 SEND OP: 5,0,0,0
+2026-04-13 08:19:20,990 Received task states
+2026-04-13 08:19:20,990 MUTATE-GEN 35: op=5,0,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'runnable', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:20,991 SEND OP: 16,2,0,0
+2026-04-13 08:19:21,030 Received task states
+2026-04-13 08:19:21,030 MUTATE-GEN 36: op=16,2,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'runnable', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:21,031 SEND OP: 16,0,0,0
+2026-04-13 08:19:21,069 Received task states
+2026-04-13 08:19:21,069 MUTATE-GEN 37: op=16,0,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'runnable', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:21,069 SEND OP: 6,0,0,0
+2026-04-13 08:19:21,183 Received task states
+2026-04-13 08:19:21,183 MUTATE-GEN 38: op=6,0,0,0 executed_steps=1 task_state={0: 'runnable', 1: 'on_cpu', 2: 'runnable', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:21,183 SEND OP: 9,12,0,0
+2026-04-13 08:19:22,545 Received task states
+2026-04-13 08:19:22,546 MUTATE-GEN 39: op=9,12,0,0 executed_steps=12 task_state={0: 'runnable', 1: 'on_cpu', 2: 'runnable', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:22,546 SEND OP: 9,3,0,0
+2026-04-13 08:19:22,928 Received task states
+2026-04-13 08:19:22,928 MUTATE-GEN 39: op=9,3,0,0 executed_steps=3 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable', 3: 'runnable', 4: 'on_cpu'}
+2026-04-13 08:19:22,928 SEND OP: 9,3,0,0
+2026-04-13 08:19:23,210 Received task states
+2026-04-13 08:19:23,210 MUTATE-GEN 39: op=9,3,0,0 executed_steps=3 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable', 3: 'on_cpu', 4: 'runnable'}
+2026-04-13 08:19:23,211 SEND OP: 9,15,0,0
+2026-04-13 08:19:24,881 Received task states
+2026-04-13 08:19:24,881 MUTATE-GEN 39: op=9,15,0,0 executed_steps=15 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable', 3: 'runnable', 4: 'on_cpu'}
+2026-04-13 08:19:24,882 SEND OP: 5,4,0,0
+2026-04-13 08:19:25,012 Received task states
+2026-04-13 08:19:25,012 MUTATE-GEN 39: op=5,4,0,0 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable', 3: 'on_cpu', 4: 'sleeping'}
+2026-04-13 08:19:25,012 SEND OP: 7,3,-11,0
+2026-04-13 08:19:25,169 Received task states
+2026-04-13 08:19:25,169 MUTATE-GEN 40: op=7,3,-11,0 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable', 3: 'on_cpu', 4: 'sleeping'}
+2026-04-13 08:19:25,170 SEND OP: 7,3,18,0
+2026-04-13 08:19:25,355 Received task states
+2026-04-13 08:19:25,355 MUTATE-GEN 41: op=7,3,18,0 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable', 3: 'on_cpu', 4: 'sleeping'}
+2026-04-13 08:19:25,355 SEND OP: 9,3,0,0
+2026-04-13 08:19:25,642 Received task states
+2026-04-13 08:19:25,642 MUTATE-GEN 42: op=9,3,0,0 executed_steps=3 task_state={0: 'runnable', 1: 'on_cpu', 2: 'runnable', 3: 'runnable', 4: 'sleeping'}
+2026-04-13 08:19:25,642 SEND OP: 9,16,0,0
+2026-04-13 08:19:27,054 Received task states
+2026-04-13 08:19:27,054 MUTATE-GEN 42: op=9,16,0,0 executed_steps=16 task_state={0: 'runnable', 1: 'on_cpu', 2: 'runnable', 3: 'runnable', 4: 'sleeping'}
+2026-04-13 08:19:27,055 SEND OP: 6,4,0,0
+2026-04-13 08:19:27,165 Received task states
+2026-04-13 08:19:27,165 MUTATE-GEN 42: op=6,4,0,0 executed_steps=1 task_state={0: 'runnable', 1: 'on_cpu', 2: 'runnable', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:27,165 SEND OP: 7,1,14,0
+2026-04-13 08:19:27,348 Received task states
+2026-04-13 08:19:27,348 MUTATE-GEN 43: op=7,1,14,0 executed_steps=1 task_state={0: 'runnable', 1: 'on_cpu', 2: 'runnable', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:27,349 SEND OP: 7,1,3,0
+2026-04-13 08:19:27,500 Received task states
+2026-04-13 08:19:27,500 MUTATE-GEN 44: op=7,1,3,0 executed_steps=1 task_state={0: 'runnable', 1: 'on_cpu', 2: 'runnable', 3: 'runnable', 4: 'runnable'}
+2026-04-13 08:19:28,637 EXIT status: work_conserving_broken=False cfs_util_decay_broken=False rt_util_decay_broken=False
