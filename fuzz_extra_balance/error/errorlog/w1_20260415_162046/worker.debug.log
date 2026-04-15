@@ -1,0 +1,151 @@
+2026-04-15 16:20:11,674 REPLAY: op=10,-1,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:11,915 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:12,422 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:12,505 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:12,974 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:13,057 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:13,552 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:13,635 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:13,717 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:13,799 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:14,295 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:14,377 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:14,845 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:14,927 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:15,424 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:15,507 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:15,589 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:15,671 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:16,167 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:16,249 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:16,717 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:16,799 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:17,301 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:17,383 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:17,466 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:17,548 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:18,043 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:18,125 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:18,593 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:18,676 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:19,170 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:19,253 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:19,335 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:19,417 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:19,913 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:19,996 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:20,464 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:20,546 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:21,041 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:21,123 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:21,205 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:21,287 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:21,780 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:21,862 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:22,328 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:22,416 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:22,912 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:22,994 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:23,076 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:23,159 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:23,652 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:23,735 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:24,201 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:24,283 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:24,778 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:24,860 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:24,942 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:25,024 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:25,516 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:25,598 REPLAY: op=8,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:25,623 REPLAY: op=16,0,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:25,651 REPLAY: op=10,-1,0,0 executed_steps=1 task_state={}
+2026-04-15 16:20:25,717 REPLAY: op=0,0,0,0 executed_steps=1 task_state={0: 'sleeping'}
+2026-04-15 16:20:25,785 REPLAY: op=0,1,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping'}
+2026-04-15 16:20:25,940 REPLAY: op=6,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'sleeping'}
+2026-04-15 16:20:26,068 REPLAY: op=6,1,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'runnable'}
+2026-04-15 16:20:26,809 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:26,955 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:27,362 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:27,513 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:27,659 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:27,790 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:28,162 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:28,308 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:28,739 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:28,886 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:29,257 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:29,405 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:29,552 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:29,699 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:30,071 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:30,218 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:30,647 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:30,794 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:31,165 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:31,311 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:31,458 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:31,605 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:32,313 REPLAY: op=2,0,3,4 executed_steps=1 task_state={0: 'runnable', 1: 'on_cpu'}
+2026-04-15 16:20:32,423 REPLAY: op=5,1,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'sleeping'}
+2026-04-15 16:20:32,588 REPLAY: op=6,1,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:32,609 REPLAY: op=11,0,2,4 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:32,751 REPLAY: op=7,0,-15,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-15 16:20:33,486 REPLAY: op=2,0,4,4 executed_steps=1 task_state={0: 'runnable', 1: 'on_cpu'}
+2026-04-15 16:20:33,596 REPLAY: op=5,1,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'sleeping'}
+2026-04-15 16:20:33,866 REPLAY: op=5,0,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping'}
+2026-04-15 16:20:33,886 REPLAY: op=11,0,1,2 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping'}
+2026-04-15 16:20:33,906 REPLAY: op=13,0,1,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping'}
+2026-04-15 16:20:34,036 REPLAY: op=6,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'sleeping'}
+2026-04-15 16:20:34,057 REPLAY: op=11,0,4,4 executed_steps=1 task_state={0: 'on_cpu', 1: 'sleeping'}
+2026-04-15 16:20:34,187 REPLAY: op=6,1,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'runnable'}
+2026-04-15 16:20:34,257 REPLAY: op=0,2,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'runnable', 2: 'sleeping'}
+2026-04-15 16:20:34,394 MUTATE-GEN: op=5,0,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping'}
+2026-04-15 16:20:34,466 MUTATE-GEN: op=0,3,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'sleeping'}
+2026-04-15 16:20:34,511 MUTATE-GEN: op=2,1,4,4 executed_steps=1 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'sleeping'}
+2026-04-15 16:20:34,685 MUTATE-GEN: op=17,0,1,0 executed_steps=1 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'sleeping'}
+2026-04-15 16:20:39,187 MUTATE-GEN: op=8,0,0,0 executed_steps=18 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'sleeping'}
+2026-04-15 16:20:39,187 MUTATE-GEN: op=8,0,0,0 executed_steps=18 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'sleeping'}
+2026-04-15 16:20:39,187 MUTATE-GEN: op=8,0,0,0 executed_steps=18 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'sleeping'}
+2026-04-15 16:20:39,187 MUTATE-GEN: op=8,0,0,0 executed_steps=18 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'sleeping'}
+2026-04-15 16:20:39,187 MUTATE-GEN: op=8,0,0,0 executed_steps=18 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'sleeping'}
+2026-04-15 16:20:39,188 MUTATE-GEN: op=8,0,0,0 executed_steps=18 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'sleeping'}
+2026-04-15 16:20:39,188 MUTATE-GEN: op=8,0,0,0 executed_steps=18 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'sleeping'}
+2026-04-15 16:20:39,188 MUTATE-GEN: op=8,0,0,0 executed_steps=18 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'sleeping'}
+2026-04-15 16:20:39,188 MUTATE-GEN: op=8,0,0,0 executed_steps=18 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'sleeping'}
+2026-04-15 16:20:39,188 MUTATE-GEN: op=8,0,0,0 executed_steps=18 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'sleeping'}
+2026-04-15 16:20:39,188 MUTATE-GEN: op=8,0,0,0 executed_steps=18 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'sleeping'}
+2026-04-15 16:20:39,188 MUTATE-GEN: op=8,0,0,0 executed_steps=18 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'sleeping'}
+2026-04-15 16:20:39,188 MUTATE-GEN: op=8,0,0,0 executed_steps=18 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'sleeping'}
+2026-04-15 16:20:39,188 MUTATE-GEN: op=8,0,0,0 executed_steps=18 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'sleeping'}
+2026-04-15 16:20:39,189 MUTATE-GEN: op=8,0,0,0 executed_steps=18 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'sleeping'}
+2026-04-15 16:20:39,189 MUTATE-GEN: op=8,0,0,0 executed_steps=18 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'sleeping'}
+2026-04-15 16:20:39,189 MUTATE-GEN: op=8,0,0,0 executed_steps=18 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'sleeping'}
+2026-04-15 16:20:39,189 MUTATE-GEN: op=8,0,0,0 executed_steps=18 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'sleeping'}
+2026-04-15 16:20:39,263 MUTATE-GEN: op=0,4,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'sleeping', 4: 'sleeping'}
+2026-04-15 16:20:39,429 MUTATE-GEN: op=6,3,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping'}
+2026-04-15 16:20:39,505 MUTATE-GEN: op=0,5,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:39,646 MUTATE-GEN: op=2,1,4,4 executed_steps=1 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:44,503 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:44,503 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:44,503 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:44,504 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:44,504 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:44,504 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:44,504 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:44,504 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:44,504 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:44,504 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:44,504 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:44,504 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:44,505 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:44,505 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:44,505 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:44,505 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:44,505 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:44,505 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:44,505 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:44,505 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:44,782 MUTATE-GEN: op=5,1,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:44,924 MUTATE-GEN: op=6,2,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping', 2: 'runnable', 3: 'on_cpu', 4: 'sleeping', 5: 'sleeping'}
+2026-04-15 16:20:46,329 EXIT status: work_conserving_broken=False cfs_util_decay_broken=False rt_util_decay_broken=False
