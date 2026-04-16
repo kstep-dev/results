@@ -1,0 +1,125 @@
+2026-04-16 13:14:00,781 STEP: op=10,-1,0,0 executed_steps=1 task_state={} kthread_state={}
+2026-04-16 13:14:00,805 STEP: op=12,0,1604,0 executed_steps=1 task_state={} kthread_state={}
+2026-04-16 13:14:00,857 STEP: op=10,0,1,0 executed_steps=1 task_state={} kthread_state={}
+2026-04-16 13:14:06,554 STEP: op=8,0,0,0 executed_steps=16 task_state={} kthread_state={}
+2026-04-16 13:14:06,554 STEP: op=8,0,0,0 executed_steps=16 task_state={} kthread_state={}
+2026-04-16 13:14:06,554 STEP: op=8,0,0,0 executed_steps=16 task_state={} kthread_state={}
+2026-04-16 13:14:06,554 STEP: op=8,0,0,0 executed_steps=16 task_state={} kthread_state={}
+2026-04-16 13:14:06,554 STEP: op=8,0,0,0 executed_steps=16 task_state={} kthread_state={}
+2026-04-16 13:14:06,554 STEP: op=8,0,0,0 executed_steps=16 task_state={} kthread_state={}
+2026-04-16 13:14:06,554 STEP: op=8,0,0,0 executed_steps=16 task_state={} kthread_state={}
+2026-04-16 13:14:06,554 STEP: op=8,0,0,0 executed_steps=16 task_state={} kthread_state={}
+2026-04-16 13:14:06,555 STEP: op=8,0,0,0 executed_steps=16 task_state={} kthread_state={}
+2026-04-16 13:14:06,555 STEP: op=8,0,0,0 executed_steps=16 task_state={} kthread_state={}
+2026-04-16 13:14:06,555 STEP: op=8,0,0,0 executed_steps=16 task_state={} kthread_state={}
+2026-04-16 13:14:06,555 STEP: op=8,0,0,0 executed_steps=16 task_state={} kthread_state={}
+2026-04-16 13:14:06,555 STEP: op=8,0,0,0 executed_steps=16 task_state={} kthread_state={}
+2026-04-16 13:14:06,555 STEP: op=8,0,0,0 executed_steps=16 task_state={} kthread_state={}
+2026-04-16 13:14:06,555 STEP: op=8,0,0,0 executed_steps=16 task_state={} kthread_state={}
+2026-04-16 13:14:06,555 STEP: op=8,0,0,0 executed_steps=16 task_state={} kthread_state={}
+2026-04-16 13:14:06,594 STEP: op=11,1,1,1 executed_steps=1 task_state={} kthread_state={}
+2026-04-16 13:14:07,055 STEP: op=8,0,0,0 executed_steps=3 task_state={} kthread_state={}
+2026-04-16 13:14:07,055 STEP: op=8,0,0,0 executed_steps=3 task_state={} kthread_state={}
+2026-04-16 13:14:07,056 STEP: op=8,0,0,0 executed_steps=3 task_state={} kthread_state={}
+2026-04-16 13:14:10,776 STEP: op=8,0,0,0 executed_steps=12 task_state={} kthread_state={}
+2026-04-16 13:14:10,776 STEP: op=8,0,0,0 executed_steps=12 task_state={} kthread_state={}
+2026-04-16 13:14:10,776 STEP: op=8,0,0,0 executed_steps=12 task_state={} kthread_state={}
+2026-04-16 13:14:10,777 STEP: op=8,0,0,0 executed_steps=12 task_state={} kthread_state={}
+2026-04-16 13:14:10,777 STEP: op=8,0,0,0 executed_steps=12 task_state={} kthread_state={}
+2026-04-16 13:14:10,777 STEP: op=8,0,0,0 executed_steps=12 task_state={} kthread_state={}
+2026-04-16 13:14:10,777 STEP: op=8,0,0,0 executed_steps=12 task_state={} kthread_state={}
+2026-04-16 13:14:10,777 STEP: op=8,0,0,0 executed_steps=12 task_state={} kthread_state={}
+2026-04-16 13:14:10,777 STEP: op=8,0,0,0 executed_steps=12 task_state={} kthread_state={}
+2026-04-16 13:14:10,777 STEP: op=8,0,0,0 executed_steps=12 task_state={} kthread_state={}
+2026-04-16 13:14:10,777 STEP: op=8,0,0,0 executed_steps=12 task_state={} kthread_state={}
+2026-04-16 13:14:10,777 STEP: op=8,0,0,0 executed_steps=12 task_state={} kthread_state={}
+2026-04-16 13:14:10,812 STEP: op=18,0,0,0 executed_steps=1 task_state={} kthread_state={0: 'created'}
+2026-04-16 13:14:10,849 STEP: op=12,0,2382,0 executed_steps=1 task_state={} kthread_state={0: 'created'}
+2026-04-16 13:14:10,889 STEP: op=12,0,5658,0 executed_steps=1 task_state={} kthread_state={0: 'created'}
+2026-04-16 13:14:10,930 STEP: op=12,1,9689,0 executed_steps=1 task_state={} kthread_state={0: 'created'}
+2026-04-16 13:14:11,126 STEP: op=0,0,0,0 executed_steps=1 task_state={0: 'sleeping'} kthread_state={0: 'created'}
+2026-04-16 13:14:11,822 STEP: op=6,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'created'}
+2026-04-16 13:14:14,372 STEP: op=2,0,2,2 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'created'}
+2026-04-16 13:14:14,415 STEP: op=12,0,5243,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'created'}
+2026-04-16 13:14:14,495 STEP: op=10,-1,2,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'created'}
+2026-04-16 13:14:17,065 STEP: op=2,0,1,1 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'created'}
+2026-04-16 13:14:17,247 STEP: op=13,1,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'created'}
+2026-04-16 13:14:17,298 STEP: op=20,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin'}
+2026-04-16 13:14:17,390 STEP: op=10,-1,3,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin'}
+2026-04-16 13:14:17,444 STEP: op=22,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked'}
+2026-04-16 13:14:17,533 STEP: op=10,0,4,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked'}
+2026-04-16 13:14:18,561 STEP: op=5,0,0,0 executed_steps=1 task_state={0: 'sleeping'} kthread_state={0: 'blocked'}
+2026-04-16 13:14:19,486 STEP: op=6,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked'}
+2026-04-16 13:14:19,678 STEP: op=13,4,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked'}
+2026-04-16 13:14:19,746 STEP: op=16,1,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked'}
+2026-04-16 13:14:19,847 STEP: op=10,-1,1,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked'}
+2026-04-16 13:14:20,984 STEP: op=5,0,0,0 executed_steps=1 task_state={0: 'sleeping'} kthread_state={0: 'blocked'}
+2026-04-16 13:14:21,044 STEP: op=13,4,0,0 executed_steps=1 task_state={0: 'sleeping'} kthread_state={0: 'blocked'}
+2026-04-16 13:14:21,968 STEP: op=6,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked'}
+2026-04-16 13:14:22,064 STEP: op=10,-1,5,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked'}
+2026-04-16 13:14:22,134 STEP: op=18,1,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created'}
+2026-04-16 13:14:23,303 STEP: op=2,0,1,2 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created'}
+2026-04-16 13:14:23,366 STEP: op=18,2,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 13:14:23,467 STEP: op=10,2,6,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 13:14:39,636 STEP: op=8,0,0,0 executed_steps=18 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 13:14:39,636 STEP: op=8,0,0,0 executed_steps=18 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 13:14:39,636 STEP: op=8,0,0,0 executed_steps=18 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 13:14:39,636 STEP: op=8,0,0,0 executed_steps=18 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 13:14:39,637 STEP: op=8,0,0,0 executed_steps=18 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 13:14:39,637 STEP: op=8,0,0,0 executed_steps=18 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 13:14:39,637 STEP: op=8,0,0,0 executed_steps=18 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 13:14:39,637 STEP: op=8,0,0,0 executed_steps=18 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 13:14:39,637 STEP: op=8,0,0,0 executed_steps=18 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 13:14:39,637 STEP: op=8,0,0,0 executed_steps=18 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 13:14:39,637 STEP: op=8,0,0,0 executed_steps=18 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 13:14:39,637 STEP: op=8,0,0,0 executed_steps=18 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 13:14:39,637 STEP: op=8,0,0,0 executed_steps=18 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 13:14:39,638 STEP: op=8,0,0,0 executed_steps=18 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 13:14:39,638 STEP: op=8,0,0,0 executed_steps=18 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 13:14:39,638 STEP: op=8,0,0,0 executed_steps=18 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 13:14:39,638 STEP: op=8,0,0,0 executed_steps=18 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 13:14:39,638 STEP: op=8,0,0,0 executed_steps=18 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 13:14:44,336 STEP: op=2,0,2,2 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 13:14:44,991 STEP: op=10,4,7,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 13:14:45,095 STEP: op=20,1,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'spin', 2: 'created'}
+2026-04-16 13:14:48,582 STEP: op=8,0,0,0 executed_steps=6 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'spin', 2: 'created'}
+2026-04-16 13:14:48,583 STEP: op=8,0,0,0 executed_steps=6 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'spin', 2: 'created'}
+2026-04-16 13:14:48,583 STEP: op=8,0,0,0 executed_steps=6 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'spin', 2: 'created'}
+2026-04-16 13:14:48,583 STEP: op=8,0,0,0 executed_steps=6 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'spin', 2: 'created'}
+2026-04-16 13:14:48,583 STEP: op=8,0,0,0 executed_steps=6 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'spin', 2: 'created'}
+2026-04-16 13:14:48,583 STEP: op=8,0,0,0 executed_steps=6 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'spin', 2: 'created'}
+2026-04-16 13:14:49,413 STEP: op=5,0,0,0 executed_steps=1 task_state={0: 'sleeping'} kthread_state={0: 'blocked', 1: 'spin', 2: 'created'}
+2026-04-16 13:14:49,510 STEP: op=23,1,0,0 executed_steps=1 task_state={0: 'sleeping'} kthread_state={0: 'spin', 1: 'dead', 2: 'created'}
+2026-04-16 13:14:53,385 STEP: op=8,0,0,0 executed_steps=10 task_state={0: 'sleeping'} kthread_state={0: 'spin', 2: 'created'}
+2026-04-16 13:14:53,385 STEP: op=8,0,0,0 executed_steps=10 task_state={0: 'sleeping'} kthread_state={0: 'spin', 2: 'created'}
+2026-04-16 13:14:53,385 STEP: op=8,0,0,0 executed_steps=10 task_state={0: 'sleeping'} kthread_state={0: 'spin', 2: 'created'}
+2026-04-16 13:14:53,386 STEP: op=8,0,0,0 executed_steps=10 task_state={0: 'sleeping'} kthread_state={0: 'spin', 2: 'created'}
+2026-04-16 13:14:53,386 STEP: op=8,0,0,0 executed_steps=10 task_state={0: 'sleeping'} kthread_state={0: 'spin', 2: 'created'}
+2026-04-16 13:14:53,386 STEP: op=8,0,0,0 executed_steps=10 task_state={0: 'sleeping'} kthread_state={0: 'spin', 2: 'created'}
+2026-04-16 13:14:53,386 STEP: op=8,0,0,0 executed_steps=10 task_state={0: 'sleeping'} kthread_state={0: 'spin', 2: 'created'}
+2026-04-16 13:14:53,386 STEP: op=8,0,0,0 executed_steps=10 task_state={0: 'sleeping'} kthread_state={0: 'spin', 2: 'created'}
+2026-04-16 13:14:53,386 STEP: op=8,0,0,0 executed_steps=10 task_state={0: 'sleeping'} kthread_state={0: 'spin', 2: 'created'}
+2026-04-16 13:14:53,386 STEP: op=8,0,0,0 executed_steps=10 task_state={0: 'sleeping'} kthread_state={0: 'spin', 2: 'created'}
+2026-04-16 13:14:53,462 STEP: op=19,2,1,2 executed_steps=1 task_state={0: 'sleeping'} kthread_state={0: 'spin', 2: 'created'}
+2026-04-16 13:14:54,276 STEP: op=6,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 2: 'created'}
+2026-04-16 13:14:54,372 STEP: op=19,2,2,2 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 2: 'created'}
+2026-04-16 13:14:55,255 STEP: op=5,0,0,0 executed_steps=1 task_state={0: 'sleeping'} kthread_state={0: 'spin', 2: 'created'}
+2026-04-16 13:14:55,335 STEP: op=16,3,0,0 executed_steps=1 task_state={0: 'sleeping'} kthread_state={0: 'spin', 2: 'created'}
+2026-04-16 13:14:55,387 STEP: op=22,0,0,0 executed_steps=1 task_state={0: 'sleeping'} kthread_state={0: 'blocked', 2: 'created'}
+2026-04-16 13:14:58,957 STEP: op=8,0,0,0 executed_steps=9 task_state={0: 'sleeping'} kthread_state={0: 'blocked', 2: 'created'}
+2026-04-16 13:14:58,957 STEP: op=8,0,0,0 executed_steps=9 task_state={0: 'sleeping'} kthread_state={0: 'blocked', 2: 'created'}
+2026-04-16 13:14:58,957 STEP: op=8,0,0,0 executed_steps=9 task_state={0: 'sleeping'} kthread_state={0: 'blocked', 2: 'created'}
+2026-04-16 13:14:58,958 STEP: op=8,0,0,0 executed_steps=9 task_state={0: 'sleeping'} kthread_state={0: 'blocked', 2: 'created'}
+2026-04-16 13:14:58,958 STEP: op=8,0,0,0 executed_steps=9 task_state={0: 'sleeping'} kthread_state={0: 'blocked', 2: 'created'}
+2026-04-16 13:14:58,958 STEP: op=8,0,0,0 executed_steps=9 task_state={0: 'sleeping'} kthread_state={0: 'blocked', 2: 'created'}
+2026-04-16 13:14:58,958 STEP: op=8,0,0,0 executed_steps=9 task_state={0: 'sleeping'} kthread_state={0: 'blocked', 2: 'created'}
+2026-04-16 13:14:58,958 STEP: op=8,0,0,0 executed_steps=9 task_state={0: 'sleeping'} kthread_state={0: 'blocked', 2: 'created'}
+2026-04-16 13:14:58,958 STEP: op=8,0,0,0 executed_steps=9 task_state={0: 'sleeping'} kthread_state={0: 'blocked', 2: 'created'}
+2026-04-16 13:14:59,025 STEP: op=13,5,0,0 executed_steps=1 task_state={0: 'sleeping'} kthread_state={0: 'blocked', 2: 'created'}
+2026-04-16 13:14:59,097 STEP: op=13,7,0,0 executed_steps=1 task_state={0: 'sleeping'} kthread_state={0: 'blocked', 2: 'created'}
+2026-04-16 13:15:00,463 STEP: op=6,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 2: 'created'}
+2026-04-16 13:15:01,701 STEP: op=5,0,0,0 executed_steps=1 task_state={0: 'sleeping'} kthread_state={0: 'blocked', 2: 'created'}
+2026-04-16 13:15:01,794 STEP: op=20,2,0,0 executed_steps=1 task_state={0: 'sleeping'} kthread_state={0: 'blocked', 2: 'spin'}
+2026-04-16 13:15:01,892 STEP: op=23,2,0,0 executed_steps=1 task_state={0: 'sleeping'} kthread_state={0: 'spin', 2: 'dead'}
+2026-04-16 13:15:02,084 STEP: op=17,7,0,0 executed_steps=1 task_state={0: 'sleeping'} kthread_state={0: 'spin'}
+2026-04-16 13:15:03,972 EXIT status: work_conserving_broken=False cfs_util_decay_broken=False rt_util_decay_broken=False

@@ -1,0 +1,186 @@
+2026-04-16 05:29:56,633 REPLAY: op=8,0,0,0 executed_steps=1 task_state={} kthread_state={}
+2026-04-16 05:29:56,682 REPLAY: op=8,0,0,0 executed_steps=1 task_state={} kthread_state={}
+2026-04-16 05:29:56,915 REPLAY: op=8,0,0,0 executed_steps=1 task_state={} kthread_state={}
+2026-04-16 05:29:56,962 REPLAY: op=8,0,0,0 executed_steps=1 task_state={} kthread_state={}
+2026-04-16 05:29:57,007 REPLAY: op=8,0,0,0 executed_steps=1 task_state={} kthread_state={}
+2026-04-16 05:29:57,052 REPLAY: op=8,0,0,0 executed_steps=1 task_state={} kthread_state={}
+2026-04-16 05:29:57,097 REPLAY: op=8,0,0,0 executed_steps=1 task_state={} kthread_state={}
+2026-04-16 05:29:57,113 REPLAY: op=18,0,0,0 executed_steps=1 task_state={} kthread_state={0: 'created'}
+2026-04-16 05:29:57,138 REPLAY: op=10,-1,0,0 executed_steps=1 task_state={} kthread_state={0: 'created'}
+2026-04-16 05:29:57,155 REPLAY: op=18,1,0,0 executed_steps=1 task_state={} kthread_state={0: 'created', 1: 'created'}
+2026-04-16 05:29:57,222 REPLAY: op=0,0,0,0 executed_steps=1 task_state={0: 'sleeping'} kthread_state={0: 'created', 1: 'created'}
+2026-04-16 05:29:57,242 REPLAY: op=12,0,4619,0 executed_steps=1 task_state={0: 'sleeping'} kthread_state={0: 'created', 1: 'created'}
+2026-04-16 05:29:57,261 REPLAY: op=20,0,0,0 executed_steps=1 task_state={0: 'sleeping'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:29:57,447 REPLAY: op=6,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:29:57,639 REPLAY: op=5,0,0,0 executed_steps=1 task_state={0: 'sleeping'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:29:57,784 REPLAY: op=6,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:29:57,890 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:29:58,057 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:29:58,161 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:29:58,269 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:29:58,373 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:29:58,481 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:29:58,585 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:29:58,693 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:29:58,797 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:29:58,905 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:29:59,009 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:29:59,117 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:29:59,222 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:29:59,329 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:29:59,419 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:29:59,526 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:29:59,631 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:29:59,738 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:29:59,789 REPLAY: op=13,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:29:59,932 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:30:00,081 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:30:00,223 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:30:00,373 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:30:00,516 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:30:00,665 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:30:00,808 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:30:00,957 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:30:01,769 REPLAY: op=2,0,1,1 executed_steps=1 task_state={0: 'runnable'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:30:01,928 REPLAY: op=16,0,0,0 executed_steps=1 task_state={0: 'runnable'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:30:01,956 REPLAY: op=10,-1,0,0 executed_steps=1 task_state={0: 'runnable'} kthread_state={0: 'spin', 1: 'created'}
+2026-04-16 05:30:01,976 REPLAY: op=22,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created'}
+2026-04-16 05:30:02,363 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created'}
+2026-04-16 05:30:02,442 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created'}
+2026-04-16 05:30:02,520 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created'}
+2026-04-16 05:30:02,599 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created'}
+2026-04-16 05:30:02,677 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created'}
+2026-04-16 05:30:02,756 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created'}
+2026-04-16 05:30:02,833 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created'}
+2026-04-16 05:30:02,912 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created'}
+2026-04-16 05:30:02,990 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created'}
+2026-04-16 05:30:03,011 REPLAY: op=18,2,0,0 executed_steps=1 task_state={0: 'on_cpu'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 05:30:03,080 REPLAY: op=0,1,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'sleeping'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 05:30:03,112 REPLAY: op=16,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'sleeping'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 05:30:03,301 REPLAY: op=5,0,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 05:30:03,457 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 05:30:03,510 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 05:30:03,562 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 05:30:03,722 REPLAY: op=8,0,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 05:30:03,792 REPLAY: op=0,2,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 05:30:04,849 MUTATE-GEN: op=8,0,0,0 executed_steps=14 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 05:30:04,850 MUTATE-GEN: op=8,0,0,0 executed_steps=14 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 05:30:04,850 MUTATE-GEN: op=8,0,0,0 executed_steps=14 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 05:30:04,850 MUTATE-GEN: op=8,0,0,0 executed_steps=14 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 05:30:04,850 MUTATE-GEN: op=8,0,0,0 executed_steps=14 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 05:30:04,850 MUTATE-GEN: op=8,0,0,0 executed_steps=14 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 05:30:04,850 MUTATE-GEN: op=8,0,0,0 executed_steps=14 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 05:30:04,850 MUTATE-GEN: op=8,0,0,0 executed_steps=14 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 05:30:04,850 MUTATE-GEN: op=8,0,0,0 executed_steps=14 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 05:30:04,850 MUTATE-GEN: op=8,0,0,0 executed_steps=14 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 05:30:04,851 MUTATE-GEN: op=8,0,0,0 executed_steps=14 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 05:30:04,851 MUTATE-GEN: op=8,0,0,0 executed_steps=14 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 05:30:04,851 MUTATE-GEN: op=8,0,0,0 executed_steps=14 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 05:30:04,851 MUTATE-GEN: op=8,0,0,0 executed_steps=14 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'blocked', 1: 'created', 2: 'created'}
+2026-04-16 05:30:04,874 MUTATE-GEN: op=20,1,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'blocked', 1: 'spin', 2: 'created'}
+2026-04-16 05:30:04,911 MUTATE-GEN: op=23,1,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'spin', 1: 'dead', 2: 'created'}
+2026-04-16 05:30:05,424 MUTATE-GEN: op=8,0,0,0 executed_steps=5 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'spin', 2: 'created'}
+2026-04-16 05:30:05,424 MUTATE-GEN: op=8,0,0,0 executed_steps=5 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'spin', 2: 'created'}
+2026-04-16 05:30:05,425 MUTATE-GEN: op=8,0,0,0 executed_steps=5 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'spin', 2: 'created'}
+2026-04-16 05:30:05,425 MUTATE-GEN: op=8,0,0,0 executed_steps=5 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'spin', 2: 'created'}
+2026-04-16 05:30:05,425 MUTATE-GEN: op=8,0,0,0 executed_steps=5 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'spin', 2: 'created'}
+2026-04-16 05:30:05,448 MUTATE-GEN: op=18,1,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'spin', 2: 'created', 1: 'created'}
+2026-04-16 05:30:05,996 MUTATE-GEN: op=8,0,0,0 executed_steps=5 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'spin', 2: 'created', 1: 'created'}
+2026-04-16 05:30:05,996 MUTATE-GEN: op=8,0,0,0 executed_steps=5 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'spin', 2: 'created', 1: 'created'}
+2026-04-16 05:30:05,997 MUTATE-GEN: op=8,0,0,0 executed_steps=5 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'spin', 2: 'created', 1: 'created'}
+2026-04-16 05:30:05,997 MUTATE-GEN: op=8,0,0,0 executed_steps=5 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'spin', 2: 'created', 1: 'created'}
+2026-04-16 05:30:05,997 MUTATE-GEN: op=8,0,0,0 executed_steps=5 task_state={0: 'sleeping', 1: 'sleeping', 2: 'sleeping'} kthread_state={0: 'spin', 2: 'created', 1: 'created'}
+2026-04-16 05:30:06,173 MUTATE-GEN: op=6,1,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping'} kthread_state={0: 'spin', 2: 'created', 1: 'created'}
+2026-04-16 05:30:06,305 MUTATE-GEN: op=6,2,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'on_cpu', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'created'}
+2026-04-16 05:30:06,433 MUTATE-GEN: op=6,0,0,0 executed_steps=1 task_state={0: 'runnable', 1: 'on_cpu', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'created'}
+2026-04-16 05:30:07,689 MUTATE-GEN: op=8,0,0,0 executed_steps=8 task_state={0: 'runnable', 1: 'runnable', 2: 'on_cpu'} kthread_state={0: 'spin', 2: 'created', 1: 'created'}
+2026-04-16 05:30:07,689 MUTATE-GEN: op=8,0,0,0 executed_steps=8 task_state={0: 'runnable', 1: 'runnable', 2: 'on_cpu'} kthread_state={0: 'spin', 2: 'created', 1: 'created'}
+2026-04-16 05:30:07,689 MUTATE-GEN: op=8,0,0,0 executed_steps=8 task_state={0: 'runnable', 1: 'runnable', 2: 'on_cpu'} kthread_state={0: 'spin', 2: 'created', 1: 'created'}
+2026-04-16 05:30:07,689 MUTATE-GEN: op=8,0,0,0 executed_steps=8 task_state={0: 'runnable', 1: 'runnable', 2: 'on_cpu'} kthread_state={0: 'spin', 2: 'created', 1: 'created'}
+2026-04-16 05:30:07,689 MUTATE-GEN: op=8,0,0,0 executed_steps=8 task_state={0: 'runnable', 1: 'runnable', 2: 'on_cpu'} kthread_state={0: 'spin', 2: 'created', 1: 'created'}
+2026-04-16 05:30:07,689 MUTATE-GEN: op=8,0,0,0 executed_steps=8 task_state={0: 'runnable', 1: 'runnable', 2: 'on_cpu'} kthread_state={0: 'spin', 2: 'created', 1: 'created'}
+2026-04-16 05:30:07,689 MUTATE-GEN: op=8,0,0,0 executed_steps=8 task_state={0: 'runnable', 1: 'runnable', 2: 'on_cpu'} kthread_state={0: 'spin', 2: 'created', 1: 'created'}
+2026-04-16 05:30:07,690 MUTATE-GEN: op=8,0,0,0 executed_steps=8 task_state={0: 'runnable', 1: 'runnable', 2: 'on_cpu'} kthread_state={0: 'spin', 2: 'created', 1: 'created'}
+2026-04-16 05:30:07,717 MUTATE-GEN: op=20,1,0,0 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'on_cpu'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:07,870 MUTATE-GEN: op=7,2,-11,0 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'on_cpu'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:08,323 MUTATE-GEN: op=8,0,0,0 executed_steps=3 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:08,323 MUTATE-GEN: op=8,0,0,0 executed_steps=3 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:08,323 MUTATE-GEN: op=8,0,0,0 executed_steps=3 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:08,361 MUTATE-GEN: op=10,-1,0,0 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:08,586 MUTATE-GEN: op=8,0,0,0 executed_steps=2 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:08,586 MUTATE-GEN: op=8,0,0,0 executed_steps=2 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:08,624 MUTATE-GEN: op=16,0,0,0 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:09,068 MUTATE-GEN: op=8,0,0,0 executed_steps=4 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:09,069 MUTATE-GEN: op=8,0,0,0 executed_steps=4 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:09,069 MUTATE-GEN: op=8,0,0,0 executed_steps=4 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:09,069 MUTATE-GEN: op=8,0,0,0 executed_steps=4 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:09,096 MUTATE-GEN: op=19,2,1,1 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:10,224 MUTATE-GEN: op=8,0,0,0 executed_steps=10 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:10,224 MUTATE-GEN: op=8,0,0,0 executed_steps=10 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:10,224 MUTATE-GEN: op=8,0,0,0 executed_steps=10 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:10,224 MUTATE-GEN: op=8,0,0,0 executed_steps=10 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:10,224 MUTATE-GEN: op=8,0,0,0 executed_steps=10 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:10,224 MUTATE-GEN: op=8,0,0,0 executed_steps=10 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:10,224 MUTATE-GEN: op=8,0,0,0 executed_steps=10 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:10,224 MUTATE-GEN: op=8,0,0,0 executed_steps=10 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:10,225 MUTATE-GEN: op=8,0,0,0 executed_steps=10 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:10,225 MUTATE-GEN: op=8,0,0,0 executed_steps=10 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:10,252 MUTATE-GEN: op=19,2,1,1 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:10,289 MUTATE-GEN: op=10,-1,0,0 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:11,757 MUTATE-GEN: op=8,0,0,0 executed_steps=13 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:11,757 MUTATE-GEN: op=8,0,0,0 executed_steps=13 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:11,757 MUTATE-GEN: op=8,0,0,0 executed_steps=13 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:11,757 MUTATE-GEN: op=8,0,0,0 executed_steps=13 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:11,757 MUTATE-GEN: op=8,0,0,0 executed_steps=13 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:11,758 MUTATE-GEN: op=8,0,0,0 executed_steps=13 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:11,758 MUTATE-GEN: op=8,0,0,0 executed_steps=13 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:11,758 MUTATE-GEN: op=8,0,0,0 executed_steps=13 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:11,758 MUTATE-GEN: op=8,0,0,0 executed_steps=13 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:11,758 MUTATE-GEN: op=8,0,0,0 executed_steps=13 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:11,758 MUTATE-GEN: op=8,0,0,0 executed_steps=13 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:11,758 MUTATE-GEN: op=8,0,0,0 executed_steps=13 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:11,758 MUTATE-GEN: op=8,0,0,0 executed_steps=13 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:11,796 MUTATE-GEN: op=16,0,0,0 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'spin'}
+2026-04-16 05:30:11,823 MUTATE-GEN: op=22,1,0,0 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'on_cpu'} kthread_state={0: 'spin', 2: 'created', 1: 'blocked'}
+2026-04-16 05:30:12,014 MUTATE-GEN: op=7,2,13,0 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'on_cpu'} kthread_state={0: 'spin', 2: 'created', 1: 'blocked'}
+2026-04-16 05:30:12,058 MUTATE-GEN: op=2,2,1,2 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'on_cpu'} kthread_state={0: 'spin', 2: 'created', 1: 'blocked'}
+2026-04-16 05:30:12,645 MUTATE-GEN: op=2,2,2,2 executed_steps=1 task_state={0: 'on_cpu', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'created', 1: 'blocked'}
+2026-04-16 05:30:12,674 MUTATE-GEN: op=20,2,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:12,863 MUTATE-GEN: op=7,0,14,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:15,414 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:15,414 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:15,415 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:15,415 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:15,415 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:15,415 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:15,415 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:15,415 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:15,415 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:15,415 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:15,416 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:15,416 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:15,416 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:15,416 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:15,416 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:15,416 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:15,416 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:15,416 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:15,416 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:15,416 MUTATE-GEN: op=8,0,0,0 executed_steps=20 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:15,454 MUTATE-GEN: op=10,-1,0,0 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:15,483 MUTATE-GEN: op=19,1,2,2 executed_steps=1 task_state={0: 'runnable', 1: 'runnable', 2: 'runnable'} kthread_state={0: 'spin', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:15,511 MUTATE-GEN: op=22,2,0,0 executed_steps=1 task_state={0: 'runnable', 1: 'on_cpu', 2: 'runnable'} kthread_state={0: 'spin', 2: 'blocked', 1: 'blocked'}
+2026-04-16 05:30:15,895 MUTATE-GEN: op=8,0,0,0 executed_steps=3 task_state={0: 'runnable', 1: 'on_cpu', 2: 'runnable'} kthread_state={0: 'spin', 2: 'blocked', 1: 'blocked'}
+2026-04-16 05:30:15,895 MUTATE-GEN: op=8,0,0,0 executed_steps=3 task_state={0: 'runnable', 1: 'on_cpu', 2: 'runnable'} kthread_state={0: 'spin', 2: 'blocked', 1: 'blocked'}
+2026-04-16 05:30:15,896 MUTATE-GEN: op=8,0,0,0 executed_steps=3 task_state={0: 'runnable', 1: 'on_cpu', 2: 'runnable'} kthread_state={0: 'spin', 2: 'blocked', 1: 'blocked'}
+2026-04-16 05:30:16,031 MUTATE-GEN: op=5,1,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'sleeping', 2: 'runnable'} kthread_state={0: 'spin', 2: 'blocked', 1: 'blocked'}
+2026-04-16 05:30:16,321 MUTATE-GEN: op=5,0,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping', 2: 'runnable'} kthread_state={0: 'spin', 2: 'blocked', 1: 'blocked'}
+2026-04-16 05:30:16,475 MUTATE-GEN: op=6,0,0,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'sleeping', 2: 'runnable'} kthread_state={0: 'spin', 2: 'blocked', 1: 'blocked'}
+2026-04-16 05:30:16,514 MUTATE-GEN: op=10,-1,1,0 executed_steps=1 task_state={0: 'on_cpu', 1: 'sleeping', 2: 'runnable'} kthread_state={0: 'spin', 2: 'blocked', 1: 'blocked'}
+2026-04-16 05:30:16,738 MUTATE-GEN: op=5,0,0,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping', 2: 'runnable'} kthread_state={0: 'spin', 2: 'blocked', 1: 'blocked'}
+2026-04-16 05:30:16,774 MUTATE-GEN: op=23,0,2,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping', 2: 'on_cpu'} kthread_state={0: 'dead', 2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:17,141 MUTATE-GEN: op=8,0,0,0 executed_steps=2 task_state={0: 'sleeping', 1: 'sleeping', 2: 'on_cpu'} kthread_state={2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:17,141 MUTATE-GEN: op=8,0,0,0 executed_steps=2 task_state={0: 'sleeping', 1: 'sleeping', 2: 'on_cpu'} kthread_state={2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:17,303 MUTATE-GEN: op=7,2,-11,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping', 2: 'on_cpu'} kthread_state={2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:17,344 MUTATE-GEN: op=10,-1,2,0 executed_steps=1 task_state={0: 'sleeping', 1: 'sleeping', 2: 'on_cpu'} kthread_state={2: 'spin', 1: 'blocked'}
+2026-04-16 05:30:18,515 EXIT status: work_conserving_broken=False cfs_util_decay_broken=False rt_util_decay_broken=False
