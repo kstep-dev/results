@@ -1,0 +1,268 @@
+2026-04-13 10:37:40,545 SEND OP: 8,0,0,0
+2026-04-13 10:37:40,815 Received task states
+2026-04-13 10:37:40,815 REPLAY 0: op=8,0,0,0 executed=True task_state={}
+2026-04-13 10:37:40,815 SEND OP: 8,0,0,0
+2026-04-13 10:37:41,199 Received task states
+2026-04-13 10:37:41,199 REPLAY 1: op=8,0,0,0 executed=True task_state={}
+2026-04-13 10:37:41,199 SEND OP: 8,0,0,0
+2026-04-13 10:37:41,294 Received task states
+2026-04-13 10:37:41,294 REPLAY 2: op=8,0,0,0 executed=True task_state={}
+2026-04-13 10:37:41,294 SEND OP: 8,0,0,0
+2026-04-13 10:37:41,635 Received task states
+2026-04-13 10:37:41,635 REPLAY 3: op=8,0,0,0 executed=True task_state={}
+2026-04-13 10:37:41,635 SEND OP: 8,0,0,0
+2026-04-13 10:37:41,727 Received task states
+2026-04-13 10:37:41,728 REPLAY 4: op=8,0,0,0 executed=True task_state={}
+2026-04-13 10:37:41,728 SEND OP: 8,0,0,0
+2026-04-13 10:37:42,104 Received task states
+2026-04-13 10:37:42,104 REPLAY 5: op=8,0,0,0 executed=True task_state={}
+2026-04-13 10:37:42,104 SEND OP: 8,0,0,0
+2026-04-13 10:37:42,198 Received task states
+2026-04-13 10:37:42,198 REPLAY 6: op=8,0,0,0 executed=True task_state={}
+2026-04-13 10:37:42,198 SEND OP: 8,0,0,0
+2026-04-13 10:37:42,290 Received task states
+2026-04-13 10:37:42,291 REPLAY 7: op=8,0,0,0 executed=True task_state={}
+2026-04-13 10:37:42,291 SEND OP: 8,0,0,0
+2026-04-13 10:37:42,383 Received task states
+2026-04-13 10:37:42,383 REPLAY 8: op=8,0,0,0 executed=True task_state={}
+2026-04-13 10:37:42,383 SEND OP: 8,0,0,0
+2026-04-13 10:37:42,766 Received task states
+2026-04-13 10:37:42,767 REPLAY 9: op=8,0,0,0 executed=True task_state={}
+2026-04-13 10:37:42,767 SEND OP: 8,0,0,0
+2026-04-13 10:37:42,862 Received task states
+2026-04-13 10:37:42,862 REPLAY 10: op=8,0,0,0 executed=True task_state={}
+2026-04-13 10:37:42,862 SEND OP: 8,0,0,0
+2026-04-13 10:37:43,202 Received task states
+2026-04-13 10:37:43,202 REPLAY 11: op=8,0,0,0 executed=True task_state={}
+2026-04-13 10:37:43,202 SEND OP: 8,0,0,0
+2026-04-13 10:37:43,295 Received task states
+2026-04-13 10:37:43,295 REPLAY 12: op=8,0,0,0 executed=True task_state={}
+2026-04-13 10:37:43,295 SEND OP: 0,0,0,0
+2026-04-13 10:37:43,383 Received task states
+2026-04-13 10:37:43,383 REPLAY 13: op=0,0,0,0 executed=True task_state={0: 'sleeping'}
+2026-04-13 10:37:43,383 SEND OP: 6,0,0,0
+2026-04-13 10:37:43,558 Received task states
+2026-04-13 10:37:43,558 REPLAY 14: op=6,0,0,0 executed=True task_state={0: 'on_cpu'}
+2026-04-13 10:37:43,558 SEND OP: 1,0,1,0
+2026-04-13 10:37:43,819 Received task states
+2026-04-13 10:37:43,819 REPLAY 15: op=1,0,1,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu'}
+2026-04-13 10:37:43,819 SEND OP: 5,0,0,0
+2026-04-13 10:37:44,049 Received task states
+2026-04-13 10:37:44,049 REPLAY 16: op=5,0,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu'}
+2026-04-13 10:37:44,049 SEND OP: 0,2,0,0
+2026-04-13 10:37:44,140 Received task states
+2026-04-13 10:37:44,140 REPLAY 17: op=0,2,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping'}
+2026-04-13 10:37:44,140 SEND OP: 1,1,3,0
+2026-04-13 10:37:44,403 Received task states
+2026-04-13 10:37:44,403 REPLAY 18: op=1,1,3,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu'}
+2026-04-13 10:37:44,403 SEND OP: 0,4,0,0
+2026-04-13 10:37:44,494 Received task states
+2026-04-13 10:37:44,494 REPLAY 19: op=0,4,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'sleeping', 3: 'on_cpu', 4: 'sleeping'}
+2026-04-13 10:37:44,494 SEND OP: 6,2,0,0
+2026-04-13 10:37:44,641 Received task states
+2026-04-13 10:37:44,641 REPLAY 20: op=6,2,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'sleeping'}
+2026-04-13 10:37:44,641 SEND OP: 6,4,0,0
+2026-04-13 10:37:44,790 Received task states
+2026-04-13 10:37:44,790 REPLAY 21: op=6,4,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable'}
+2026-04-13 10:37:44,790 SEND OP: 6,0,0,0
+2026-04-13 10:37:44,974 Received task states
+2026-04-13 10:37:44,974 REPLAY 22: op=6,0,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable'}
+2026-04-13 10:37:44,974 SEND OP: 3,3,0,0
+2026-04-13 10:37:45,250 Received task states
+2026-04-13 10:37:45,250 REPLAY 23: op=3,3,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable'}
+2026-04-13 10:37:45,251 SEND OP: 5,3,0,0
+2026-04-13 10:37:45,390 Received task states
+2026-04-13 10:37:45,391 REPLAY 24: op=5,3,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'on_cpu', 3: 'sleeping', 4: 'runnable'}
+2026-04-13 10:37:45,391 SEND OP: 6,3,0,0
+2026-04-13 10:37:45,544 Received task states
+2026-04-13 10:37:45,544 REPLAY 25: op=6,3,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable'}
+2026-04-13 10:37:45,544 SEND OP: 0,5,0,0
+2026-04-13 10:37:45,641 Received task states
+2026-04-13 10:37:45,641 REPLAY 26: op=0,5,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable', 5: 'sleeping'}
+2026-04-13 10:37:45,641 SEND OP: 10,-1,0,0
+2026-04-13 10:37:45,685 Received task states
+2026-04-13 10:37:45,685 REPLAY 27: op=10,-1,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable', 5: 'sleeping'}
+2026-04-13 10:37:45,686 SEND OP: 4,0,0,0
+2026-04-13 10:37:45,865 Received task states
+2026-04-13 10:37:45,865 REPLAY 28: op=4,0,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable', 5: 'sleeping'}
+2026-04-13 10:37:45,865 SEND OP: 8,0,0,0
+2026-04-13 10:37:46,233 Received task states
+2026-04-13 10:37:46,234 REPLAY 29: op=8,0,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable', 5: 'sleeping'}
+2026-04-13 10:37:46,234 SEND OP: 8,0,0,0
+2026-04-13 10:37:46,405 Received task states
+2026-04-13 10:37:46,405 REPLAY 30: op=8,0,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable', 5: 'sleeping'}
+2026-04-13 10:37:46,405 SEND OP: 8,0,0,0
+2026-04-13 10:37:46,576 Received task states
+2026-04-13 10:37:46,576 REPLAY 31: op=8,0,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable', 5: 'sleeping'}
+2026-04-13 10:37:46,576 SEND OP: 8,0,0,0
+2026-04-13 10:37:46,741 Received task states
+2026-04-13 10:37:46,741 REPLAY 32: op=8,0,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable', 5: 'sleeping'}
+2026-04-13 10:37:46,741 SEND OP: 8,0,0,0
+2026-04-13 10:37:47,008 Received task states
+2026-04-13 10:37:47,008 REPLAY 33: op=8,0,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable', 5: 'sleeping'}
+2026-04-13 10:37:47,008 SEND OP: 8,0,0,0
+2026-04-13 10:37:47,179 Received task states
+2026-04-13 10:37:47,179 REPLAY 34: op=8,0,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable', 5: 'sleeping'}
+2026-04-13 10:37:47,180 SEND OP: 8,0,0,0
+2026-04-13 10:37:47,668 Received task states
+2026-04-13 10:37:47,668 REPLAY 35: op=8,0,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'on_cpu', 5: 'sleeping'}
+2026-04-13 10:37:47,668 SEND OP: 8,0,0,0
+2026-04-13 10:37:47,869 Received task states
+2026-04-13 10:37:47,869 REPLAY 36: op=8,0,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'on_cpu', 5: 'sleeping'}
+2026-04-13 10:37:47,870 SEND OP: 6,5,0,0
+2026-04-13 10:37:48,002 Received task states
+2026-04-13 10:37:48,002 REPLAY 37: op=6,5,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable'}
+2026-04-13 10:37:48,002 SEND OP: 0,6,0,0
+2026-04-13 10:37:48,095 Received task states
+2026-04-13 10:37:48,095 REPLAY 38: op=0,6,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'sleeping'}
+2026-04-13 10:37:48,095 SEND OP: 6,6,0,0
+2026-04-13 10:37:48,225 Received task states
+2026-04-13 10:37:48,226 REPLAY 39: op=6,6,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:48,226 SEND OP: 8,0,0,0
+2026-04-13 10:37:48,437 Received task states
+2026-04-13 10:37:48,437 REPLAY 40: op=8,0,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:48,437 SEND OP: 8,0,0,0
+2026-04-13 10:37:48,638 Received task states
+2026-04-13 10:37:48,638 REPLAY 41: op=8,0,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:48,638 SEND OP: 8,0,0,0
+2026-04-13 10:37:48,839 Received task states
+2026-04-13 10:37:48,839 REPLAY 42: op=8,0,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:48,839 SEND OP: 8,0,0,0
+2026-04-13 10:37:49,041 Received task states
+2026-04-13 10:37:49,041 REPLAY 43: op=8,0,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:49,041 SEND OP: 8,0,0,0
+2026-04-13 10:37:49,243 Received task states
+2026-04-13 10:37:49,243 REPLAY 44: op=8,0,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:49,243 SEND OP: 8,0,0,0
+2026-04-13 10:37:49,445 Received task states
+2026-04-13 10:37:49,446 REPLAY 45: op=8,0,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:49,446 SEND OP: 8,0,0,0
+2026-04-13 10:37:49,648 Received task states
+2026-04-13 10:37:49,648 REPLAY 46: op=8,0,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:49,648 SEND OP: 8,0,0,0
+2026-04-13 10:37:49,849 Received task states
+2026-04-13 10:37:49,849 REPLAY 47: op=8,0,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:49,849 SEND OP: 7,1,-4,0
+2026-04-13 10:37:50,016 Received task states
+2026-04-13 10:37:50,016 REPLAY 48: op=7,1,-4,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:50,016 SEND OP: 5,0,0,0
+2026-04-13 10:37:50,407 Received task states
+2026-04-13 10:37:50,407 REPLAY 49: op=5,0,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'on_cpu', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:50,407 SEND OP: 8,0,0,0
+2026-04-13 10:37:50,649 Received task states
+2026-04-13 10:37:50,649 REPLAY 50: op=8,0,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'on_cpu', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:50,649 SEND OP: 8,0,0,0
+2026-04-13 10:37:50,850 Received task states
+2026-04-13 10:37:50,851 REPLAY 51: op=8,0,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'on_cpu', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:50,851 SEND OP: 8,0,0,0
+2026-04-13 10:37:51,059 Received task states
+2026-04-13 10:37:51,059 REPLAY 52: op=8,0,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'on_cpu', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:51,059 SEND OP: 8,0,0,0
+2026-04-13 10:37:51,266 Received task states
+2026-04-13 10:37:51,266 REPLAY 53: op=8,0,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'on_cpu', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:51,266 SEND OP: 8,0,0,0
+2026-04-13 10:37:51,466 Received task states
+2026-04-13 10:37:51,466 REPLAY 54: op=8,0,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'on_cpu', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:51,466 SEND OP: 8,0,0,0
+2026-04-13 10:37:51,673 Received task states
+2026-04-13 10:37:51,673 REPLAY 55: op=8,0,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'on_cpu', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:51,673 SEND OP: 8,0,0,0
+2026-04-13 10:37:51,880 Received task states
+2026-04-13 10:37:51,880 REPLAY 56: op=8,0,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'on_cpu', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:51,880 SEND OP: 8,0,0,0
+2026-04-13 10:37:52,080 Received task states
+2026-04-13 10:37:52,080 REPLAY 57: op=8,0,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'on_cpu', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:52,080 SEND OP: 8,0,0,0
+2026-04-13 10:37:52,284 Received task states
+2026-04-13 10:37:52,285 REPLAY 58: op=8,0,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'on_cpu', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:52,285 SEND OP: 8,0,0,0
+2026-04-13 10:37:52,492 Received task states
+2026-04-13 10:37:52,492 REPLAY 59: op=8,0,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'on_cpu', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:52,492 SEND OP: 8,0,0,0
+2026-04-13 10:37:52,694 Received task states
+2026-04-13 10:37:52,695 REPLAY 60: op=8,0,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'on_cpu', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:52,695 SEND OP: 8,0,0,0
+2026-04-13 10:37:52,990 Received task states
+2026-04-13 10:37:52,991 REPLAY 61: op=8,0,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'on_cpu', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:52,991 SEND OP: 8,0,0,0
+2026-04-13 10:37:53,195 Received task states
+2026-04-13 10:37:53,195 REPLAY 62: op=8,0,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'on_cpu', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:53,195 SEND OP: 8,0,0,0
+2026-04-13 10:37:53,393 Received task states
+2026-04-13 10:37:53,393 REPLAY 63: op=8,0,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'on_cpu', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:53,394 SEND OP: 8,0,0,0
+2026-04-13 10:37:53,575 Received task states
+2026-04-13 10:37:53,575 REPLAY 64: op=8,0,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'on_cpu', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:53,576 SEND OP: 11,0,4,4
+2026-04-13 10:37:53,611 Received task states
+2026-04-13 10:37:53,611 REPLAY 65: op=11,0,4,4 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'on_cpu', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:53,612 SEND OP: 13,0,4,0
+2026-04-13 10:37:53,677 Received task states
+2026-04-13 10:37:53,677 REPLAY 66: op=13,0,4,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'on_cpu', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:53,678 SEND OP: 4,1,0,0
+2026-04-13 10:37:53,858 Received task states
+2026-04-13 10:37:53,859 REPLAY 67: op=4,1,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'on_cpu', 3: 'on_cpu', 4: 'on_cpu', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:53,859 SEND OP: 2,2,4,4
+2026-04-13 10:37:54,657 Received task states
+2026-04-13 10:37:54,657 REPLAY 68: op=2,2,4,4 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable', 5: 'on_cpu', 6: 'runnable'}
+2026-04-13 10:37:54,658 SEND OP: 11,0,1,2
+2026-04-13 10:37:55,079 Received task states
+2026-04-13 10:37:55,079 REPLAY 69: op=11,0,1,2 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'on_cpu', 3: 'on_cpu', 4: 'runnable', 5: 'on_cpu', 6: 'runnable'}
+2026-04-13 10:37:55,079 SEND OP: 5,3,0,0
+2026-04-13 10:37:55,227 Received task states
+2026-04-13 10:37:55,227 REPLAY 70: op=5,3,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'on_cpu', 3: 'sleeping', 4: 'runnable', 5: 'on_cpu', 6: 'on_cpu'}
+2026-04-13 10:37:55,228 SEND OP: 7,2,1,0
+2026-04-13 10:37:55,386 Received task states
+2026-04-13 10:37:55,387 REPLAY 71: op=7,2,1,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'on_cpu', 3: 'sleeping', 4: 'runnable', 5: 'on_cpu', 6: 'on_cpu'}
+2026-04-13 10:37:55,387 SEND OP: 7,2,-20,0
+2026-04-13 10:37:55,552 Received task states
+2026-04-13 10:37:55,553 REPLAY 72: op=7,2,-20,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'on_cpu', 3: 'sleeping', 4: 'runnable', 5: 'on_cpu', 6: 'on_cpu'}
+2026-04-13 10:37:55,553 SEND OP: 6,0,0,0
+2026-04-13 10:37:55,707 Received task states
+2026-04-13 10:37:55,707 REPLAY 73: op=6,0,0,0 executed=True task_state={0: 'runnable', 1: 'on_cpu', 2: 'on_cpu', 3: 'sleeping', 4: 'runnable', 5: 'on_cpu', 6: 'on_cpu'}
+2026-04-13 10:37:55,707 SEND OP: 2,6,1,2
+2026-04-13 10:37:55,882 Received task states
+2026-04-13 10:37:55,882 REPLAY 74: op=2,6,1,2 executed=True task_state={0: 'runnable', 1: 'on_cpu', 2: 'on_cpu', 3: 'sleeping', 4: 'runnable', 5: 'on_cpu', 6: 'on_cpu'}
+2026-04-13 10:37:55,882 SEND OP: 6,3,0,0
+2026-04-13 10:37:56,038 Received task states
+2026-04-13 10:37:56,038 REPLAY 75: op=6,3,0,0 executed=True task_state={0: 'runnable', 1: 'on_cpu', 2: 'on_cpu', 3: 'on_cpu', 4: 'runnable', 5: 'on_cpu', 6: 'runnable'}
+2026-04-13 10:37:56,038 SEND OP: 13,0,2,0
+2026-04-13 10:37:56,562 Received task states
+2026-04-13 10:37:56,563 REPLAY 76: op=13,0,2,0 executed=True task_state={0: 'runnable', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable', 5: 'on_cpu', 6: 'runnable'}
+2026-04-13 10:37:56,563 SEND OP: 13,0,1,0
+2026-04-13 10:37:57,290 Received task states
+2026-04-13 10:37:57,291 MUTATE-GEN 0: op=13,0,1,0 executed=True task_state={0: 'on_cpu', 1: 'runnable', 2: 'runnable', 3: 'on_cpu', 4: 'runnable', 5: 'on_cpu', 6: 'runnable'}
+2026-04-13 10:37:57,291 SEND OP: 9,4,0,0
+2026-04-13 10:37:58,586 Received task states
+2026-04-13 10:37:58,586 MUTATE-GEN 1: op=9,4,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:58,587 SEND OP: 13,0,2,0
+2026-04-13 10:37:58,620 Received task states
+2026-04-13 10:37:58,620 MUTATE-GEN 1: op=13,0,2,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:58,620 SEND OP: 12,0,1088,0
+2026-04-13 10:37:58,654 Received task states
+2026-04-13 10:37:58,654 MUTATE-GEN 2: op=12,0,1088,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable', 5: 'runnable', 6: 'runnable'}
+2026-04-13 10:37:58,654 SEND OP: 0,7,0,0
+2026-04-13 10:37:58,741 Received task states
+2026-04-13 10:37:58,742 MUTATE-GEN 3: op=0,7,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable', 5: 'runnable', 6: 'runnable', 7: 'sleeping'}
+2026-04-13 10:37:58,742 SEND OP: 5,3,0,0
+2026-04-13 10:37:58,936 Received task states
+2026-04-13 10:37:58,936 MUTATE-GEN 4: op=5,3,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'on_cpu', 3: 'sleeping', 4: 'runnable', 5: 'runnable', 6: 'runnable', 7: 'sleeping'}
+2026-04-13 10:37:58,937 SEND OP: 0,8,0,0
+2026-04-13 10:37:59,026 Received task states
+2026-04-13 10:37:59,026 MUTATE-GEN 5: op=0,8,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'on_cpu', 3: 'sleeping', 4: 'runnable', 5: 'runnable', 6: 'runnable', 7: 'sleeping', 8: 'sleeping'}
+2026-04-13 10:37:59,026 SEND OP: 6,3,0,0
+2026-04-13 10:37:59,210 Received task states
+2026-04-13 10:37:59,210 MUTATE-GEN 6: op=6,3,0,0 executed=True task_state={0: 'on_cpu', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable', 5: 'runnable', 6: 'runnable', 7: 'sleeping', 8: 'sleeping'}
+2026-04-13 10:37:59,210 SEND OP: 5,0,0,0
+2026-04-13 10:37:59,747 Received task states
+2026-04-13 10:37:59,747 MUTATE-GEN 7: op=5,0,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable', 5: 'on_cpu', 6: 'runnable', 7: 'sleeping', 8: 'sleeping'}
+2026-04-13 10:37:59,747 SEND OP: 7,5,15,0
+2026-04-13 10:37:59,912 Received task states
+2026-04-13 10:37:59,912 MUTATE-GEN 8: op=7,5,15,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable', 5: 'on_cpu', 6: 'runnable', 7: 'sleeping', 8: 'sleeping'}
+2026-04-13 10:37:59,912 SEND OP: 9,8,0,0
+2026-04-13 10:38:02,083 Received task states
+2026-04-13 10:38:02,083 MUTATE-GEN 9: op=9,8,0,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable', 5: 'on_cpu', 6: 'runnable', 7: 'sleeping', 8: 'sleeping'}
+2026-04-13 10:38:02,084 SEND OP: 7,5,9,0
+2026-04-13 10:38:02,250 Received task states
+2026-04-13 10:38:02,250 MUTATE-GEN 9: op=7,5,9,0 executed=True task_state={0: 'sleeping', 1: 'on_cpu', 2: 'runnable', 3: 'on_cpu', 4: 'runnable', 5: 'on_cpu', 6: 'runnable', 7: 'sleeping', 8: 'sleeping'}
+2026-04-13 10:38:03,494 EXIT status: work_conserving_broken=True cfs_util_decay_broken=False rt_util_decay_broken=False

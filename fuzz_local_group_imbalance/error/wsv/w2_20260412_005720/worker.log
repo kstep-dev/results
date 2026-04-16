@@ -1,0 +1,838 @@
+c[?7l[2J[0mSeaBIOS (version 1.16.3-debian-1.16.3-2)
+Booting from ROM..c[?7l[2J[    0.000000] Linux version 7.0.0-rc7-master (Tingjia@node0.sched.advosuwmadison-pg0.wisc.cloudlab.us) (gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #1 SMP PREEMPT 1970-01-01
+[    0.000000] Command line: rw nokaslr loglevel=7 sched_verbose isolcpus=nohz,managed_irq,1-4 irqaffinity=0 rcu_nocbs=1-4 nohz_full=1-4 init=/init panic=-1 console=ttyS0 tsc=nowatchdog -- driver=executor topology=CLS:0/1-2/1-2/3-4/3-4
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff]  System RAM
+[    0.000000] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff]  device reserved
+[    0.000000] BIOS-e820: [gap 0x00000000000a0000-0x00000000000effff]
+[    0.000000] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff]  device reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000001ffdffff]  System RAM
+[    0.000000] BIOS-e820: [mem 0x000000001ffe0000-0x000000001fffffff]  device reserved
+[    0.000000] BIOS-e820: [gap 0x0000000020000000-0x00000000feffbfff]
+[    0.000000] BIOS-e820: [mem 0x00000000feffc000-0x00000000feffffff]  device reserved
+[    0.000000] BIOS-e820: [gap 0x00000000ff000000-0x00000000fffbffff]
+[    0.000000] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff]  device reserved
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] APIC: Static calls initialized
+[    0.000000] Hypervisor detected: KVM
+[    0.000000] last_pfn = 0x1ffe0 max_arch_pfn = 0x400000000
+[    0.000000] kvm-clock: Using msrs 4b564d01 and 4b564d00
+[    0.000000] kvm-clock: using sched offset of 103512932 cycles
+[    0.000002] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+[    0.000005] tsc: Detected 2199.998 MHz processor
+[    0.000928] last_pfn = 0x1ffe0 max_arch_pfn = 0x400000000
+[    0.000929] x86/PAT: PAT support disabled because CONFIG_X86_PAT is disabled in the kernel.
+[    0.000932] x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WB  WT  UC- UC  
+[    0.000940] Using GB pages for direct mapping
+[    0.001166] RAMDISK: [mem 0x1f488000-0x1ffdffff]
+[    0.001168] ACPI: Early table checksum verification disabled
+[    0.001170] ACPI: RSDP 0x00000000000F5290 000014 (v00 BOCHS )
+[    0.001180] ACPI: RSDT 0x000000001FFE1E38 000034 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.001187] ACPI: FACP 0x000000001FFE1CCC 000074 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.001194] ACPI: DSDT 0x000000001FFE0040 001C8C (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.001199] ACPI: FACS 0x000000001FFE0000 000040
+[    0.001203] ACPI: APIC 0x000000001FFE1D40 000098 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.001208] ACPI: HPET 0x000000001FFE1DD8 000038 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.001213] ACPI: WAET 0x000000001FFE1E10 000028 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.001217] ACPI: Reserving FACP table memory at [mem 0x1ffe1ccc-0x1ffe1d3f]
+[    0.001219] ACPI: Reserving DSDT table memory at [mem 0x1ffe0040-0x1ffe1ccb]
+[    0.001220] ACPI: Reserving FACS table memory at [mem 0x1ffe0000-0x1ffe003f]
+[    0.001221] ACPI: Reserving APIC table memory at [mem 0x1ffe1d40-0x1ffe1dd7]
+[    0.001223] ACPI: Reserving HPET table memory at [mem 0x1ffe1dd8-0x1ffe1e0f]
+[    0.001224] ACPI: Reserving WAET table memory at [mem 0x1ffe1e10-0x1ffe1e37]
+[    0.001244] No NUMA configuration found
+[    0.001246] Faking a node at [mem 0x0000000000000000-0x000000001ffdffff]
+[    0.001250] NODE_DATA(0) allocated [mem 0x1f485640-0x1f487fff]
+[    0.001270] ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+[    0.001324] IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+[    0.001329] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.001331] ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+[    0.001333] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.001334] ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+[    0.001336] ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+[    0.001342] ACPI: Using ACPI (MADT) for SMP configuration information
+[    0.001344] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.001347] TSC deadline timer available
+[    0.001352] CPU topo: Max. logical packages:   1
+[    0.001353] CPU topo: Max. logical nodes:      1
+[    0.001354] CPU topo: Num. nodes per package:  1
+[    0.001359] CPU topo: Max. logical dies:       1
+[    0.001359] CPU topo: Max. dies per package:   1
+[    0.001368] CPU topo: Max. threads per core:   1
+[    0.001369] CPU topo: Num. cores per package:     5
+[    0.001370] CPU topo: Num. threads per package:   5
+[    0.001371] CPU topo: Allowing 5 present CPUs plus 0 hotplug CPUs
+[    0.001387] kvm-guest: APIC: eoi() replaced with kvm_guest_apic_eoi_write()
+[    0.001398] kvm-guest: KVM setup pv remote TLB flush
+[    0.001403] kvm-guest: setup PV sched yield
+[    0.001406] [gap 0x20000000-0xfeffbfff] available for PCI devices
+[    0.001408] Booting paravirtualized kernel on KVM
+[    0.001409] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+[    0.003224] Zone ranges:
+[    0.003225]   DMA32    [mem 0x0000000000001000-0x000000001ffdffff]
+[    0.003227]   Normal   empty
+[    0.003229] Movable zone start for each node
+[    0.003229] Early memory node ranges
+[    0.003230]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.003232]   node   0: [mem 0x0000000000100000-0x000000001ffdffff]
+[    0.003234] Initmem setup node 0 [mem 0x0000000000001000-0x000000001ffdffff]
+[    0.003756] On node 0, zone DMA32: 1 pages in unavailable ranges
+[    0.006965] On node 0, zone DMA32: 97 pages in unavailable ranges
+[    0.006968] On node 0, zone DMA32: 32 pages in unavailable ranges
+[    0.006973] setup_percpu: NR_CPUS:64 nr_cpumask_bits:5 nr_cpu_ids:5 nr_node_ids:1
+[    0.009396] percpu: Embedded 47 pages/cpu s154584 r8192 d29736 u1048576
+[    0.009449] Kernel command line: rw nokaslr loglevel=7 sched_verbose isolcpus=nohz,managed_irq,1-4 irqaffinity=0 rcu_nocbs=1-4 nohz_full=1-4 init=/init panic=-1 console=ttyS0 tsc=nowatchdog -- driver=executor topology=CLS:0/1-2/1-2/3-4/3-4
+[    0.009491] Housekeeping: nohz unsupported. Build with CONFIG_NO_HZ_FULL
+[    0.009517] Housekeeping: nohz unsupported. Build with CONFIG_NO_HZ_FULL
+[    0.009533] Unknown kernel command line parameters "isolcpus=nohz,managed_irq,1-4 rcu_nocbs=1-4 nohz_full=1-4", will be passed to user space.
+[    0.009543] random: crng init done
+[    0.009544] printk: log buffer data + meta data: 131072 + 458752 = 589824 bytes
+[    0.009591] Dentry cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.009623] Inode-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.009718] Fallback order for Node 0: 0 
+[    0.009721] Built 1 zonelists, mobility grouping on.  Total pages: 130942
+[    0.009722] Policy zone: DMA32
+[    0.009724] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.010622] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=5, Nodes=1
+[    0.013683] ftrace: allocating 13835 entries in 55 pages
+[    0.013685] ftrace: allocated 55 pages with 5 groups
+[    0.014365] rcu: Hierarchical RCU implementation.
+[    0.014366] rcu: 	RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=5.
+[    0.014368] 	Trampoline variant of Tasks RCU enabled.
+[    0.014369] 	Rude variant of Tasks RCU enabled.
+[    0.014370] 	Tracing variant of Tasks RCU enabled.
+[    0.014371] rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+[    0.014372] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=5
+[    0.014383] RCU Tasks: Setting shift to 3 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=5.
+[    0.014386] RCU Tasks Rude: Setting shift to 3 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=5.
+[    0.015229] NR_IRQS: 4352, nr_irqs: 80, preallocated irqs: 16
+[    0.015434] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.015578] printk: legacy console [ttyS0] enabled
+[    0.279788] ACPI: Core revision 20251212
+[    0.281537] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604467 ns
+[    0.285097] APIC: Switch to symmetric I/O mode setup
+[    0.287068] kvm-guest: APIC: send_IPI_mask() replaced with kvm_send_ipi_mask()
+[    0.289822] kvm-guest: APIC: send_IPI_mask_allbutself() replaced with kvm_send_ipi_mask_allbutself()
+[    0.293286] kvm-guest: setup PV IPIs
+[    0.296371] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.298809] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x1fb63109b96, max_idle_ns: 440795265316 ns
+[    0.303015] Calibrating delay loop (skipped) preset value.. 4399.99 BogoMIPS (lpj=2199998)
+[    0.304233] Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+[    0.305017] Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+[    0.306024] mitigations: Enabled attack vectors: SMT mitigations: off
+[    0.307017] Speculative Store Bypass: Vulnerable
+[    0.308017] Spectre V2 : Vulnerable
+[    0.309017] RETBleed: Vulnerable
+[    0.310016] ITS: Vulnerable
+[    0.311017] MDS: Vulnerable
+[    0.312016] TAA: Vulnerable
+[    0.313016] MMIO Stale Data: Vulnerable
+[    0.314016] Spectre V1 : Vulnerable: __user pointer sanitization and usercopy barriers only; no swapgs barriers
+[    0.315057] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.316016] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.317016] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.318016] x86/fpu: Supporting XSAVE feature 0x008: 'MPX bounds registers'
+[    0.319017] x86/fpu: Supporting XSAVE feature 0x010: 'MPX CSR'
+[    0.320016] x86/fpu: Supporting XSAVE feature 0x020: 'AVX-512 opmask'
+[    0.321016] x86/fpu: Supporting XSAVE feature 0x040: 'AVX-512 Hi256'
+[    0.322016] x86/fpu: Supporting XSAVE feature 0x080: 'AVX-512 ZMM_Hi256'
+[    0.323017] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[    0.324016] x86/fpu: xstate_offset[3]:  832, xstate_sizes[3]:   64
+[    0.325017] x86/fpu: xstate_offset[4]:  896, xstate_sizes[4]:   64
+[    0.326017] x86/fpu: xstate_offset[5]:  960, xstate_sizes[5]:   64
+[    0.327016] x86/fpu: xstate_offset[6]: 1024, xstate_sizes[6]:  512
+[    0.328017] x86/fpu: xstate_offset[7]: 1536, xstate_sizes[7]: 1024
+[    0.329017] x86/fpu: Enabled xstate features 0xff, context size is 2560 bytes, using 'compacted' format.
+[    0.331375] Freeing SMP alternatives memory: 16K
+[    0.332018] pid_max: default: 32768 minimum: 301
+[    0.333058] Mount-cache hash table entries: 1024 (order: 1, 8192 bytes, linear)
+[    0.334018] Mountpoint-cache hash table entries: 1024 (order: 1, 8192 bytes, linear)
+[    0.335069] VFS: Finished mounting rootfs on nullfs
+[    0.336249] smpboot: CPU0: Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz (family: 0x6, model: 0x55, stepping: 0x4)
+[    0.337360] Performance Events: Skylake events, full-width counters, Intel PMU driver.
+[    0.338033] ... version:                   2
+[    0.339019] ... bit width:                 48
+[    0.340019] ... generic counters:          4
+[    0.341019] ... generic bitmap:            000000000000000f
+[    0.342019] ... fixed-purpose counters:    3
+[    0.343019] ... fixed-purpose bitmap:      0000000000000007
+[    0.344019] ... value mask:                0000ffffffffffff
+[    0.345019] ... max period:                00007fffffffffff
+[    0.346019] ... global_ctrl mask:          000000070000000f
+[    0.347183] signal: max sigframe size: 3216
+[    0.348077] rcu: Hierarchical SRCU implementation.
+[    0.349026] rcu: 	Max phase no-delay instances is 400.
+[    0.350320] smp: Bringing up secondary CPUs ...
+[    0.351213] smpboot: x86: Booting SMP configuration:
+[    0.352034] .... node  #0, CPUs:      #1 #2 #3 #4
+[    0.357124] smp: Brought up 1 node, 5 CPUs
+[    0.359020] smpboot: Total of 5 processors activated (21999.98 BogoMIPS)
+[    0.360156] root domain span: 0-4
+[    0.361057] Memory: 486380K/523768K available (5264K kernel code, 1001K rwdata, 1340K rodata, 972K init, 284K bss, 34176K reserved, 0K cma-reserved)
+[    0.363075] devtmpfs: initialized
+[    0.364540] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[    0.365148] thermal_sys: Registered thermal governor 'step_wise'
+[    0.365168] cpuidle: using governor ladder
+[    0.367090] kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+[    0.368784] ACPI: Added _OSI(Module Device)
+[    0.369021] ACPI: Added _OSI(Processor Device)
+[    0.370020] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.371027] ACPI Error: AE_BAD_PARAMETER, During Region initialization (20251212/tbxfload-52)
+[    0.372020] ACPI: Unable to load the System Description Tables
+[    0.373020] ACPI Error: Could not remove SCI handler (20251212/evmisc-251)
+[    0.385093] clocksource: Switched to clocksource kvm-clock
+[    0.391991] pnp: PnP ACPI: disabled
+[    0.397074] Unpacking initramfs...
+[    0.397075] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x1fb63109b96, max_idle_ns: 440795265316 ns
+[    0.406606] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[    0.411666] workingset: timestamp_bits=56 max_order=17 bucket_order=0
+[    0.413956] Freeing initrd memory: 11616K
+[    0.416697] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    0.420063] serial8250: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[    0.423464] serial8250: ttyS1 at I/O 0x2f8 (irq = 3, base_baud = 115200) is a 16550A
+[    0.426838] serial8250: ttyS2 at I/O 0x3e8 (irq = 4, base_baud = 115200) is a 16550A
+[    0.430220] serial8250: ttyS3 at I/O 0x2e8 (irq = 3, base_baud = 115200) is a 16550A
+[    0.434102] IPI shorthand broadcast: enabled
+[    0.436371] sched_clock: Marking stable (154187417, 281572619)->(523560452, -87800416)
+[    0.441972] Freeing unused kernel image (initmem) memory: 972K
+[    0.443649] Write protecting the kernel read-only data: 8192k
+[    0.445908] Freeing unused kernel image (text/rodata gap) memory: 876K
+[    0.448100] Freeing unused kernel image (rodata/data gap) memory: 708K
+[    0.449931] Run /init as init process
+Loading kmod.ko with params: driver=executor topology=CLS:0/1-2/1-2/3-4/3-4 isolcpus=nohz,managed_irq,1-4 rcu_nocbs=1-4 nohz_full=1-4 
+[    0.492773] kmod: loading out-of-tree module taints kernel.
+[    0.496753] kmod: unknown parameter 'isolcpus' ignored
+[    0.498227] kmod: unknown parameter 'rcu_nocbs' ignored
+[    0.499702] kmod: unknown parameter 'nohz_full' ignored
+[    0.502171] [92mStarting executor on Linux 7.0.0-rc7-master[0m
+[    0.514020] [92mDisabled workqueue on CPU 1[0m
+[    0.515436] [92mDisabled workqueue on CPU 2[0m
+[    0.516832] [92mDisabled workqueue on CPU 3[0m
+[    0.518236] [92mDisabled workqueue on CPU 4[0m
+[    0.519756] [92mMoved kthreads to CPU 0[0m
+[    0.521145] [92mWriting /sys/fs/cgroup//cgroup.subtree_control: +cpu +cpuset[0m
+[    0.535396] [92mTraced init_tg_cfs_entry with on_sched_group_alloc[0m
+[    0.537828] [92mexecutor: applying topology CLS (5 cpulists)
+[    0.537828] [0m
+[    0.540109] root domain span: 0-4
+[    0.541217] executor: custom frequency disabled
+[    0.543279] Topology levels:
+[    0.544150] - CLS  |    0 |  1-2 |  1-2 |  3-4 |  3-4 | CLUSTER, SHARE_LLC
+[    0.546097] - MC   |    0 |  1-4 |  1-4 |  1-4 |  1-4 | SHARE_LLC
+[    0.547833] - PKG  |    0 |  1-4 |  1-4 |  1-4 |  1-4 | 
+[    0.549356] - NODE |    0 |  1-4 |  1-4 |  1-4 |  1-4 | 
+[    0.550859] Sched domains:
+[    0.551653] - CLS[1]: mask=1-2, groups={1: 1024, 2: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, CLUSTER, SHARE_LLC, PREFER_SIBLING
+[    0.555540] - CLS[2]: mask=1-2, groups={2: 1024, 1: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, CLUSTER, SHARE_LLC, PREFER_SIBLING
+[    0.559427] - CLS[3]: mask=3-4, groups={3: 1024, 4: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, CLUSTER, SHARE_LLC, PREFER_SIBLING
+[    0.563319] - CLS[4]: mask=3-4, groups={4: 1024, 3: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, CLUSTER, SHARE_LLC, PREFER_SIBLING
+[    0.567200] - MC[1]: mask=1-4, groups={1-2: 2048, 3-4: 2048}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_LLC, PREFER_SIBLING
+[    0.570930] - MC[2]: mask=1-4, groups={1-2: 2048, 3-4: 2048}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_LLC, PREFER_SIBLING
+[    0.574676] - MC[3]: mask=1-4, groups={3-4: 2048, 1-2: 2048}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_LLC, PREFER_SIBLING
+[    0.578406] - MC[4]: mask=1-4, groups={3-4: 2048, 1-2: 2048}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_LLC, PREFER_SIBLING
+[    0.582131] [92mDisabled timer ticks on CPU 1[0m
+[    0.583479] [92mDisabled timer ticks on CPU 2[0m
+[    0.584826] [92mDisabled timer ticks on CPU 3[0m
+[    0.586180] [92mDisabled timer ticks on CPU 4[0m
+[    0.587551] [92mDisabled jiffies update[0m
+[   10.000000] [92mMocked sched clock[0m
+[   10.000000] [92mDisabled sched feature NI_RANDOM[0m
+[   10.000000] [92mReset runqueues state[0m
+[   10.000000] [92mReset cpumask[0m
+[   10.000000] [92mReset tasks state[0m
+[   10.000000] [92mRunning driver executor[0m
+[   10.000000] EXECOP: {"op": 10, "a": -1, "b": 0, "c": 0}
+[   10.000000] [92mSet min vruntime to 10000000000 ns on cpu 0[0m
+[   10.000000] [92mSet min vruntime to 10000000000 ns on cpu 1[0m
+[   10.000000] [92mSet min vruntime to 10000000000 ns on cpu 2[0m
+[   10.000000] [92mSet min vruntime to 10000000000 ns on cpu 3[0m
+[   10.000000] [92mSet min vruntime to 10000000000 ns on cpu 4[0m
+[   10.000000] [92mCreated directory /sys/fs/cgroup/cg0[0m
+[   10.000000] [92mWriting /sys/fs/cgroup/cg0/cgroup.subtree_control: +cpu +cpuset[0m
+[   10.000000] [92mWriting /sys/fs/cgroup/cg0/cpuset.cpus: 1-4[0m
+[   10.000000] CPU 1: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 2: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 3: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 4: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] EXECOP: {"op": 10, "a": 0, "b": 1, "c": 0}
+[   10.000000] [92mSet min vruntime to 10000000000 ns on cpu 0[0m
+[   10.000000] [92mSet min vruntime to 10000000000 ns on cpu 1[0m
+[   10.000000] [92mSet min vruntime to 10000000000 ns on cpu 2[0m
+[   10.000000] [92mSet min vruntime to 10000000000 ns on cpu 3[0m
+[   10.000000] [92mSet min vruntime to 10000000000 ns on cpu 4[0m
+[   10.000000] [92mCreated directory /sys/fs/cgroup/cg0/cg1[0m
+[   10.000000] [92mWriting /sys/fs/cgroup/cg0/cg1/cgroup.subtree_control: +cpu +cpuset[0m
+[   10.000000] [92mWriting /sys/fs/cgroup/cg0/cg1/cpuset.cpus: 1-4[0m
+[   10.000000] CPU 1: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 2: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 3: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 4: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] EXECOP: {"op": 0, "a": 0, "b": 0, "c": 0}
+[   10.000000] [92mTask created with pid 75[0m
+[   10.000000] [92mTask 75 is ready[0m
+[   10.000000] [92mPinned task 75 to CPUs 1-4[0m
+[   10.000000] Task 0 75: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.000000] CPU 1: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 2: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 3: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 4: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] EXECOP: {"op": 0, "a": 1, "b": 0, "c": 0}
+[   10.000000] [92mTask created with pid 76[0m
+[   10.000000] [92mTask 76 is ready[0m
+[   10.000000] [92mPinned task 76 to CPUs 1-4[0m
+[   10.000000] Task 0 75: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.000000] Task 1 76: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.000000] CPU 1: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 2: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 3: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 4: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] EXECOP: {"op": 6, "a": 1, "b": 0, "c": 0}
+[   10.000000] [92mWaked up task 76[0m
+[   10.000000] Task 0 75: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.000000] Task 1 76: on_cpu=1, state=0, cpu=1, class=0, util_avg=0
+[   10.000000] CPU 1: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 2: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 3: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 4: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] EXECOP: {"op": 12, "a": 1, "b": 3205, "c": 0}
+[   10.000000] [92mWriting /sys/fs/cgroup/cg0/cg1/cpu.weight: 3205[0m
+[   10.000000] Task 0 75: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.000000] Task 1 76: on_cpu=1, state=0, cpu=1, class=0, util_avg=0
+[   10.000000] CPU 1: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 2: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 3: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 4: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] EXECOP: {"op": 3, "a": 1, "b": 0, "c": 0}
+[   10.000000] [92mWriting /sys/fs/cgroup//cgroup.procs: 76[0m
+[   10.000000] [92mPinned task 76 to CPUs 1-4[0m
+[   10.000000] [92mSet task 76 to FIFO[0m
+[   10.000000] Task 0 75: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.000000] Task 1 76: on_cpu=1, state=0, cpu=1, class=1, util_avg=0
+[   10.000000] CPU 1: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 2: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 3: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 4: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] EXECOP: {"op": 11, "a": 1, "b": 4, "c": 4}
+[   10.000000] [92mWriting /sys/fs/cgroup/cg0/cg1/cpuset.cpus: 4-4[0m
+[   10.000000] Task 0 75: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.000000] Task 1 76: on_cpu=1, state=0, cpu=1, class=1, util_avg=0
+[   10.000000] CPU 1: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 2: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 3: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] CPU 4: 0, 0, 10000000000, 10000000000, 0
+[   10.000000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.001000] Task 0 75: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.001000] Task 1 76: on_cpu=1, state=0, cpu=1, class=1, util_avg=0
+[   10.001000] CPU 1: 0, 20, 10001000000, 10001000000, 0
+[   10.001000] CPU 2: 0, 0, 10001000000, 10001000000, 0
+[   10.001000] CPU 3: 0, 0, 10001000000, 10001000000, 0
+[   10.001000] CPU 4: 0, 0, 10001000000, 10001000000, 0
+[   10.001000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.002000] Task 0 75: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.002000] Task 1 76: on_cpu=1, state=0, cpu=1, class=1, util_avg=0
+[   10.002000] CPU 1: 0, 41, 10002000000, 10002000000, 0
+[   10.002000] CPU 2: 0, 0, 10002000000, 10002000000, 0
+[   10.002000] CPU 3: 0, 0, 10002000000, 10002000000, 0
+[   10.002000] CPU 4: 0, 0, 10002000000, 10002000000, 0
+[   10.002000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.003000] Task 0 75: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.003000] Task 1 76: on_cpu=1, state=0, cpu=1, class=1, util_avg=0
+[   10.003000] CPU 1: 0, 61, 10003000000, 10003000000, 0
+[   10.003000] CPU 2: 0, 0, 10003000000, 10003000000, 0
+[   10.003000] CPU 3: 0, 0, 10003000000, 10003000000, 0
+[   10.003000] CPU 4: 0, 0, 10003000000, 10003000000, 0
+[   10.003000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.004000] should balance
+[   10.004000] Task 0 75: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.004000] Task 1 76: on_cpu=1, state=0, cpu=1, class=1, util_avg=0
+[   10.004000] CPU 1: 0, 81, 10004000000, 10004000000, 0
+[   10.004000] CPU 2: 0, 0, 10004000000, 10004000000, 0
+[   10.004000] CPU 3: 0, 0, 10004000000, 10004000000, 0
+[   10.004000] CPU 4: 0, 0, 10004000000, 10004000000, 0
+[   10.004000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.005000] Task 0 75: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.005000] Task 1 76: on_cpu=1, state=0, cpu=1, class=1, util_avg=0
+[   10.005000] CPU 1: 0, 100, 10005000000, 10005000000, 0
+[   10.005000] CPU 2: 0, 0, 10005000000, 10005000000, 0
+[   10.005000] CPU 3: 0, 0, 10005000000, 10005000000, 0
+[   10.005000] CPU 4: 0, 0, 10005000000, 10005000000, 0
+[   10.005000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.006000] Task 0 75: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.006000] Task 1 76: on_cpu=1, state=0, cpu=1, class=1, util_avg=0
+[   10.006000] CPU 1: 0, 119, 10006000000, 10006000000, 0
+[   10.006000] CPU 2: 0, 0, 10006000000, 10006000000, 0
+[   10.006000] CPU 3: 0, 0, 10006000000, 10006000000, 0
+[   10.006000] CPU 4: 0, 0, 10006000000, 10006000000, 0
+[   10.006000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.007000] Task 0 75: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.007000] Task 1 76: on_cpu=1, state=0, cpu=1, class=1, util_avg=0
+[   10.007000] CPU 1: 0, 137, 10007000000, 10007000000, 0
+[   10.007000] CPU 2: 0, 0, 10007000000, 10007000000, 0
+[   10.007000] CPU 3: 0, 0, 10007000000, 10007000000, 0
+[   10.007000] CPU 4: 0, 0, 10007000000, 10007000000, 0
+[   10.007000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.008000] Task 0 75: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.008000] Task 1 76: on_cpu=1, state=0, cpu=1, class=1, util_avg=0
+[   10.008000] CPU 1: 0, 156, 10008000000, 10008000000, 0
+[   10.008000] CPU 2: 0, 0, 10008000000, 10008000000, 0
+[   10.008000] CPU 3: 0, 0, 10008000000, 10008000000, 0
+[   10.008000] CPU 4: 0, 0, 10008000000, 10008000000, 0
+[   10.008000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.009000] Task 0 75: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.009000] Task 1 76: on_cpu=1, state=0, cpu=1, class=1, util_avg=0
+[   10.009000] CPU 1: 0, 173, 10009000000, 10009000000, 0
+[   10.009000] CPU 2: 0, 0, 10009000000, 10009000000, 0
+[   10.009000] CPU 3: 0, 0, 10009000000, 10009000000, 0
+[   10.009000] CPU 4: 0, 0, 10009000000, 10009000000, 0
+[   10.009000] EXECOP: {"op": 3, "a": 1, "b": 0, "c": 0}
+[   10.009000] [92mWriting /sys/fs/cgroup//cgroup.procs: 76[0m
+[   10.009000] [92mPinned task 76 to CPUs 1-4[0m
+[   10.009000] [92mSet task 76 to FIFO[0m
+[   10.009000] Task 0 75: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.009000] Task 1 76: on_cpu=1, state=0, cpu=1, class=1, util_avg=0
+[   10.009000] CPU 1: 0, 173, 10009000000, 10009000000, 0
+[   10.009000] CPU 2: 0, 0, 10009000000, 10009000000, 0
+[   10.009000] CPU 3: 0, 0, 10009000000, 10009000000, 0
+[   10.009000] CPU 4: 0, 0, 10009000000, 10009000000, 0
+[   10.009000] EXECOP: {"op": 2, "a": 1, "b": 4, "c": 4}
+[   10.009000] [92mPinned task 76 to CPUs 4-4[0m
+[   10.009000] Task 0 75: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.009000] Task 1 76: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.009000] CPU 1: 0, 173, 10009000000, 10009000000, 0
+[   10.009000] CPU 2: 0, 0, 10009000000, 10009000000, 0
+[   10.009000] CPU 3: 0, 0, 10009000000, 10009000000, 0
+[   10.009000] CPU 4: 0, 0, 10009000000, 10009000000, 0
+[   10.009000] EXECOP: {"op": 2, "a": 1, "b": 3, "c": 4}
+[   10.009000] [92mPinned task 76 to CPUs 3-4[0m
+[   10.009000] Task 0 75: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.009000] Task 1 76: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.009000] CPU 1: 0, 173, 10009000000, 10009000000, 0
+[   10.009000] CPU 2: 0, 0, 10009000000, 10009000000, 0
+[   10.009000] CPU 3: 0, 0, 10009000000, 10009000000, 0
+[   10.009000] CPU 4: 0, 0, 10009000000, 10009000000, 0
+[   10.009000] EXECOP: {"op": 13, "a": 1, "b": 0, "c": 0}
+[   10.009000] [92mWriting /sys/fs/cgroup/cg0/cg1/cgroup.procs: 75[0m
+[   10.009000] Task 0 75: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.009000] Task 1 76: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.009000] CPU 1: 0, 173, 10009000000, 10009000000, 0
+[   10.009000] CPU 2: 0, 0, 10009000000, 10009000000, 0
+[   10.009000] CPU 3: 0, 0, 10009000000, 10009000000, 0
+[   10.009000] CPU 4: 0, 0, 10009000000, 10009000000, 0
+[   10.009000] EXECOP: {"op": 1, "a": 1, "b": 2, "c": 0}
+[   10.009000] [92mForked task 76 1 times[0m
+[   10.009000] Task 0 75: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.009000] Task 1 76: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.009000] Task 2 77: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.009000] CPU 1: 0, 173, 10009000000, 10009000000, 0
+[   10.009000] CPU 2: 0, 0, 10009000000, 10009000000, 0
+[   10.009000] CPU 3: 0, 0, 10009000000, 10009000000, 0
+[   10.009000] CPU 4: 0, 0, 10009000000, 10009000000, 0
+[   10.009000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.010000] Task 0 75: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.010000] Task 1 76: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.010000] Task 2 77: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.010000] CPU 1: 0, 170, 10010000000, 10010000000, 0
+[   10.010000] CPU 2: 0, 0, 10010000000, 10010000000, 0
+[   10.010000] CPU 3: 0, 20, 10010000000, 10010000000, 0
+[   10.010000] CPU 4: 0, 20, 10010000000, 10010000000, 0
+[   10.010000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.011000] Task 0 75: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.011000] Task 1 76: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.011000] Task 2 77: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.011000] CPU 1: 0, 170, 10011000000, 10011000000, 0
+[   10.011000] CPU 2: 0, 0, 10011000000, 10011000000, 0
+[   10.011000] CPU 3: 0, 41, 10011000000, 10011000000, 0
+[   10.011000] CPU 4: 0, 41, 10011000000, 10011000000, 0
+[   10.011000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.012000] Task 0 75: on_cpu=0, state=1, cpu=0, class=0, util_avg=0
+[   10.012000] Task 1 76: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.012000] Task 2 77: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.012000] CPU 1: 0, 170, 10012000000, 10012000000, 0
+[   10.012000] CPU 2: 0, 0, 10012000000, 10012000000, 0
+[   10.012000] CPU 3: 0, 61, 10012000000, 10012000000, 0
+[   10.012000] CPU 4: 0, 61, 10012000000, 10012000000, 0
+[   10.012000] EXECOP: {"op": 6, "a": 0, "b": 0, "c": 0}
+[   10.012000] [92mWaked up task 75[0m
+[   10.012000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.012000] Task 1 76: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.012000] Task 2 77: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.012000] CPU 1: 0, 170, 10012000000, 10012000000, 0
+[   10.012000] CPU 2: 0, 0, 10012000000, 10012000000, 0
+[   10.012000] CPU 3: 0, 61, 10012000000, 10012000000, 0
+[   10.012000] CPU 4: 0, 61, 10012000000, 10012000000, 0
+[   10.012000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.013000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.013000] Task 1 76: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.013000] Task 2 77: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.013000] CPU 1: 0, 170, 10013000000, 10013000000, 0
+[   10.013000] CPU 2: 0, 0, 10013000000, 10013000000, 0
+[   10.013000] CPU 3: 0, 81, 10013000000, 10013000000, 0
+[   10.013000] CPU 4: 0, 81, 10013000000, 10013000000, 0
+[   10.013000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.014000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.014000] Task 1 76: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.014000] Task 2 77: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.014000] CPU 1: 0, 156, 10014000000, 10014000000, 0
+[   10.014000] CPU 2: 0, 0, 10014000000, 10014000000, 0
+[   10.014000] CPU 3: 0, 100, 10014000000, 10014000000, 0
+[   10.014000] CPU 4: 0, 100, 10014000000, 10014000000, 0
+[   10.014000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.015000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.015000] Task 1 76: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.015000] Task 2 77: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.015000] CPU 1: 0, 156, 10015000000, 10015000000, 0
+[   10.015000] CPU 2: 0, 0, 10015000000, 10015000000, 0
+[   10.015000] CPU 3: 0, 119, 10015000000, 10015000000, 0
+[   10.015000] CPU 4: 0, 119, 10015000000, 10015000000, 0
+[   10.015000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.016000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.016000] Task 1 76: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.016000] Task 2 77: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.016000] CPU 1: 0, 156, 10016000000, 10016000000, 0
+[   10.016000] CPU 2: 0, 0, 10016000000, 10016000000, 0
+[   10.016000] CPU 3: 0, 137, 10016000000, 10016000000, 0
+[   10.016000] CPU 4: 0, 137, 10016000000, 10016000000, 0
+[   10.016000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.017000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.017000] Task 1 76: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.017000] Task 2 77: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.017000] CPU 1: 0, 156, 10017000000, 10017000000, 0
+[   10.017000] CPU 2: 0, 0, 10017000000, 10017000000, 0
+[   10.017000] CPU 3: 0, 137, 10017000000, 10017000000, 0
+[   10.017000] CPU 4: 0, 137, 10017000000, 10017000000, 0
+[   10.017000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.018000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.018000] Task 1 76: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.018000] Task 2 77: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.018000] CPU 1: 0, 144, 10018000000, 10018000000, 0
+[   10.018000] CPU 2: 0, 0, 10018000000, 10018000000, 0
+[   10.018000] CPU 3: 0, 173, 10018000000, 10018000000, 0
+[   10.018000] CPU 4: 0, 173, 10018000000, 10018000000, 0
+[   10.018000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.019000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.019000] Task 1 76: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.019000] Task 2 77: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.019000] CPU 1: 0, 144, 10019000000, 10019000000, 0
+[   10.019000] CPU 2: 0, 0, 10019000000, 10019000000, 0
+[   10.019000] CPU 3: 0, 191, 10019000000, 10019000000, 0
+[   10.019000] CPU 4: 0, 191, 10019000000, 10019000000, 0
+[   10.019000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.020000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.020000] Task 1 76: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.020000] Task 2 77: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.020000] CPU 1: 0, 144, 10020000000, 10020000000, 0
+[   10.020000] CPU 2: 0, 0, 10020000000, 10020000000, 0
+[   10.020000] CPU 3: 0, 208, 10020000000, 10020000000, 0
+[   10.020000] CPU 4: 0, 208, 10020000000, 10020000000, 0
+[   10.020000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.021000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.021000] Task 1 76: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.021000] Task 2 77: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.021000] CPU 1: 0, 144, 10021000000, 10021000000, 0
+[   10.021000] CPU 2: 0, 0, 10021000000, 10021000000, 0
+[   10.021000] CPU 3: 0, 224, 10021000000, 10021000000, 0
+[   10.021000] CPU 4: 0, 224, 10021000000, 10021000000, 0
+[   10.021000] EXECOP: {"op": 2, "a": 2, "b": 4, "c": 4}
+[   10.021000] should balance
+[   10.021000] [92mPinned task 77 to CPUs 4-4[0m
+[   10.021000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.021000] Task 1 76: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.021000] Task 2 77: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.021000] CPU 1: 0, 144, 10021000000, 10021000000, 0
+[   10.021000] CPU 2: 0, 0, 10021000000, 10021000000, 0
+[   10.021000] CPU 3: 0, 224, 10021000000, 10021000000, 0
+[   10.021000] CPU 4: 0, 224, 10021000000, 10021000000, 0
+[   10.021000] EXECOP: {"op": 1, "a": 1, "b": 3, "c": 0}
+[   10.021000] [92mForked task 76 1 times[0m
+[   10.021000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.021000] Task 1 76: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.021000] Task 2 77: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.021000] Task 3 78: on_cpu=0, state=0, cpu=3, class=1, util_avg=0
+[   10.021000] CPU 1: 0, 144, 10021000000, 10021000000, 0
+[   10.021000] CPU 2: 0, 0, 10021000000, 10021000000, 0
+[   10.021000] CPU 3: 0, 224, 10021000000, 10021000000, 0
+[   10.021000] CPU 4: 0, 224, 10021000000, 10021000000, 0
+[   10.021000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.022000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.022000] Task 1 76: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.022000] Task 2 77: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.022000] Task 3 78: on_cpu=0, state=0, cpu=3, class=1, util_avg=0
+[   10.022000] CPU 1: 0, 132, 10022000000, 10022000000, 0
+[   10.022000] CPU 2: 0, 0, 10022000000, 10022000000, 0
+[   10.022000] CPU 3: 0, 241, 10022000000, 10022000000, 0
+[   10.022000] CPU 4: 0, 241, 10022000000, 10022000000, 0
+[   10.022000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.023000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.023000] Task 1 76: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.023000] Task 2 77: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.023000] Task 3 78: on_cpu=0, state=0, cpu=3, class=1, util_avg=0
+[   10.023000] CPU 1: 0, 132, 10023000000, 10023000000, 0
+[   10.023000] CPU 2: 0, 0, 10023000000, 10023000000, 0
+[   10.023000] CPU 3: 0, 257, 10023000000, 10023000000, 0
+[   10.023000] CPU 4: 0, 257, 10023000000, 10023000000, 0
+[   10.023000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.024000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.024000] Task 1 76: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.024000] Task 2 77: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.024000] Task 3 78: on_cpu=0, state=0, cpu=3, class=1, util_avg=0
+[   10.024000] CPU 1: 0, 132, 10024000000, 10024000000, 0
+[   10.024000] CPU 2: 0, 0, 10024000000, 10024000000, 0
+[   10.024000] CPU 3: 0, 272, 10024000000, 10024000000, 0
+[   10.024000] CPU 4: 0, 272, 10024000000, 10024000000, 0
+[   10.024000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.025000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.025000] Task 1 76: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.025000] Task 2 77: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.025000] Task 3 78: on_cpu=0, state=0, cpu=3, class=1, util_avg=0
+[   10.025000] CPU 1: 0, 132, 10025000000, 10025000000, 0
+[   10.025000] CPU 2: 0, 0, 10025000000, 10025000000, 0
+[   10.025000] CPU 3: 0, 288, 10025000000, 10025000000, 0
+[   10.025000] CPU 4: 0, 288, 10025000000, 10025000000, 0
+[   10.025000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.026000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.026000] Task 1 76: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.026000] Task 2 77: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.026000] Task 3 78: on_cpu=0, state=0, cpu=3, class=1, util_avg=0
+[   10.026000] CPU 1: 0, 122, 10026000000, 10026000000, 0
+[   10.026000] CPU 2: 0, 0, 10026000000, 10026000000, 0
+[   10.026000] CPU 3: 0, 303, 10026000000, 10026000000, 0
+[   10.026000] CPU 4: 0, 303, 10026000000, 10026000000, 0
+[   10.026000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.027000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.027000] Task 1 76: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.027000] Task 2 77: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.027000] Task 3 78: on_cpu=0, state=0, cpu=3, class=1, util_avg=0
+[   10.027000] CPU 1: 0, 122, 10027000000, 10027000000, 0
+[   10.027000] CPU 2: 0, 0, 10027000000, 10027000000, 0
+[   10.027000] CPU 3: 0, 318, 10027000000, 10027000000, 0
+[   10.027000] CPU 4: 0, 318, 10027000000, 10027000000, 0
+[   10.027000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.028000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.028000] Task 1 76: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.028000] Task 2 77: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.028000] Task 3 78: on_cpu=0, state=0, cpu=3, class=1, util_avg=0
+[   10.028000] CPU 1: 0, 122, 10028000000, 10028000000, 0
+[   10.028000] CPU 2: 0, 0, 10028000000, 10028000000, 0
+[   10.028000] CPU 3: 0, 332, 10028000000, 10028000000, 0
+[   10.028000] CPU 4: 0, 332, 10028000000, 10028000000, 0
+[   10.028000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.029000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.029000] Task 1 76: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.029000] Task 2 77: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.029000] Task 3 78: on_cpu=0, state=0, cpu=3, class=1, util_avg=0
+[   10.029000] CPU 1: 0, 122, 10029000000, 10029000000, 0
+[   10.029000] CPU 2: 0, 0, 10029000000, 10029000000, 0
+[   10.029000] CPU 3: 0, 346, 10029000000, 10029000000, 0
+[   10.029000] CPU 4: 0, 346, 10029000000, 10029000000, 0
+[   10.029000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.030000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.030000] Task 1 76: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.030000] Task 2 77: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.030000] Task 3 78: on_cpu=0, state=0, cpu=3, class=1, util_avg=0
+[   10.030000] CPU 1: 0, 112, 10030000000, 10030000000, 0
+[   10.030000] CPU 2: 0, 0, 10030000000, 10030000000, 0
+[   10.030000] CPU 3: 0, 360, 10030000000, 10030000000, 0
+[   10.030000] CPU 4: 0, 360, 10030000000, 10030000000, 0
+[   10.030000] EXECOP: {"op": 4, "a": 1, "b": 0, "c": 0}
+[   10.030000] [92mSet task 76 to CFS[0m
+[   10.030000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.030000] Task 1 76: on_cpu=0, state=0, cpu=3, class=0, util_avg=0
+[   10.030000] Task 2 77: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.030000] Task 3 78: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.030000] CPU 1: 0, 112, 10030000000, 10030000000, 0
+[   10.030000] CPU 2: 0, 0, 10030000000, 10030000000, 0
+[   10.030000] CPU 3: 0, 360, 10030000000, 10030000000, 0
+[   10.030000] CPU 4: 0, 360, 10030000000, 10030000000, 0
+[   10.030000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.031000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.031000] Task 1 76: on_cpu=0, state=0, cpu=3, class=0, util_avg=0
+[   10.031000] Task 2 77: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.031000] Task 3 78: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.031000] CPU 1: 0, 112, 10031000000, 10031000000, 0
+[   10.031000] CPU 2: 0, 0, 10031000000, 10031000000, 0
+[   10.031000] CPU 3: 0, 374, 10031000000, 10031000000, 0
+[   10.031000] CPU 4: 0, 374, 10031000000, 10031000000, 0
+[   10.031000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.032000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.032000] Task 1 76: on_cpu=0, state=0, cpu=3, class=0, util_avg=0
+[   10.032000] Task 2 77: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.032000] Task 3 78: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.032000] CPU 1: 0, 112, 10032000000, 10032000000, 0
+[   10.032000] CPU 2: 0, 0, 10032000000, 10032000000, 0
+[   10.032000] CPU 3: 0, 387, 10032000000, 10032000000, 0
+[   10.032000] CPU 4: 0, 387, 10032000000, 10032000000, 0
+[   10.032000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.033000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 1 76: on_cpu=0, state=0, cpu=3, class=0, util_avg=0
+[   10.033000] Task 2 77: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.033000] Task 3 78: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.033000] CPU 1: 0, 112, 10033000000, 10033000000, 0
+[   10.033000] CPU 2: 0, 0, 10033000000, 10033000000, 0
+[   10.033000] CPU 3: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] CPU 4: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] EXECOP: {"op": 11, "a": 0, "b": 4, "c": 4}
+[   10.033000] [92mWriting /sys/fs/cgroup/cg0/cpuset.cpus: 4-4[0m
+[   10.033000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 1 76: on_cpu=0, state=0, cpu=3, class=0, util_avg=0
+[   10.033000] Task 2 77: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.033000] Task 3 78: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.033000] CPU 1: 0, 112, 10033000000, 10033000000, 0
+[   10.033000] CPU 2: 0, 0, 10033000000, 10033000000, 0
+[   10.033000] CPU 3: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] CPU 4: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] EXECOP: {"op": 1, "a": 3, "b": 4, "c": 0}
+[   10.033000] [92mForked task 78 1 times[0m
+[   10.033000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 1 76: on_cpu=0, state=0, cpu=3, class=0, util_avg=0
+[   10.033000] Task 2 77: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.033000] Task 3 78: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.033000] Task 4 79: on_cpu=0, state=0, cpu=3, class=1, util_avg=0
+[   10.033000] CPU 1: 0, 112, 10033000000, 10033000000, 0
+[   10.033000] CPU 2: 0, 0, 10033000000, 10033000000, 0
+[   10.033000] CPU 3: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] CPU 4: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] EXECOP: {"op": 1, "a": 2, "b": 5, "c": 0}
+[   10.033000] [92mForked task 77 1 times[0m
+[   10.033000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 1 76: on_cpu=0, state=0, cpu=3, class=0, util_avg=0
+[   10.033000] Task 2 77: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.033000] Task 3 78: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.033000] Task 4 79: on_cpu=0, state=0, cpu=3, class=1, util_avg=0
+[   10.033000] Task 5 80: on_cpu=0, state=0, cpu=4, class=1, util_avg=0
+[   10.033000] CPU 1: 0, 112, 10033000000, 10033000000, 0
+[   10.033000] CPU 2: 0, 0, 10033000000, 10033000000, 0
+[   10.033000] CPU 3: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] CPU 4: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] EXECOP: {"op": 4, "a": 2, "b": 0, "c": 0}
+[   10.033000] [92mSet task 77 to CFS[0m
+[   10.033000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 1 76: on_cpu=0, state=0, cpu=3, class=0, util_avg=0
+[   10.033000] Task 2 77: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 3 78: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.033000] Task 4 79: on_cpu=0, state=0, cpu=3, class=1, util_avg=0
+[   10.033000] Task 5 80: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.033000] CPU 1: 0, 112, 10033000000, 10033000000, 0
+[   10.033000] CPU 2: 0, 0, 10033000000, 10033000000, 0
+[   10.033000] CPU 3: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] CPU 4: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] EXECOP: {"op": 1, "a": 5, "b": 6, "c": 0}
+[   10.033000] [92mForked task 80 1 times[0m
+[   10.033000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 1 76: on_cpu=0, state=0, cpu=3, class=0, util_avg=0
+[   10.033000] Task 2 77: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 3 78: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.033000] Task 4 79: on_cpu=0, state=0, cpu=3, class=1, util_avg=0
+[   10.033000] Task 5 80: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.033000] Task 6 81: on_cpu=0, state=0, cpu=4, class=1, util_avg=0
+[   10.033000] CPU 1: 0, 112, 10033000000, 10033000000, 0
+[   10.033000] CPU 2: 0, 0, 10033000000, 10033000000, 0
+[   10.033000] CPU 3: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] CPU 4: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] EXECOP: {"op": 4, "a": 3, "b": 0, "c": 0}
+[   10.033000] [92mSet task 78 to CFS[0m
+[   10.033000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 1 76: on_cpu=0, state=0, cpu=3, class=0, util_avg=0
+[   10.033000] Task 2 77: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 3 78: on_cpu=0, state=0, cpu=3, class=0, util_avg=0
+[   10.033000] Task 4 79: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.033000] Task 5 80: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.033000] Task 6 81: on_cpu=0, state=0, cpu=4, class=1, util_avg=0
+[   10.033000] CPU 1: 0, 112, 10033000000, 10033000000, 0
+[   10.033000] CPU 2: 0, 0, 10033000000, 10033000000, 0
+[   10.033000] CPU 3: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] CPU 4: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] EXECOP: {"op": 5, "a": 5, "b": 0, "c": 0}
+[   10.033000] [92mPaused task 80[0m
+[   10.033000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 1 76: on_cpu=0, state=0, cpu=3, class=0, util_avg=0
+[   10.033000] Task 2 77: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 3 78: on_cpu=0, state=0, cpu=3, class=0, util_avg=0
+[   10.033000] Task 4 79: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.033000] Task 5 80: on_cpu=0, state=1, cpu=4, class=1, util_avg=0
+[   10.033000] Task 6 81: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.033000] CPU 1: 0, 112, 10033000000, 10033000000, 0
+[   10.033000] CPU 2: 0, 0, 10033000000, 10033000000, 0
+[   10.033000] CPU 3: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] CPU 4: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] EXECOP: {"op": 1, "a": 4, "b": 7, "c": 0}
+[   10.033000] [92mForked task 79 1 times[0m
+[   10.033000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 1 76: on_cpu=0, state=0, cpu=3, class=0, util_avg=0
+[   10.033000] Task 2 77: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 3 78: on_cpu=0, state=0, cpu=3, class=0, util_avg=0
+[   10.033000] Task 4 79: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.033000] Task 5 80: on_cpu=0, state=1, cpu=4, class=1, util_avg=0
+[   10.033000] Task 6 81: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.033000] Task 7 82: on_cpu=0, state=0, cpu=3, class=1, util_avg=0
+[   10.033000] CPU 1: 0, 112, 10033000000, 10033000000, 0
+[   10.033000] CPU 2: 0, 0, 10033000000, 10033000000, 0
+[   10.033000] CPU 3: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] CPU 4: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] EXECOP: {"op": 1, "a": 6, "b": 8, "c": 0}
+[   10.033000] [92mForked task 81 1 times[0m
+[   10.033000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 1 76: on_cpu=0, state=0, cpu=3, class=0, util_avg=0
+[   10.033000] Task 2 77: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 3 78: on_cpu=0, state=0, cpu=3, class=0, util_avg=0
+[   10.033000] Task 4 79: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.033000] Task 5 80: on_cpu=0, state=1, cpu=4, class=1, util_avg=0
+[   10.033000] Task 6 81: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.033000] Task 7 82: on_cpu=0, state=0, cpu=3, class=1, util_avg=0
+[   10.033000] Task 8 83: on_cpu=0, state=0, cpu=4, class=1, util_avg=0
+[   10.033000] CPU 1: 0, 112, 10033000000, 10033000000, 0
+[   10.033000] CPU 2: 0, 0, 10033000000, 10033000000, 0
+[   10.033000] CPU 3: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] CPU 4: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] EXECOP: {"op": 4, "a": 6, "b": 0, "c": 0}
+[   10.033000] [92mSet task 81 to CFS[0m
+[   10.033000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 1 76: on_cpu=0, state=0, cpu=3, class=0, util_avg=0
+[   10.033000] Task 2 77: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 3 78: on_cpu=0, state=0, cpu=3, class=0, util_avg=0
+[   10.033000] Task 4 79: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.033000] Task 5 80: on_cpu=0, state=1, cpu=4, class=1, util_avg=0
+[   10.033000] Task 6 81: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 7 82: on_cpu=0, state=0, cpu=3, class=1, util_avg=0
+[   10.033000] Task 8 83: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.033000] CPU 1: 0, 112, 10033000000, 10033000000, 0
+[   10.033000] CPU 2: 0, 0, 10033000000, 10033000000, 0
+[   10.033000] CPU 3: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] CPU 4: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] EXECOP: {"op": 11, "a": 1, "b": 4, "c": 4}
+[   10.033000] [92mWriting /sys/fs/cgroup/cg0/cg1/cpuset.cpus: 4-4[0m
+[   10.033000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 1 76: on_cpu=0, state=0, cpu=3, class=0, util_avg=0
+[   10.033000] Task 2 77: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 3 78: on_cpu=0, state=0, cpu=3, class=0, util_avg=0
+[   10.033000] Task 4 79: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.033000] Task 5 80: on_cpu=0, state=1, cpu=4, class=1, util_avg=0
+[   10.033000] Task 6 81: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 7 82: on_cpu=0, state=0, cpu=3, class=1, util_avg=0
+[   10.033000] Task 8 83: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.033000] CPU 1: 0, 112, 10033000000, 10033000000, 0
+[   10.033000] CPU 2: 0, 0, 10033000000, 10033000000, 0
+[   10.033000] CPU 3: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] CPU 4: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] EXECOP: {"op": 3, "a": 8, "b": 0, "c": 0}
+[   10.033000] [92mWriting /sys/fs/cgroup//cgroup.procs: 83[0m
+[   10.033000] [92mPinned task 83 to CPUs 1-4[0m
+[   10.033000] [92mSet task 83 to FIFO[0m
+[   10.033000] Task 0 75: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 1 76: on_cpu=0, state=0, cpu=3, class=0, util_avg=0
+[   10.033000] Task 2 77: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 3 78: on_cpu=0, state=0, cpu=3, class=0, util_avg=0
+[   10.033000] Task 4 79: on_cpu=1, state=0, cpu=3, class=1, util_avg=0
+[   10.033000] Task 5 80: on_cpu=0, state=1, cpu=4, class=1, util_avg=0
+[   10.033000] Task 6 81: on_cpu=0, state=0, cpu=4, class=0, util_avg=0
+[   10.033000] Task 7 82: on_cpu=0, state=0, cpu=3, class=1, util_avg=0
+[   10.033000] Task 8 83: on_cpu=1, state=0, cpu=4, class=1, util_avg=0
+[   10.033000] CPU 1: 0, 112, 10033000000, 10033000000, 0
+[   10.033000] CPU 2: 0, 0, 10033000000, 10033000000, 0
+[   10.033000] CPU 3: 0, 400, 10033000000, 10033000000, 0
+[   10.033000] CPU 4: 0, 400, 10033000000, 10033000000, 0
+[   10.131000] should balance
+[   10.133000] [92mRunnable task 8 (83) can run on idle CPUs 1-4[0m
+[   10.133000] [92mwork_conserving_check: runnable=8 idle_cpus=1-2 eligible=1[0m
+[   10.133000] [92mExiting driver executor on Linux 7.0.0-rc7-master[0m
+[   10.133000] reboot: Restarting system
+[   10.133000] reboot: machine restart
