@@ -1,0 +1,1961 @@
+{
+  "Linux_name": "master",
+  "cmd_meta": [
+    {
+      "cmd_id": 0,
+      "cmd_name": "TASK_CREATE",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 1,
+      "cmd_name": "TASK_WAKEUP",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 2,
+      "cmd_name": "TASK_PAUSE",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 3,
+      "cmd_name": "TASK_CREATE",
+      "cmd_args": [
+        1,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 4,
+      "cmd_name": "TASK_WAKEUP",
+      "cmd_args": [
+        1,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 5,
+      "cmd_name": "TASK_PIN",
+      "cmd_args": [
+        1,
+        3,
+        4
+      ],
+      "new_signal_ids": [
+        18446744071581559104,
+        18446744071581559349,
+        18446744071581559701,
+        18446744071581560205,
+        18446744071581517887,
+        18446744071581527735,
+        18446744071581649582
+      ],
+      "new_edges": {
+        "21": [
+          [
+            "dequeue_load_avg:kernel/sched/fair.c:3839 (discriminator 18)",
+            "detach_entity_load_avg:kernel/sched/fair.c:4735 (discriminator 18)"
+          ],
+          [
+            "detach_entity_load_avg:kernel/sched/fair.c:4735 (discriminator 9)",
+            "detach_entity_load_avg:kernel/sched/fair.c:4735 (discriminator 18)"
+          ],
+          [
+            "detach_entity_load_avg:kernel/sched/fair.c:4735 (discriminator 18)",
+            "detach_entity_load_avg:kernel/sched/fair.c:4736 (discriminator 18)"
+          ],
+          [
+            "detach_entity_load_avg:kernel/sched/fair.c:4736 (discriminator 9)",
+            "detach_entity_load_avg:kernel/sched/fair.c:4736 (discriminator 18)"
+          ],
+          [
+            "rq_clock_pelt:kernel/sched/pelt.h:74",
+            "enqueue_task:kernel/sched/core.c:2098"
+          ],
+          [
+            "rq_clock_skip_update:kernel/sched/sched.h:1779",
+            "move_queued_task:kernel/sched/core.c:2466"
+          ]
+        ],
+        "0": [
+          [
+            "cpuidle_idle_call:kernel/sched/idle.c:199",
+            "arch_set_bit:./arch/x86/include/asm/bitops.h:55"
+          ]
+        ]
+      }
+    },
+    {
+      "cmd_id": 6,
+      "cmd_name": "TASK_WAKEUP",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [
+        18446744071581576332,
+        18446744071581574548,
+        18446744071581574641,
+        18446744071581577461,
+        18446744071581574820
+      ],
+      "new_edges": {
+        "1": [
+          [
+            "available_idle_cpu:kernel/sched/sched.h:1409 (discriminator 1)",
+            "idle_rq:kernel/sched/sched.h:1398 (discriminator 1)"
+          ],
+          [
+            "idle_rq:kernel/sched/sched.h:1398 (discriminator 1)",
+            "arch_atomic_read:./arch/x86/include/asm/atomic.h:23"
+          ],
+          [
+            "arch_atomic_read:./arch/x86/include/asm/atomic.h:23",
+            "capacity_of:kernel/sched/fair.c:7287 (discriminator 1)"
+          ],
+          [
+            "capacity_of:kernel/sched/fair.c:7287 (discriminator 1)",
+            "select_idle_sibling:kernel/sched/fair.c:7863 (discriminator 3)"
+          ],
+          [
+            "select_idle_sibling:kernel/sched/fair.c:7863 (discriminator 3)",
+            "__preempt_count_dec_and_test:./arch/x86/include/asm/preempt.h:95 (discriminator 1)"
+          ]
+        ]
+      }
+    },
+    {
+      "cmd_id": 7,
+      "cmd_name": "CGROUP_CREATE",
+      "cmd_args": [
+        -1,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 8,
+      "cmd_name": "TASK_PIN",
+      "cmd_args": [
+        0,
+        1,
+        4
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 9,
+      "cmd_name": "TASK_PIN",
+      "cmd_args": [
+        1,
+        1,
+        3
+      ],
+      "new_signal_ids": [
+        18446744071581539145,
+        18446744071581540255,
+        18446744071581536997,
+        18446744071581537722,
+        18446744071581537358,
+        18446744071581538789,
+        18446744071581537078,
+        18446744071581536299
+      ],
+      "new_edges": {
+        "1": [
+          [
+            "affine_move_task:kernel/sched/core.c:2865",
+            "affine_move_task:kernel/sched/core.c:2879"
+          ],
+          [
+            "affine_move_task:kernel/sched/core.c:2879",
+            "affine_move_task:kernel/sched/core.c:2889"
+          ],
+          [
+            "affine_move_task:kernel/sched/core.c:2889",
+            "__preempt_count_add:./arch/x86/include/asm/preempt.h:80 (discriminator 12)"
+          ],
+          [
+            "__preempt_count_add:./arch/x86/include/asm/preempt.h:80 (discriminator 12)",
+            "rq_unpin_lock:kernel/sched/sched.h:1881"
+          ],
+          [
+            "rq_unpin_lock:kernel/sched/sched.h:1881",
+            "rq_lockp:kernel/sched/sched.h:1554"
+          ],
+          [
+            "rq_lockp:kernel/sched/sched.h:1554",
+            "__preempt_count_dec_and_test:./arch/x86/include/asm/preempt.h:95 (discriminator 1)"
+          ],
+          [
+            "__preempt_count_dec_and_test:./arch/x86/include/asm/preempt.h:95 (discriminator 1)",
+            "affine_move_task:kernel/sched/core.c:2903"
+          ],
+          [
+            "affine_move_task:kernel/sched/core.c:2903",
+            "affine_move_task:kernel/sched/core.c:3009"
+          ]
+        ]
+      }
+    },
+    {
+      "cmd_id": 10,
+      "cmd_name": "TASK_PAUSE",
+      "cmd_args": [
+        1,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 11,
+      "cmd_name": "TASK_WAKEUP",
+      "cmd_args": [
+        1,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 12,
+      "cmd_name": "CGROUP_DESTROY",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 13,
+      "cmd_name": "TASK_SET_PRIO",
+      "cmd_args": [
+        0,
+        -8,
+        0
+      ],
+      "new_signal_ids": [
+        18446744071581563095,
+        18446744071581563589,
+        18446744071581587816
+      ],
+      "new_edges": {
+        "1": [
+          [
+            "get_pelt_divider:kernel/sched/pelt.h:49",
+            "update_cfs_rq_load_avg:kernel/sched/fair.c:4644 (discriminator 18)"
+          ],
+          [
+            "update_cfs_rq_load_avg:kernel/sched/fair.c:4644 (discriminator 9)",
+            "update_cfs_rq_load_avg:kernel/sched/fair.c:4644 (discriminator 18)"
+          ],
+          [
+            "update_tg_load_avg:kernel/sched/fair.c:4168",
+            "se_update_runnable:kernel/sched/sched.h:931"
+          ]
+        ]
+      }
+    },
+    {
+      "cmd_id": 14,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [
+        18446744071581530294
+      ],
+      "new_edges": {
+        "0": [
+          [
+            "cpuidle_idle_call:kernel/sched/idle.c:199",
+            "sched_tick:kernel/sched/core.c:5548 (discriminator 4)"
+          ]
+        ]
+      }
+    },
+    {
+      "cmd_id": 15,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 16,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 17,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 18,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 19,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 20,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 21,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 22,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 23,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 24,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 25,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 26,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 27,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 28,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 29,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 30,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 31,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 32,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 33,
+      "cmd_name": "TASK_PAUSE",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 34,
+      "cmd_name": "TASK_WAKEUP",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 35,
+      "cmd_name": "CGROUP_CREATE",
+      "cmd_args": [
+        -1,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 36,
+      "cmd_name": "CGROUP_ADD_TASK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 37,
+      "cmd_name": "TASK_SET_PRIO",
+      "cmd_args": [
+        1,
+        -20,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 38,
+      "cmd_name": "CGROUP_SET_WEIGHT",
+      "cmd_args": [
+        0,
+        5435,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 39,
+      "cmd_name": "CGROUP_DESTROY",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 40,
+      "cmd_name": "TASK_SET_PRIO",
+      "cmd_args": [
+        0,
+        -20,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 41,
+      "cmd_name": "CGROUP_CREATE",
+      "cmd_args": [
+        -1,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 42,
+      "cmd_name": "CGROUP_CREATE",
+      "cmd_args": [
+        0,
+        1,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 43,
+      "cmd_name": "TASK_SET_PRIO",
+      "cmd_args": [
+        0,
+        10,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 44,
+      "cmd_name": "CGROUP_ADD_TASK",
+      "cmd_args": [
+        1,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 45,
+      "cmd_name": "CGROUP_MOVE_TASK_ROOT",
+      "cmd_args": [
+        1,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 46,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 47,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 48,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 49,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 50,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 51,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 52,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 53,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 54,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 55,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 56,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 57,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 58,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 59,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 60,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 61,
+      "cmd_name": "CGROUP_SET_CPUSET",
+      "cmd_args": [
+        0,
+        2,
+        2
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 62,
+      "cmd_name": "TASK_SET_PRIO",
+      "cmd_args": [
+        0,
+        7,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 63,
+      "cmd_name": "CGROUP_SET_WEIGHT",
+      "cmd_args": [
+        0,
+        4877,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 64,
+      "cmd_name": "CGROUP_ADD_TASK",
+      "cmd_args": [
+        1,
+        1,
+        0
+      ],
+      "new_signal_ids": [
+        18446744071581564265,
+        18446744071584205489
+      ],
+      "new_edges": {
+        "0": [
+          [
+            "update_misfit_status:kernel/sched/fair.c:5132 (discriminator 1)",
+            "update_misfit_status:kernel/sched/fair.c:5136"
+          ]
+        ],
+        "76": [
+          [
+            "__exit_to_user_mode_loop:kernel/entry/common.c:63",
+            "get_current:./arch/x86/include/asm/current.h:23"
+          ]
+        ]
+      }
+    },
+    {
+      "cmd_id": 65,
+      "cmd_name": "CGROUP_CREATE",
+      "cmd_args": [
+        1,
+        2,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 66,
+      "cmd_name": "TASK_PAUSE",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [
+        18446744071581566277,
+        18446744071581567988,
+        18446744071581602596,
+        18446744071581605300,
+        18446744071584206340,
+        18446744071581614407,
+        18446744071581616996,
+        18446744071581614110,
+        18446744071581617230,
+        18446744071581617584,
+        18446744071581525162,
+        18446744071581508392,
+        18446744071584204871
+      ],
+      "new_edges": {
+        "75": [
+          [
+            "child_cfs_rq_on_list:kernel/sched/fair.c:4121",
+            "child_cfs_rq_on_list:kernel/sched/fair.c:4126"
+          ],
+          [
+            "child_cfs_rq_on_list:kernel/sched/fair.c:4126",
+            "__update_blocked_fair:kernel/sched/fair.c:9910 (discriminator 2)"
+          ],
+          [
+            "group_has_capacity:kernel/sched/fair.c:10265",
+            "update_sg_lb_stats:kernel/sched/fair.c:10545 (discriminator 1)"
+          ],
+          [
+            "update_sg_lb_stats:kernel/sched/fair.c:10545 (discriminator 1)",
+            "update_sd_lb_stats:kernel/sched/fair.c:11167"
+          ],
+          [
+            "constant_test_bit:./arch/x86/include/asm/bitops.h:202",
+            "get_current:./arch/x86/include/asm/current.h:23"
+          ],
+          [
+            "sched_balance_newidle:kernel/sched/fair.c:12970",
+            "msecs_to_jiffies:./include/linux/jiffies.h:561"
+          ],
+          [
+            "msecs_to_jiffies:./include/linux/jiffies.h:561",
+            "get_sd_balance_interval:kernel/sched/fair.c:12175 (discriminator 7)"
+          ],
+          [
+            "get_sd_balance_interval:kernel/sched/fair.c:12175 (discriminator 7)",
+            "update_next_balance:kernel/sched/fair.c:12187"
+          ],
+          [
+            "update_next_balance:kernel/sched/fair.c:12187",
+            "sched_balance_newidle:kernel/sched/fair.c:13057 (discriminator 2)"
+          ],
+          [
+            "sched_balance_newidle:kernel/sched/fair.c:13057 (discriminator 2)",
+            "rq_repin_lock:kernel/sched/sched.h:1894"
+          ]
+        ],
+        "0": [
+          [
+            "rq_lockp:kernel/sched/sched.h:1554",
+            "__this_rq:kernel/sched/sched.h:1387"
+          ],
+          [
+            "sched_ttwu_pending:kernel/sched/core.c:3769",
+            "finish_task_switch:kernel/sched/core.c:5183 (discriminator 1)"
+          ],
+          [
+            "__schedule:kernel/sched/core.c:6922",
+            "schedule_idle:kernel/sched/core.c:7034"
+          ]
+        ]
+      }
+    },
+    {
+      "cmd_id": 67,
+      "cmd_name": "TASK_WAKEUP",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [
+        18446744071581573595
+      ],
+      "new_edges": {
+        "1": [
+          [
+            "record_wakee:kernel/sched/fair.c:7301 (discriminator 1)",
+            "select_task_rq_fair:kernel/sched/fair.c:8601"
+          ]
+        ]
+      }
+    },
+    {
+      "cmd_id": 68,
+      "cmd_name": "TASK_SET_PRIO",
+      "cmd_args": [
+        0,
+        19,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 69,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [
+        18446744071581595276,
+        18446744071581548346,
+        18446744071581544693,
+        18446744071581546899,
+        18446744071581545776,
+        18446744071581546028,
+        18446744071581597466,
+        18446744071581604137,
+        18446744071581606266,
+        18446744071581604895,
+        18446744071581602496,
+        18446744071581603595
+      ],
+      "new_edges": {
+        "76": [
+          [
+            "update_misfit_status:kernel/sched/fair.c:5133",
+            "update_misfit_status:kernel/sched/fair.c:5144"
+          ],
+          [
+            "update_misfit_status:kernel/sched/fair.c:5144",
+            "task_cfs_rq:kernel/sched/sched.h:1681"
+          ],
+          [
+            "task_cfs_rq:kernel/sched/sched.h:1681",
+            "update_cfs_rq_h_load:kernel/sched/fair.c:9951 (discriminator 1)"
+          ],
+          [
+            "update_cfs_rq_h_load:kernel/sched/fair.c:9951 (discriminator 1)",
+            "update_cfs_rq_h_load:kernel/sched/fair.c:9967 (discriminator 1)"
+          ],
+          [
+            "update_cfs_rq_h_load:kernel/sched/fair.c:9967 (discriminator 1)",
+            "update_cfs_rq_h_load:kernel/sched/fair.c:9971 (discriminator 2)"
+          ],
+          [
+            "update_cfs_rq_h_load:kernel/sched/fair.c:9971 (discriminator 2)",
+            "task_h_load:kernel/sched/fair.c:9986 (discriminator 1)"
+          ],
+          [
+            "task_h_load:kernel/sched/fair.c:9986 (discriminator 1)",
+            "task_cpu:./include/linux/sched.h:2259 (discriminator 2)"
+          ]
+        ],
+        "0": [
+          [
+            "update_sg_lb_stats:kernel/sched/fair.c:10522",
+            "update_sg_lb_stats:kernel/sched/fair.c:10481 (discriminator 2)"
+          ],
+          [
+            "group_classify:kernel/sched/fair.c:10313",
+            "update_sg_lb_stats:kernel/sched/fair.c:10545 (discriminator 1)"
+          ],
+          [
+            "update_sg_lb_stats:kernel/sched/fair.c:10545 (discriminator 1)",
+            "update_sd_lb_stats:kernel/sched/fair.c:11167"
+          ],
+          [
+            "update_sd_pick_busiest:kernel/sched/fair.c:10583 (discriminator 1)",
+            "capacity_of:kernel/sched/fair.c:7287 (discriminator 1)"
+          ],
+          [
+            "capacity_of:kernel/sched/fair.c:7287 (discriminator 1)",
+            "update_sd_lb_stats:kernel/sched/fair.c:11173"
+          ]
+        ]
+      }
+    },
+    {
+      "cmd_id": 70,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [
+        18446744071581606627,
+        18446744071581608825
+      ],
+      "new_edges": {
+        "0": [
+          [
+            "sched_balance_rq:kernel/sched/fair.c:11897 (discriminator 1)",
+            "sched_balance_rq:kernel/sched/fair.c:11898"
+          ],
+          [
+            "sched_balance_rq:kernel/sched/fair.c:11898",
+            "sched_balance_rq:kernel/sched/fair.c:12110"
+          ]
+        ]
+      }
+    },
+    {
+      "cmd_id": 71,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 72,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 73,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 74,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 75,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 76,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 77,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 78,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 79,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 80,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 81,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 82,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 83,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 84,
+      "cmd_name": "TASK_PIN",
+      "cmd_args": [
+        1,
+        4,
+        4
+      ],
+      "new_signal_ids": [
+        18446744071581549780,
+        18446744071581549199
+      ],
+      "new_edges": {
+        "1": [
+          [
+            "bitmap_intersects:./include/linux/bitmap.h:424",
+            "set_task_max_allowed_capacity:kernel/sched/fair.c:8714 (discriminator 5)"
+          ],
+          [
+            "set_task_max_allowed_capacity:kernel/sched/fair.c:8714 (discriminator 5)",
+            "bitmap_intersects:./include/linux/bitmap.h:424"
+          ]
+        ]
+      }
+    },
+    {
+      "cmd_id": 85,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [
+        18446744071581594476
+      ],
+      "new_edges": {
+        "76": [
+          [
+            "update_misfit_status:kernel/sched/fair.c:5132 (discriminator 1)",
+            "update_misfit_status:kernel/sched/fair.c:5136"
+          ]
+        ]
+      }
+    },
+    {
+      "cmd_id": 86,
+      "cmd_name": "TASK_SET_PRIO",
+      "cmd_args": [
+        1,
+        -5,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 87,
+      "cmd_name": "CGROUP_CREATE",
+      "cmd_args": [
+        0,
+        3,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 88,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 89,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 90,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 91,
+      "cmd_name": "TASK_PIN",
+      "cmd_args": [
+        0,
+        1,
+        4
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 92,
+      "cmd_name": "CGROUP_CREATE",
+      "cmd_args": [
+        3,
+        4,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 93,
+      "cmd_name": "CGROUP_CREATE",
+      "cmd_args": [
+        3,
+        5,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 94,
+      "cmd_name": "TASK_SET_PRIO",
+      "cmd_args": [
+        0,
+        3,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 95,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 96,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [
+        18446744071581603943
+      ],
+      "new_edges": {
+        "0": [
+          [
+            "group_has_capacity:kernel/sched/fair.c:10260",
+            "update_sg_lb_stats:kernel/sched/fair.c:10545 (discriminator 1)"
+          ]
+        ]
+      }
+    },
+    {
+      "cmd_id": 97,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 98,
+      "cmd_name": "TASK_SET_PRIO",
+      "cmd_args": [
+        0,
+        -1,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 99,
+      "cmd_name": "TASK_SET_PRIO",
+      "cmd_args": [
+        0,
+        -6,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 100,
+      "cmd_name": "CGROUP_CREATE",
+      "cmd_args": [
+        0,
+        6,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 101,
+      "cmd_name": "CGROUP_CREATE",
+      "cmd_args": [
+        3,
+        7,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 102,
+      "cmd_name": "CGROUP_CREATE",
+      "cmd_args": [
+        3,
+        8,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 103,
+      "cmd_name": "CGROUP_CREATE",
+      "cmd_args": [
+        8,
+        9,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 104,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 105,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 106,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 107,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 108,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 109,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 110,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 111,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 112,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 113,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 114,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 115,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 116,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 117,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 118,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 119,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 120,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 121,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 122,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 123,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 124,
+      "cmd_name": "CGROUP_CREATE",
+      "cmd_args": [
+        9,
+        10,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 125,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 126,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 127,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 128,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 129,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 130,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 131,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 132,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 133,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 134,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 135,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 136,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 137,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 138,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 139,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 140,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 141,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 142,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 143,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 144,
+      "cmd_name": "TICK",
+      "cmd_args": [
+        0,
+        0,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    },
+    {
+      "cmd_id": 145,
+      "cmd_name": "TASK_SET_PRIO",
+      "cmd_args": [
+        1,
+        13,
+        0
+      ],
+      "new_signal_ids": [],
+      "new_edges": {}
+    }
+  ]
+}
