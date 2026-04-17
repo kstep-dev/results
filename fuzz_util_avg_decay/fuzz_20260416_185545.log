@@ -1,0 +1,292 @@
+[18:55:45] Logging to /users/Tingjia/project/kSTEP/data/fuzz_20260416_185545/fuzz_20260416_185545.log
+[18:55:45] Running: `[94mmake -C /users/Tingjia/project/kSTEP kstep LINUX_NAME=master[0m`
+[18:55:58] kSTEP fuzzer: workers=9  driver=executor  linux=master  steps=50  topology=default  frequency=default  capacity=1024/512/  ci_mode=False  cross_scheduler=True  kthreads=False  fresh_ratio=0.1  mutate_ratio=0.9  special_mutate_ratio=0.1  pivot_rarity_alpha=2.0
+[18:55:58] CPU pinning: selected=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] QEMU=['0-1', '2-3', '4-5', '6-7', '8-9', '10-11', '12-13', '14-15', '16-17'] Python=[18, 19]
+[18:55:58] Spawned worker 0 (pid=1012331)
+[18:55:58] Spawned worker 1 (pid=1012332)
+[18:55:58] Spawned worker 2 (pid=1012333)
+[18:55:58] Spawned worker 3 (pid=1012334)
+[18:55:58] Spawned worker 4 (pid=1012335)
+[18:55:58] Spawned worker 5 (pid=1012336)
+[18:55:58] Spawned worker 6 (pid=1012337)
+[18:55:58] Spawned worker 7 (pid=1012338)
+[18:55:58] Spawned worker 8 (pid=1012339)
+[18:56:08] [    10s]  execs=0 (0.00/s)  fresh=0  replay=0  mutate=0  signals=0 (+0 this interval)  new_total=0  corpus=0  special_corpus=0  errors=0
+[18:56:18] [    20s]  execs=0 (0.00/s)  fresh=0  replay=0  mutate=0  signals=0 (+0 this interval)  new_total=0  corpus=0  special_corpus=0  errors=0
+[18:56:28] [    30s]  execs=0 (0.00/s)  fresh=0  replay=0  mutate=0  signals=0 (+0 this interval)  new_total=0  corpus=0  special_corpus=0  errors=0
+[18:56:38] [    40s]  execs=0 (0.00/s)  fresh=0  replay=0  mutate=0  signals=0 (+0 this interval)  new_total=0  corpus=0  special_corpus=0  errors=0
+[18:56:48] [    50s]  execs=0 (0.00/s)  fresh=0  replay=0  mutate=0  signals=0 (+0 this interval)  new_total=0  corpus=0  special_corpus=0  errors=0
+[18:56:50] [result] worker=1  mode=fresh  ops=396  exec_time=52.06s  special_pivots=2  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[18:56:54] [+] seed #0: +2163 new  distinct=2163  productive_cmd=55 covered=1  total=2163  corpus=1
+[18:56:54] [+] special seed #0: pivots=2  special_corpus=1
+[18:56:54] [mutate] pool=coverage picked seed=#0 pivot=149 kind=coverage bottleneck_signal=18446744071584191648 bottleneck_signal_freq=1.000000 score=0.7071
+[18:56:54] [result] worker=3  mode=fresh  ops=435  exec_time=54.15s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[18:56:59] [+] seed #1: +201 new  distinct=2113  productive_cmd=18 covered=2  total=2364  corpus=2
+[18:56:59] [mutate] pool=coverage picked seed=#1 pivot=316 kind=coverage bottleneck_signal=18446744071581557035 bottleneck_signal_freq=0.500000 score=0.7071
+[18:56:59] [    62s]  execs=2 (0.03/s)  fresh=2  replay=0  mutate=0  signals=2364 (+2364 this interval)  new_total=2364  corpus=2  special_corpus=1  errors=0
+[18:57:09] [result] worker=2  mode=fresh  ops=635  exec_time=71.45s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[18:57:12] [+] seed #2: +84 new  distinct=2114  productive_cmd=17 covered=3  total=2448  corpus=3
+[18:57:12] [mutate] pool=coverage picked seed=#0 pivot=314 kind=coverage bottleneck_signal=18446744071581578224 bottleneck_signal_freq=1.000000 score=0.0786
+[18:57:12] [    74s]  execs=3 (0.04/s)  fresh=3  replay=0  mutate=0  signals=2448 (+84 this interval)  new_total=2448  corpus=3  special_corpus=1  errors=0
+[18:57:13] [result] worker=4  mode=fresh  ops=915  exec_time=75.39s  special_pivots=1  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[18:57:18] [+] seed #3: +145 new  distinct=2337  productive_cmd=23 covered=4  total=2593  corpus=4
+[18:57:18] [+] special seed #3: pivots=1  special_corpus=2
+[18:57:18] [mutate] pool=coverage picked seed=#1 pivot=284 kind=coverage bottleneck_signal=18446744071581562513 bottleneck_signal_freq=0.750000 score=0.0786
+[18:57:18] [result] worker=6  mode=fresh  ops=896  exec_time=79.08s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[18:57:20] [+] seed #4: +6 new  distinct=2131  productive_cmd=4 covered=5  total=2599  corpus=5
+[18:57:20] [mutate] pool=coverage picked seed=#4 pivot=662 kind=coverage bottleneck_signal=18446744071581559446 bottleneck_signal_freq=0.200000 score=0.7071
+[18:57:22] [    84s]  execs=5 (0.06/s)  fresh=5  replay=0  mutate=0  signals=2599 (+151 this interval)  new_total=2599  corpus=5  special_corpus=2  errors=0
+[18:57:26] [result] worker=5  mode=fresh  ops=885  exec_time=87.88s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[18:57:28] [+] seed #5: +34 new  distinct=2215  productive_cmd=7 covered=6  total=2633  corpus=6
+[18:57:28] [mutate] pool=coverage picked seed=#2 pivot=2 kind=coverage bottleneck_signal=18446744071581667268 bottleneck_signal_freq=0.333333 score=0.1768
+[18:57:28] [result] worker=7  mode=fresh  ops=527  exec_time=90.75s  special_pivots=1  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[18:57:31] [+] seed #6: +37 new  distinct=1945  productive_cmd=4 covered=7  total=2670  corpus=7
+[18:57:31] [+] special seed #6: pivots=1  special_corpus=3
+[18:57:31] [mutate] pool=coverage picked seed=#3 pivot=484 kind=coverage bottleneck_signal=18446744071581564681 bottleneck_signal_freq=0.285714 score=0.1768
+[18:57:32] [    95s]  execs=7 (0.07/s)  fresh=7  replay=0  mutate=0  signals=2670 (+71 this interval)  new_total=2670  corpus=7  special_corpus=3  errors=0
+[18:57:42] [   105s]  execs=7 (0.07/s)  fresh=7  replay=0  mutate=0  signals=2670 (+0 this interval)  new_total=2670  corpus=7  special_corpus=3  errors=0
+[18:57:52] [   115s]  execs=7 (0.06/s)  fresh=7  replay=0  mutate=0  signals=2670 (+0 this interval)  new_total=2670  corpus=7  special_corpus=3  errors=0
+[18:58:03] [   125s]  execs=7 (0.06/s)  fresh=7  replay=0  mutate=0  signals=2670 (+0 this interval)  new_total=2670  corpus=7  special_corpus=3  errors=0
+[18:58:03] [result] worker=3  mode=mutate  ops=566  exec_time=64.27s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[18:58:06] [+] seed #7: +13 new  distinct=2156  productive_cmd=2 covered=8  total=2683  corpus=8
+[18:58:06] [mutate] pool=coverage picked seed=#2 pivot=474 kind=coverage bottleneck_signal=18446744071581524840 bottleneck_signal_freq=0.125000 score=0.7071
+[18:58:08] [result] worker=8  mode=fresh  ops=1010  exec_time=130.26s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=True, rt_util_decay_broken=False)
+[18:58:08] [error] worker=8  category=cfs_util_decay  msg='cfs_util_decay: cfs util decay violation'  saved=/users/Tingjia/project/kSTEP/data/fuzz_20260416_185545/error/cfs_util_decay/w8_20260416_185808
+[18:58:08] [mutate] pool=coverage picked seed=#5 pivot=549 kind=coverage bottleneck_signal=18446744071581537192 bottleneck_signal_freq=0.125000 score=0.7071
+[18:58:13] [   135s]  execs=9 (0.07/s)  fresh=8  replay=0  mutate=1  signals=2683 (+13 this interval)  new_total=2683  corpus=8  special_corpus=3  errors=1  [cfs_util_decay=1]
+[18:58:14] [result] worker=2  mode=mutate  ops=435  exec_time=62.04s  special_pivots=1  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[18:58:15] [+] seed #8: +2 new  distinct=2085  productive_cmd=2 covered=9  total=2685  corpus=9
+[18:58:15] [+] special seed #8: pivots=1  special_corpus=4
+[18:58:15] [mutate] pool=coverage picked seed=#3 pivot=122 kind=coverage bottleneck_signal=18446744071581591550 bottleneck_signal_freq=0.111111 score=0.7071
+[18:58:23] [   146s]  execs=10 (0.07/s)  fresh=8  replay=0  mutate=2  signals=2685 (+2 this interval)  new_total=2685  corpus=9  special_corpus=4  errors=1  [cfs_util_decay=1]
+[18:58:30] [result] worker=1  mode=mutate  ops=668  exec_time=95.38s  special_pivots=1  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[18:58:32] [+] seed #9: +23 new  distinct=2260  productive_cmd=3 covered=10  total=2708  corpus=10
+[18:58:32] [+] special seed #9: pivots=1  special_corpus=5
+[18:58:33] [   156s]  execs=11 (0.07/s)  fresh=8  replay=0  mutate=3  signals=2708 (+23 this interval)  new_total=2708  corpus=10  special_corpus=5  errors=1  [cfs_util_decay=1]
+[18:58:35] [result] worker=5  mode=mutate  ops=672  exec_time=67.17s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=True, rt_util_decay_broken=False)
+[18:58:35] [error] worker=5  category=cfs_util_decay  msg='cfs_util_decay: cfs util decay violation'  saved=/users/Tingjia/project/kSTEP/data/fuzz_20260416_185545/error/cfs_util_decay/w5_20260416_185835
+[18:58:35] [mutate] pool=coverage picked seed=#9 pivot=662 kind=coverage bottleneck_signal=18446744071581584273 bottleneck_signal_freq=0.100000 score=0.7071
+[18:58:44] [   166s]  execs=12 (0.07/s)  fresh=8  replay=0  mutate=4  signals=2708 (+0 this interval)  new_total=2708  corpus=10  special_corpus=5  errors=2  [cfs_util_decay=2]
+[18:58:54] [   176s]  execs=12 (0.07/s)  fresh=8  replay=0  mutate=4  signals=2708 (+0 this interval)  new_total=2708  corpus=10  special_corpus=5  errors=2  [cfs_util_decay=2]
+[18:58:57] [result] worker=7  mode=mutate  ops=745  exec_time=86.04s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[18:58:59] [+] seed #10: +3 new  distinct=2314  productive_cmd=1 covered=11  total=2711  corpus=11
+[18:58:59] [mutate] pool=coverage picked seed=#0 pivot=384 kind=coverage bottleneck_signal=18446744071581557507 bottleneck_signal_freq=0.090909 score=0.7071
+[18:58:59] [result] worker=6  mode=mutate  ops=860  exec_time=98.95s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[18:59:01] [+] seed #11: +3 new  distinct=2040  productive_cmd=2 covered=12  total=2714  corpus=12
+[18:59:01] [mutate] pool=coverage picked seed=#2 pivot=293 kind=coverage bottleneck_signal=18446744071581586882 bottleneck_signal_freq=0.083333 score=0.7071
+[18:59:04] [   186s]  execs=14 (0.08/s)  fresh=8  replay=0  mutate=6  signals=2714 (+6 this interval)  new_total=2714  corpus=12  special_corpus=5  errors=2  [cfs_util_decay=2]
+[18:59:04] [result] worker=0  mode=fresh  ops=727  exec_time=186.52s  special_pivots=1  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[18:59:07] [+] special seed #12: pivots=1  special_corpus=6
+[18:59:07] [mutate] pool=coverage picked seed=#3 pivot=420 kind=coverage bottleneck_signal=18446744071581555484 bottleneck_signal_freq=0.307692 score=0.0442
+[18:59:07] [result] worker=4  mode=mutate  ops=786  exec_time=109.54s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[18:59:09] [mutate] pool=coverage picked seed=#3 pivot=431 kind=coverage bottleneck_signal=18446744071581664795 bottleneck_signal_freq=0.357143 score=0.0283
+[18:59:13] [result] worker=3  mode=mutate  ops=615  exec_time=67.81s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[18:59:15] [+] seed #14: +3 new  distinct=2126  productive_cmd=2 covered=15  total=2717  corpus=13
+[18:59:15] [mutate] pool=coverage picked seed=#3 pivot=447 kind=coverage bottleneck_signal=18446744071581614160 bottleneck_signal_freq=0.133333 score=0.1768
+[18:59:15] [   198s]  execs=17 (0.09/s)  fresh=9  replay=0  mutate=8  signals=2717 (+3 this interval)  new_total=2717  corpus=13  special_corpus=6  errors=2  [cfs_util_decay=2]
+[18:59:16] [result] worker=1  mode=fresh  ops=476  exec_time=43.49s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[18:59:17] [+] seed #15: +3 new  distinct=2104  productive_cmd=1 covered=16  total=2720  corpus=14
+[18:59:17] [mutate] pool=coverage picked seed=#9 pivot=658 kind=coverage bottleneck_signal=18446744071581586193 bottleneck_signal_freq=0.062500 score=0.7071
+[18:59:26] [   208s]  execs=18 (0.09/s)  fresh=10  replay=0  mutate=8  signals=2720 (+3 this interval)  new_total=2720  corpus=14  special_corpus=6  errors=2  [cfs_util_decay=2]
+[18:59:26] [result] worker=2  mode=mutate  ops=670  exec_time=71.03s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[18:59:27] [+] seed #16: +1 new  distinct=1813  productive_cmd=1 covered=17  total=2721  corpus=15
+[18:59:27] [mutate] pool=coverage picked seed=#6 pivot=519 kind=coverage bottleneck_signal=18446744072098947635 bottleneck_signal_freq=0.117647 score=0.1768
+[18:59:36] [   218s]  execs=19 (0.09/s)  fresh=10  replay=0  mutate=9  signals=2721 (+1 this interval)  new_total=2721  corpus=15  special_corpus=6  errors=2  [cfs_util_decay=2]
+[18:59:41] [result] worker=8  mode=mutate  ops=739  exec_time=93.15s  special_pivots=1  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[18:59:42] [+] special seed #17: pivots=1  special_corpus=7
+[18:59:42] [mutate] pool=coverage picked seed=#16 pivot=204 kind=coverage bottleneck_signal=18446744071581566772 bottleneck_signal_freq=0.055556 score=0.7071
+[18:59:46] [   229s]  execs=20 (0.09/s)  fresh=10  replay=0  mutate=10  signals=2721 (+0 this interval)  new_total=2721  corpus=15  special_corpus=7  errors=2  [cfs_util_decay=2]
+[18:59:48] [result] worker=6  mode=mutate  ops=390  exec_time=47.10s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[18:59:50] [+] seed #18: +28 new  distinct=2244  productive_cmd=3 covered=19  total=2749  corpus=16
+[18:59:50] [mutate] pool=special picked seed=#12 pivot=518 kind=special_state bottleneck_signal=None bottleneck_signal_freq=0.000000 score=0.7071
+[18:59:52] [result] worker=7  mode=mutate  ops=395  exec_time=52.13s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[18:59:52] [mutate] pool=coverage picked seed=#3 pivot=426 kind=coverage bottleneck_signal=18446744071581547431 bottleneck_signal_freq=0.200000 score=0.0442
+[18:59:57] [   239s]  execs=22 (0.09/s)  fresh=10  replay=0  mutate=12  signals=2749 (+28 this interval)  new_total=2749  corpus=16  special_corpus=7  errors=2  [cfs_util_decay=2]
+[19:00:03] [result] worker=0  mode=mutate  ops=570  exec_time=56.60s  special_pivots=1  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:00:05] [+] seed #20: +5 new  distinct=2217  productive_cmd=3 covered=21  total=2754  corpus=17
+[19:00:05] [+] special seed #20: pivots=1  special_corpus=8
+[19:00:07] [   249s]  execs=23 (0.09/s)  fresh=10  replay=0  mutate=13  signals=2754 (+5 this interval)  new_total=2754  corpus=17  special_corpus=8  errors=2  [cfs_util_decay=2]
+[19:00:12] [result] worker=5  mode=mutate  ops=673  exec_time=96.46s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:00:13] [mutate] pool=coverage picked seed=#6 pivot=488 kind=coverage bottleneck_signal=18446744071581558331 bottleneck_signal_freq=0.045455 score=0.7071
+[19:00:17] [   260s]  execs=24 (0.09/s)  fresh=10  replay=0  mutate=14  signals=2754 (+0 this interval)  new_total=2754  corpus=17  special_corpus=8  errors=2  [cfs_util_decay=2]
+[19:00:17] [result] worker=4  mode=mutate  ops=698  exec_time=68.50s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:00:18] [mutate] pool=coverage picked seed=#0 pivot=389 kind=coverage bottleneck_signal=18446744071581635712 bottleneck_signal_freq=0.652174 score=0.0031
+[19:00:28] [   270s]  execs=25 (0.09/s)  fresh=10  replay=0  mutate=15  signals=2754 (+0 this interval)  new_total=2754  corpus=17  special_corpus=8  errors=2  [cfs_util_decay=2]
+[19:00:37] [result] worker=3  mode=mutate  ops=604  exec_time=81.07s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:00:38] [+] seed #23: +1 new  distinct=2170  productive_cmd=1 covered=24  total=2755  corpus=18
+[19:00:38] [mutate] pool=coverage picked seed=#20 pivot=437 kind=coverage bottleneck_signal=18446744071584205828 bottleneck_signal_freq=0.041667 score=0.7071
+[19:00:38] [   280s]  execs=26 (0.09/s)  fresh=10  replay=0  mutate=16  signals=2755 (+1 this interval)  new_total=2755  corpus=18  special_corpus=8  errors=2  [cfs_util_decay=2]
+[19:00:38] [result] worker=7  mode=mutate  ops=520  exec_time=45.06s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:00:39] [+] seed #24: +1 new  distinct=2220  productive_cmd=1 covered=25  total=2756  corpus=19
+[19:00:39] [mutate] pool=coverage picked seed=#18 pivot=310 kind=coverage bottleneck_signal=18446744071581594065 bottleneck_signal_freq=0.040000 score=0.7071
+[19:00:48] [   290s]  execs=27 (0.09/s)  fresh=10  replay=0  mutate=17  signals=2756 (+1 this interval)  new_total=2756  corpus=19  special_corpus=8  errors=2  [cfs_util_decay=2]
+[19:00:53] [result] worker=1  mode=mutate  ops=669  exec_time=95.95s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:00:54] [mutate] pool=coverage picked seed=#8 pivot=327 kind=coverage bottleneck_signal=18446744071581591560 bottleneck_signal_freq=0.038462 score=0.7071
+[19:00:58] [   301s]  execs=28 (0.09/s)  fresh=10  replay=0  mutate=18  signals=2756 (+0 this interval)  new_total=2756  corpus=19  special_corpus=8  errors=2  [cfs_util_decay=2]
+[19:01:01] [result] worker=0  mode=fresh  ops=526  exec_time=55.82s  special_pivots=2  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:01:02] [+] special seed #26: pivots=2  special_corpus=9
+[19:01:02] [mutate] pool=coverage picked seed=#6 pivot=488 kind=coverage bottleneck_signal=18446744071581558331 bottleneck_signal_freq=0.037037 score=0.5774
+[19:01:07] [result] worker=2  mode=mutate  ops=684  exec_time=100.43s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:01:09] [+] seed #27: +5 new  distinct=2002  productive_cmd=3 covered=28  total=2761  corpus=20
+[19:01:09] [mutate] pool=coverage picked seed=#20 pivot=437 kind=coverage bottleneck_signal=18446744071584205828 bottleneck_signal_freq=0.035714 score=0.5774
+[19:01:09] [   311s]  execs=30 (0.10/s)  fresh=11  replay=0  mutate=19  signals=2761 (+5 this interval)  new_total=2761  corpus=20  special_corpus=9  errors=2  [cfs_util_decay=2]
+[19:01:10] [result] worker=7  mode=mutate  ops=321  exec_time=31.66s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:01:11] [result] worker=4  mode=mutate  ops=400  exec_time=52.31s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:01:11] [+] seed #29: +1 new  distinct=2121  productive_cmd=1 covered=30  total=2762  corpus=21
+[19:01:11] [mutate] pool=coverage picked seed=#8 pivot=326 kind=coverage bottleneck_signal=18446744071581578102 bottleneck_signal_freq=0.033333 score=0.7071
+[19:01:14] [result] worker=8  mode=mutate  ops=751  exec_time=91.40s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:01:15] [mutate] pool=coverage picked seed=#18 pivot=152 kind=coverage bottleneck_signal=18446744071581672098 bottleneck_signal_freq=0.032258 score=0.7071
+[19:01:19] [   322s]  execs=33 (0.10/s)  fresh=11  replay=0  mutate=22  signals=2762 (+1 this interval)  new_total=2762  corpus=21  special_corpus=9  errors=2  [cfs_util_decay=2]
+[19:01:29] [result] worker=3  mode=mutate  ops=590  exec_time=50.99s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:01:29] [mutate] pool=coverage picked seed=#15 pivot=132 kind=coverage bottleneck_signal=18446744071581620262 bottleneck_signal_freq=0.062500 score=0.1768
+[19:01:29] [   332s]  execs=34 (0.10/s)  fresh=11  replay=0  mutate=23  signals=2762 (+0 this interval)  new_total=2762  corpus=21  special_corpus=9  errors=2  [cfs_util_decay=2]
+[19:01:32] [result] worker=1  mode=mutate  ops=338  exec_time=38.73s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:01:39] [   342s]  execs=35 (0.10/s)  fresh=11  replay=0  mutate=24  signals=2762 (+0 this interval)  new_total=2762  corpus=21  special_corpus=9  errors=2  [cfs_util_decay=2]
+[19:01:49] [   352s]  execs=35 (0.10/s)  fresh=11  replay=0  mutate=24  signals=2762 (+0 this interval)  new_total=2762  corpus=21  special_corpus=9  errors=2  [cfs_util_decay=2]
+[19:01:51] [result] worker=4  mode=mutate  ops=337  exec_time=39.75s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:01:52] [mutate] pool=coverage picked seed=#24 pivot=429 kind=coverage bottleneck_signal=18446744071581557445 bottleneck_signal_freq=0.029412 score=0.7071
+[19:02:00] [   362s]  execs=36 (0.10/s)  fresh=11  replay=0  mutate=25  signals=2762 (+0 this interval)  new_total=2762  corpus=21  special_corpus=9  errors=2  [cfs_util_decay=2]
+[19:02:10] [result] worker=2  mode=mutate  ops=586  exec_time=60.85s  special_pivots=1  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:02:10] [+] special seed #34: pivots=1  special_corpus=10
+[19:02:10] [mutate] pool=coverage picked seed=#8 pivot=327 kind=coverage bottleneck_signal=18446744071581591560 bottleneck_signal_freq=0.085714 score=0.0642
+[19:02:10] [   373s]  execs=37 (0.10/s)  fresh=11  replay=0  mutate=26  signals=2762 (+0 this interval)  new_total=2762  corpus=21  special_corpus=10  errors=2  [cfs_util_decay=2]
+[19:02:18] [result] worker=5  mode=mutate  ops=688  exec_time=124.90s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:02:19] [mutate] pool=coverage picked seed=#18 pivot=152 kind=coverage bottleneck_signal=18446744071581672098 bottleneck_signal_freq=0.027778 score=0.5774
+[19:02:19] [result] worker=8  mode=mutate  ops=600  exec_time=64.62s  special_pivots=1  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:02:20] [+] special seed #36: pivots=1  special_corpus=11
+[19:02:20] [mutate] pool=coverage picked seed=#23 pivot=601 kind=coverage bottleneck_signal=18446744071581673214 bottleneck_signal_freq=0.054054 score=0.1768
+[19:02:21] [   383s]  execs=39 (0.10/s)  fresh=11  replay=0  mutate=28  signals=2762 (+0 this interval)  new_total=2762  corpus=21  special_corpus=11  errors=2  [cfs_util_decay=2]
+[19:02:31] [   393s]  execs=39 (0.10/s)  fresh=11  replay=0  mutate=28  signals=2762 (+0 this interval)  new_total=2762  corpus=21  special_corpus=11  errors=2  [cfs_util_decay=2]
+[19:02:35] [result] worker=4  mode=mutate  ops=492  exec_time=42.90s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:02:35] [+] seed #37: +2 new  distinct=2222  productive_cmd=1 covered=38  total=2764  corpus=22
+[19:02:35] [mutate] pool=special picked seed=#12 pivot=518 kind=special_state bottleneck_signal=None bottleneck_signal_freq=0.000000 score=0.5774
+[19:02:37] [result] worker=6  mode=mutate  ops=715  exec_time=167.49s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:02:39] [mutate] pool=coverage picked seed=#27 pivot=501 kind=coverage bottleneck_signal=18446744071581674315 bottleneck_signal_freq=0.025641 score=0.7071
+[19:02:41] [   403s]  execs=41 (0.10/s)  fresh=11  replay=0  mutate=30  signals=2764 (+2 this interval)  new_total=2764  corpus=22  special_corpus=11  errors=2  [cfs_util_decay=2]
+[19:02:51] [result] worker=2  mode=mutate  ops=338  exec_time=40.03s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:02:51] [mutate] pool=coverage picked seed=#27 pivot=521 kind=coverage bottleneck_signal=18446744072098951071 bottleneck_signal_freq=0.025000 score=0.7071
+[19:02:51] [   413s]  execs=42 (0.10/s)  fresh=11  replay=0  mutate=31  signals=2764 (+0 this interval)  new_total=2764  corpus=22  special_corpus=11  errors=2  [cfs_util_decay=2]
+[19:02:56] [result] worker=7  mode=fresh  ops=1119  exec_time=105.53s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:02:59] [+] seed #40: +6 new  distinct=2216  productive_cmd=3 covered=41  total=2770  corpus=23
+[19:02:59] [mutate] pool=coverage picked seed=#27 pivot=501 kind=coverage bottleneck_signal=18446744071581674315 bottleneck_signal_freq=0.024390 score=0.5774
+[19:02:59] [result] worker=0  mode=mutate  ops=643  exec_time=114.64s  special_pivots=1  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:03:00] [+] special seed #41: pivots=1  special_corpus=12
+[19:03:00] [mutate] pool=coverage picked seed=#27 pivot=521 kind=coverage bottleneck_signal=18446744072098951071 bottleneck_signal_freq=0.023810 score=0.5774
+[19:03:01] [   423s]  execs=44 (0.10/s)  fresh=12  replay=0  mutate=32  signals=2770 (+6 this interval)  new_total=2770  corpus=23  special_corpus=12  errors=2  [cfs_util_decay=2]
+[19:03:11] [   433s]  execs=44 (0.10/s)  fresh=12  replay=0  mutate=32  signals=2770 (+0 this interval)  new_total=2770  corpus=23  special_corpus=12  errors=2  [cfs_util_decay=2]
+[19:03:11] [result] worker=3  mode=mutate  ops=867  exec_time=101.75s  special_pivots=1  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:03:12] [+] special seed #42: pivots=1  special_corpus=13
+[19:03:12] [mutate] pool=coverage picked seed=#14 pivot=3 kind=coverage bottleneck_signal=18446744071581607031 bottleneck_signal_freq=0.046512 score=0.1768
+[19:03:21] [   444s]  execs=45 (0.10/s)  fresh=12  replay=0  mutate=33  signals=2770 (+0 this interval)  new_total=2770  corpus=23  special_corpus=13  errors=2  [cfs_util_decay=2]
+[19:03:31] [   454s]  execs=45 (0.10/s)  fresh=12  replay=0  mutate=33  signals=2770 (+0 this interval)  new_total=2770  corpus=23  special_corpus=13  errors=2  [cfs_util_decay=2]
+[19:03:41] [   464s]  execs=45 (0.10/s)  fresh=12  replay=0  mutate=33  signals=2770 (+0 this interval)  new_total=2770  corpus=23  special_corpus=13  errors=2  [cfs_util_decay=2]
+[19:03:42] [result] worker=1  mode=fresh  ops=1160  exec_time=129.53s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=True)
+[19:03:42] [error] worker=1  category=rt_util_decay  msg='rt_util_decay: rt util decay violation'  saved=/users/Tingjia/project/kSTEP/data/fuzz_20260416_185545/error/rt_util_decay/w1_20260416_190342
+[19:03:43] [mutate] pool=coverage picked seed=#5 pivot=7 kind=coverage bottleneck_signal=18446744071581542834 bottleneck_signal_freq=0.069767 score=0.0786
+[19:03:48] [result] worker=8  mode=mutate  ops=725  exec_time=88.25s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:03:49] [mutate] pool=coverage picked seed=#27 pivot=501 kind=coverage bottleneck_signal=18446744071581674315 bottleneck_signal_freq=0.022727 score=0.5000
+[19:03:52] [   474s]  execs=47 (0.10/s)  fresh=13  replay=0  mutate=34  signals=2770 (+0 this interval)  new_total=2770  corpus=23  special_corpus=13  errors=3  [cfs_util_decay=2  rt_util_decay=1]
+[19:03:52] [result] worker=5  mode=mutate  ops=1217  exec_time=93.14s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:03:53] [mutate] pool=coverage picked seed=#40 pivot=282 kind=coverage bottleneck_signal=18446744071581522338 bottleneck_signal_freq=0.022222 score=0.7071
+[19:04:02] [   484s]  execs=48 (0.10/s)  fresh=13  replay=0  mutate=35  signals=2770 (+0 this interval)  new_total=2770  corpus=23  special_corpus=13  errors=3  [cfs_util_decay=2  rt_util_decay=1]
+[19:04:12] [   494s]  execs=48 (0.10/s)  fresh=13  replay=0  mutate=35  signals=2770 (+0 this interval)  new_total=2770  corpus=23  special_corpus=13  errors=3  [cfs_util_decay=2  rt_util_decay=1]
+[19:04:22] [   504s]  execs=48 (0.10/s)  fresh=13  replay=0  mutate=35  signals=2770 (+0 this interval)  new_total=2770  corpus=23  special_corpus=13  errors=3  [cfs_util_decay=2  rt_util_decay=1]
+[19:04:23] [result] worker=6  mode=mutate  ops=781  exec_time=103.48s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:04:24] [mutate] pool=coverage picked seed=#40 pivot=14 kind=coverage bottleneck_signal=18446744071581659621 bottleneck_signal_freq=0.021739 score=0.7071
+[19:04:31] [result] worker=2  mode=mutate  ops=674  exec_time=99.95s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:04:33] [+] seed #46: +1 new  distinct=1943  productive_cmd=1 covered=47  total=2771  corpus=24
+[19:04:33] [mutate] pool=coverage picked seed=#40 pivot=282 kind=coverage bottleneck_signal=18446744071581522338 bottleneck_signal_freq=0.021277 score=0.5774
+[19:04:33] [   515s]  execs=50 (0.10/s)  fresh=13  replay=0  mutate=37  signals=2771 (+1 this interval)  new_total=2771  corpus=24  special_corpus=13  errors=3  [cfs_util_decay=2  rt_util_decay=1]
+[19:04:33] [result] worker=0  mode=mutate  ops=532  exec_time=91.61s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:04:34] [mutate] pool=coverage picked seed=#11 pivot=133 kind=coverage bottleneck_signal=18446744071581632655 bottleneck_signal_freq=0.041667 score=0.1768
+[19:04:43] [   525s]  execs=51 (0.10/s)  fresh=13  replay=0  mutate=38  signals=2771 (+0 this interval)  new_total=2771  corpus=24  special_corpus=13  errors=3  [cfs_util_decay=2  rt_util_decay=1]
+[19:04:48] [result] worker=7  mode=mutate  ops=621  exec_time=109.21s  special_pivots=1  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:04:50] [+] seed #48: +1 new  distinct=1928  productive_cmd=1 covered=49  total=2772  corpus=25
+[19:04:50] [+] special seed #48: pivots=1  special_corpus=14
+[19:04:50] [mutate] pool=coverage picked seed=#29 pivot=381 kind=coverage bottleneck_signal=18446744071581675205 bottleneck_signal_freq=0.020408 score=0.7071
+[19:04:50] [result] worker=3  mode=mutate  ops=938  exec_time=97.80s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:04:51] [mutate] pool=coverage picked seed=#18 pivot=152 kind=coverage bottleneck_signal=18446744071581672098 bottleneck_signal_freq=0.020000 score=0.5000
+[19:04:53] [   536s]  execs=53 (0.10/s)  fresh=13  replay=0  mutate=40  signals=2772 (+1 this interval)  new_total=2772  corpus=25  special_corpus=14  errors=3  [cfs_util_decay=2  rt_util_decay=1]
+[19:05:03] [   546s]  execs=53 (0.10/s)  fresh=13  replay=0  mutate=40  signals=2772 (+0 this interval)  new_total=2772  corpus=25  special_corpus=14  errors=3  [cfs_util_decay=2  rt_util_decay=1]
+[19:05:13] [   556s]  execs=53 (0.10/s)  fresh=13  replay=0  mutate=40  signals=2772 (+0 this interval)  new_total=2772  corpus=25  special_corpus=14  errors=3  [cfs_util_decay=2  rt_util_decay=1]
+[19:05:16] [result] worker=4  mode=mutate  ops=651  exec_time=161.12s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:05:18] [mutate] pool=coverage picked seed=#27 pivot=87 kind=coverage bottleneck_signal=18446744071581536350 bottleneck_signal_freq=0.019608 score=0.7071
+[19:05:18] [result] worker=8  mode=mutate  ops=517  exec_time=87.86s  special_pivots=1  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:05:20] [+] special seed #51: pivots=1  special_corpus=15
+[19:05:24] [   566s]  execs=55 (0.10/s)  fresh=13  replay=0  mutate=42  signals=2772 (+0 this interval)  new_total=2772  corpus=25  special_corpus=15  errors=3  [cfs_util_decay=2  rt_util_decay=1]
+[19:05:25] [result] worker=1  mode=mutate  ops=705  exec_time=102.06s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=True, rt_util_decay_broken=False)
+[19:05:25] [error] worker=1  category=cfs_util_decay  msg='cfs_util_decay: cfs util decay violation'  saved=/users/Tingjia/project/kSTEP/data/fuzz_20260416_185545/error/cfs_util_decay/w1_20260416_190525
+[19:05:25] [mutate] pool=coverage picked seed=#16 pivot=204 kind=coverage bottleneck_signal=18446744071581566772 bottleneck_signal_freq=0.038462 score=0.1443
+[19:05:32] [result] worker=6  mode=mutate  ops=641  exec_time=67.88s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:05:33] [mutate] pool=coverage picked seed=#14 pivot=3 kind=coverage bottleneck_signal=18446744071581607031 bottleneck_signal_freq=0.075472 score=0.0361
+[19:05:34] [   576s]  execs=57 (0.10/s)  fresh=13  replay=0  mutate=44  signals=2772 (+0 this interval)  new_total=2772  corpus=25  special_corpus=15  errors=4  [cfs_util_decay=3  rt_util_decay=1]
+[19:05:42] [result] worker=7  mode=mutate  ops=395  exec_time=52.06s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:05:42] [mutate] pool=coverage picked seed=#27 pivot=87 kind=coverage bottleneck_signal=18446744071581536350 bottleneck_signal_freq=0.018519 score=0.5774
+[19:05:44] [   586s]  execs=58 (0.10/s)  fresh=13  replay=0  mutate=45  signals=2772 (+0 this interval)  new_total=2772  corpus=25  special_corpus=15  errors=4  [cfs_util_decay=3  rt_util_decay=1]
+[19:05:54] [   596s]  execs=58 (0.10/s)  fresh=13  replay=0  mutate=45  signals=2772 (+0 this interval)  new_total=2772  corpus=25  special_corpus=15  errors=4  [cfs_util_decay=3  rt_util_decay=1]
+[19:05:58] [result] worker=8  mode=fresh  ops=259  exec_time=38.76s  special_pivots=1  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:06:00] [+] seed #54: +2 new  distinct=1956  productive_cmd=1 covered=55  total=2774  corpus=26
+[19:06:00] [+] special seed #54: pivots=1  special_corpus=16
+[19:06:00] [mutate] pool=coverage picked seed=#16 pivot=204 kind=coverage bottleneck_signal=18446744071581566772 bottleneck_signal_freq=0.036364 score=0.1250
+[19:06:03] [result] worker=0  mode=mutate  ops=586  exec_time=89.27s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:06:04] [mutate] pool=coverage picked seed=#18 pivot=310 kind=coverage bottleneck_signal=18446744071581594065 bottleneck_signal_freq=0.035714 score=0.1443
+[19:06:04] [   606s]  execs=60 (0.10/s)  fresh=14  replay=0  mutate=46  signals=2774 (+2 this interval)  new_total=2774  corpus=26  special_corpus=16  errors=4  [cfs_util_decay=3  rt_util_decay=1]
+[19:06:12] [result] worker=5  mode=mutate  ops=1192  exec_time=138.63s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:06:14] [+] seed #56: +1 new  distinct=2074  productive_cmd=1 covered=57  total=2775  corpus=27
+[19:06:14] [mutate] pool=special picked seed=#26 pivot=466 kind=special_state bottleneck_signal=None bottleneck_signal_freq=0.000000 score=0.7071
+[19:06:15] [   617s]  execs=61 (0.10/s)  fresh=14  replay=0  mutate=47  signals=2775 (+1 this interval)  new_total=2775  corpus=27  special_corpus=16  errors=4  [cfs_util_decay=3  rt_util_decay=1]
+[19:06:25] [   627s]  execs=61 (0.10/s)  fresh=14  replay=0  mutate=47  signals=2775 (+0 this interval)  new_total=2775  corpus=27  special_corpus=16  errors=4  [cfs_util_decay=3  rt_util_decay=1]
+[19:06:28] [result] worker=3  mode=mutate  ops=841  exec_time=97.19s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:06:30] [+] seed #57: +1 new  distinct=2311  productive_cmd=1 covered=58  total=2776  corpus=28
+[19:06:30] [mutate] pool=coverage picked seed=#27 pivot=87 kind=coverage bottleneck_signal=18446744071581536350 bottleneck_signal_freq=0.017241 score=0.5000
+[19:06:35] [   637s]  execs=62 (0.10/s)  fresh=14  replay=0  mutate=48  signals=2776 (+1 this interval)  new_total=2776  corpus=28  special_corpus=16  errors=4  [cfs_util_decay=3  rt_util_decay=1]
+[19:06:37] [result] worker=6  mode=mutate  ops=504  exec_time=63.70s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:06:37] [mutate] pool=coverage picked seed=#46 pivot=8 kind=coverage bottleneck_signal=18446744071581661722 bottleneck_signal_freq=0.016949 score=0.7071
+[19:06:45] [   648s]  execs=63 (0.10/s)  fresh=14  replay=0  mutate=49  signals=2776 (+0 this interval)  new_total=2776  corpus=28  special_corpus=16  errors=4  [cfs_util_decay=3  rt_util_decay=1]
+[19:06:51] [result] worker=0  mode=mutate  ops=446  exec_time=47.34s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:06:52] [+] seed #59: +1 new  distinct=2277  productive_cmd=1 covered=60  total=2777  corpus=29
+[19:06:52] [mutate] pool=coverage picked seed=#56 pivot=430 kind=coverage bottleneck_signal=18446744071581555720 bottleneck_signal_freq=0.016667 score=0.7071
+[19:06:53] [result] worker=1  mode=mutate  ops=861  exec_time=88.78s  special_pivots=1  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:06:56] [+] seed #60: +23 new  distinct=2094  productive_cmd=1 covered=61  total=2800  corpus=30
+[19:06:56] [+] special seed #60: pivots=1  special_corpus=17
+[19:06:56] [mutate] pool=coverage picked seed=#46 pivot=8 kind=coverage bottleneck_signal=18446744071581661722 bottleneck_signal_freq=0.016393 score=0.5774
+[19:06:56] [   658s]  execs=65 (0.10/s)  fresh=14  replay=0  mutate=51  signals=2800 (+24 this interval)  new_total=2800  corpus=30  special_corpus=17  errors=4  [cfs_util_decay=3  rt_util_decay=1]
+[19:06:56] [result] worker=2  mode=mutate  ops=1246  exec_time=142.11s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:07:02] [+] seed #61: +8 new  distinct=2186  productive_cmd=3 covered=62  total=2808  corpus=31
+[19:07:02] [mutate] pool=coverage picked seed=#40 pivot=282 kind=coverage bottleneck_signal=18446744071581522338 bottleneck_signal_freq=0.016129 score=0.5000
+[19:07:06] [   669s]  execs=66 (0.10/s)  fresh=14  replay=0  mutate=52  signals=2808 (+8 this interval)  new_total=2808  corpus=31  special_corpus=17  errors=4  [cfs_util_decay=3  rt_util_decay=1]
+[19:07:15] [result] worker=4  mode=mutate  ops=1130  exec_time=116.72s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:07:18] [+] seed #62: +9 new  distinct=2037  productive_cmd=2 covered=63  total=2817  corpus=32
+[19:07:18] [mutate] pool=coverage picked seed=#40 pivot=282 kind=coverage bottleneck_signal=18446744071581522338 bottleneck_signal_freq=0.015873 score=0.4472
+[19:07:18] [   680s]  execs=67 (0.10/s)  fresh=14  replay=0  mutate=53  signals=2817 (+9 this interval)  new_total=2817  corpus=32  special_corpus=17  errors=4  [cfs_util_decay=3  rt_util_decay=1]
+[19:07:18] [result] worker=5  mode=mutate  ops=696  exec_time=63.81s  special_pivots=1  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:07:19] [+] special seed #63: pivots=1  special_corpus=18
+[19:07:19] [mutate] pool=coverage picked seed=#61 pivot=655 kind=coverage bottleneck_signal=18446744071581549172 bottleneck_signal_freq=0.015625 score=0.7071
+[19:07:28] [   691s]  execs=68 (0.10/s)  fresh=14  replay=0  mutate=54  signals=2817 (+0 this interval)  new_total=2817  corpus=32  special_corpus=18  errors=4  [cfs_util_decay=3  rt_util_decay=1]
+[19:07:28] [result] worker=8  mode=mutate  ops=625  exec_time=88.32s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:07:29] [mutate] pool=special picked seed=#54 pivot=252 kind=special_state bottleneck_signal=None bottleneck_signal_freq=0.000000 score=0.7071
+[19:07:36] [result] worker=6  mode=mutate  ops=446  exec_time=58.96s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:07:37] [mutate] pool=coverage picked seed=#61 pivot=578 kind=coverage bottleneck_signal=18446744071581560711 bottleneck_signal_freq=0.015152 score=0.7071
+[19:07:39] [   701s]  execs=70 (0.10/s)  fresh=14  replay=0  mutate=56  signals=2817 (+0 this interval)  new_total=2817  corpus=32  special_corpus=18  errors=4  [cfs_util_decay=3  rt_util_decay=1]
+[19:07:42] [result] worker=7  mode=mutate  ops=882  exec_time=119.49s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:07:43] [mutate] pool=coverage picked seed=#11 pivot=732 kind=coverage bottleneck_signal=18446744071581693840 bottleneck_signal_freq=0.089552 score=0.0196
+[19:07:48] [result] worker=1  mode=mutate  ops=485  exec_time=51.78s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:07:48] [mutate] pool=coverage picked seed=#61 pivot=578 kind=coverage bottleneck_signal=18446744071581560711 bottleneck_signal_freq=0.014706 score=0.5774
+[19:07:49] [   711s]  execs=72 (0.10/s)  fresh=14  replay=0  mutate=58  signals=2817 (+0 this interval)  new_total=2817  corpus=32  special_corpus=18  errors=4  [cfs_util_decay=3  rt_util_decay=1]
+[19:07:59] [   721s]  execs=72 (0.10/s)  fresh=14  replay=0  mutate=58  signals=2817 (+0 this interval)  new_total=2817  corpus=32  special_corpus=18  errors=4  [cfs_util_decay=3  rt_util_decay=1]
+[19:08:07] [result] worker=2  mode=mutate  ops=698  exec_time=65.48s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:08:09] [+] seed #68: +4 new  distinct=2197  productive_cmd=1 covered=69  total=2821  corpus=33
+[19:08:09] [mutate] pool=coverage picked seed=#40 pivot=282 kind=coverage bottleneck_signal=18446744071581522338 bottleneck_signal_freq=0.014493 score=0.4082
+[19:08:09] [   732s]  execs=73 (0.10/s)  fresh=14  replay=0  mutate=59  signals=2821 (+4 this interval)  new_total=2821  corpus=33  special_corpus=18  errors=4  [cfs_util_decay=3  rt_util_decay=1]
+[19:08:11] [result] worker=8  mode=mutate  ops=266  exec_time=41.22s  special_pivots=1  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:08:11] [+] seed #69: +1 new  distinct=1964  productive_cmd=1 covered=70  total=2822  corpus=34
+[19:08:11] [+] special seed #69: pivots=1  special_corpus=19
+[19:08:11] [mutate] pool=coverage picked seed=#40 pivot=14 kind=coverage bottleneck_signal=18446744071581659621 bottleneck_signal_freq=0.014286 score=0.5774
+[19:08:15] [result] worker=0  mode=mutate  ops=868  exec_time=83.08s  special_pivots=0  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:08:16] [mutate] pool=special picked seed=#63 pivot=481 kind=special_state bottleneck_signal=None bottleneck_signal_freq=0.000000 score=0.7071
+[19:08:19] [   742s]  execs=75 (0.10/s)  fresh=14  replay=0  mutate=61  signals=2822 (+1 this interval)  new_total=2822  corpus=34  special_corpus=19  errors=4  [cfs_util_decay=3  rt_util_decay=1]
+[19:08:29] [   752s]  execs=75 (0.10/s)  fresh=14  replay=0  mutate=61  signals=2822 (+0 this interval)  new_total=2822  corpus=34  special_corpus=19  errors=4  [cfs_util_decay=3  rt_util_decay=1]
+[19:08:39] [result] worker=5  mode=mutate  ops=804  exec_time=80.44s  special_pivots=1  checker_status=CheckerStatus(work_conserving_broken=False, cfs_util_decay_broken=False, rt_util_decay_broken=False)
+[19:08:40] [+] special seed #71: pivots=1  special_corpus=20
+[19:08:40] [mutate] pool=coverage picked seed=#69 pivot=6 kind=coverage bottleneck_signal=18446744071581542319 bottleneck_signal_freq=0.013889 score=0.7071
+[19:08:40] [   762s]  execs=76 (0.10/s)  fresh=14  replay=0  mutate=62  signals=2822 (+0 this interval)  new_total=2822  corpus=34  special_corpus=20  errors=4  [cfs_util_decay=3  rt_util_decay=1]
