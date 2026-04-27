@@ -1,0 +1,2302 @@
+c[?7l[2J[0mSeaBIOS (version 1.16.3-debian-1.16.3-2)
+Booting from ROM..c[?7l[2J[    0.000000] Linux version 6.12.0-rc1-cd9626e9ebc77edec33023fe95dab4b04ffc819d~1 (Tingjia@node0.sched2.advosuwmadison-pg0.wisc.cloudlab.us) (gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #1 SMP 1970-01-01
+[    0.000000] Command line: rw nokaslr loglevel=7 sched_verbose isolcpus=nohz,managed_irq,1 irqaffinity=0 rcu_nocbs=1 nohz_full=1 init=/init panic=-1 console=ttyS0 tsc=nowatchdog -- driver=executor
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000001ffdffff] usable
+[    0.000000] BIOS-e820: [mem 0x000000001ffe0000-0x000000001fffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000feffc000-0x00000000feffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] APIC: Static calls initialized
+[    0.000000] Hypervisor detected: KVM
+[    0.000000] kvm-clock: Using msrs 4b564d01 and 4b564d00
+[    0.000000] kvm-clock: using sched offset of 92670796 cycles
+[    0.000002] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+[    0.000006] tsc: Detected 2199.998 MHz processor
+[    0.000885] last_pfn = 0x1ffe0 max_arch_pfn = 0x400000000
+[    0.000886] x86/PAT: PAT support disabled because CONFIG_X86_PAT is disabled in the kernel.
+[    0.000890] x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WB  WT  UC- UC  
+[    0.000897] Using GB pages for direct mapping
+[    0.001201] RAMDISK: [mem 0x1f6ce000-0x1ffdffff]
+[    0.001203] ACPI: Early table checksum verification disabled
+[    0.001206] ACPI: RSDP 0x00000000000F5290 000014 (v00 BOCHS )
+[    0.001217] ACPI: RSDT 0x000000001FFE1D1D 000034 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.001224] ACPI: FACP 0x000000001FFE1BC9 000074 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.001231] ACPI: DSDT 0x000000001FFE0040 001B89 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.001236] ACPI: FACS 0x000000001FFE0000 000040
+[    0.001240] ACPI: APIC 0x000000001FFE1C3D 000080 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.001246] ACPI: HPET 0x000000001FFE1CBD 000038 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.001251] ACPI: WAET 0x000000001FFE1CF5 000028 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.001255] ACPI: Reserving FACP table memory at [mem 0x1ffe1bc9-0x1ffe1c3c]
+[    0.001257] ACPI: Reserving DSDT table memory at [mem 0x1ffe0040-0x1ffe1bc8]
+[    0.001258] ACPI: Reserving FACS table memory at [mem 0x1ffe0000-0x1ffe003f]
+[    0.001260] ACPI: Reserving APIC table memory at [mem 0x1ffe1c3d-0x1ffe1cbc]
+[    0.001261] ACPI: Reserving HPET table memory at [mem 0x1ffe1cbd-0x1ffe1cf4]
+[    0.001262] ACPI: Reserving WAET table memory at [mem 0x1ffe1cf5-0x1ffe1d1c]
+[    0.001285] No NUMA configuration found
+[    0.001286] Faking a node at [mem 0x0000000000000000-0x000000001ffdffff]
+[    0.001291] NODE_DATA(0) allocated [mem 0x1f6cb640-0x1f6cdfff]
+[    0.001304] Zone ranges:
+[    0.001305]   DMA32    [mem 0x0000000000001000-0x000000001ffdffff]
+[    0.001307]   Normal   empty
+[    0.001309] Movable zone start for each node
+[    0.001309] Early memory node ranges
+[    0.001310]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.001312]   node   0: [mem 0x0000000000100000-0x000000001ffdffff]
+[    0.001314] Initmem setup node 0 [mem 0x0000000000001000-0x000000001ffdffff]
+[    0.001325] On node 0, zone DMA32: 1 pages in unavailable ranges
+[    0.004969] On node 0, zone DMA32: 97 pages in unavailable ranges
+[    0.004972] On node 0, zone DMA32: 32 pages in unavailable ranges
+[    0.004990] ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+[    0.005051] IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+[    0.005055] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.005058] ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+[    0.005060] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.005061] ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+[    0.005063] ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+[    0.005069] ACPI: Using ACPI (MADT) for SMP configuration information
+[    0.005071] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.005075] TSC deadline timer available
+[    0.005084] CPU topo: Max. logical packages:   1
+[    0.005085] CPU topo: Max. logical dies:       1
+[    0.005086] CPU topo: Max. dies per package:   1
+[    0.005094] CPU topo: Max. threads per core:   1
+[    0.005096] CPU topo: Num. cores per package:     2
+[    0.005097] CPU topo: Num. threads per package:   2
+[    0.005097] CPU topo: Allowing 2 present CPUs plus 0 hotplug CPUs
+[    0.005115] kvm-guest: APIC: eoi() replaced with kvm_guest_apic_eoi_write()
+[    0.005127] kvm-guest: KVM setup pv remote TLB flush
+[    0.005132] kvm-guest: setup PV sched yield
+[    0.005135] [mem 0x20000000-0xfeffbfff] available for PCI devices
+[    0.005137] Booting paravirtualized kernel on KVM
+[    0.005138] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+[    0.007053] setup_percpu: NR_CPUS:64 nr_cpumask_bits:2 nr_cpu_ids:2 nr_node_ids:1
+[    0.007934] percpu: Embedded 51 pages/cpu s169816 r8192 d30888 u1048576
+[    0.007996] Kernel command line: rw nokaslr loglevel=7 sched_verbose isolcpus=nohz,managed_irq,1 irqaffinity=0 rcu_nocbs=1 nohz_full=1 init=/init panic=-1 console=ttyS0 tsc=nowatchdog -- driver=executor
+[    0.008092] Unknown kernel command line parameters "isolcpus=nohz,managed_irq,1 rcu_nocbs=1 nohz_full=1", will be passed to user space.
+[    0.008102] random: crng init done
+[    0.008192] Dentry cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.008235] Inode-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.008301] Fallback order for Node 0: 0 
+[    0.008304] Built 1 zonelists, mobility grouping on.  Total pages: 130942
+[    0.008306] Policy zone: DMA32
+[    0.008307] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.009398] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.009428] ftrace: allocating 13297 entries in 52 pages
+[    0.012505] ftrace: allocated 52 pages with 3 groups
+[    0.013131] rcu: Hierarchical RCU implementation.
+[    0.013132] rcu: 	RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=2.
+[    0.013134] 	Rude variant of Tasks RCU enabled.
+[    0.013135] rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+[    0.013136] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.013144] RCU Tasks Rude: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.013478] NR_IRQS: 4352, nr_irqs: 56, preallocated irqs: 16
+[    0.013673] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.013813] printk: legacy console [ttyS0] enabled
+[    0.247446] ACPI: Core revision 20240827
+[    0.249188] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604467 ns
+[    0.252738] APIC: Switch to symmetric I/O mode setup
+[    0.254679] kvm-guest: APIC: send_IPI_mask() replaced with kvm_send_ipi_mask()
+[    0.257395] kvm-guest: APIC: send_IPI_mask_allbutself() replaced with kvm_send_ipi_mask_allbutself()
+[    0.260834] kvm-guest: setup PV IPIs
+[    0.263895] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.266228] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x1fb63109b96, max_idle_ns: 440795265316 ns
+[    0.270248] Calibrating delay loop (skipped) preset value.. 4399.99 BogoMIPS (lpj=2199998)
+[    0.271442] Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+[    0.272250] Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+[    0.273258] Spectre V2 : User space: Vulnerable
+[    0.274250] Speculative Store Bypass: Vulnerable
+[    0.275287] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.276249] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.277249] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.278249] x86/fpu: Supporting XSAVE feature 0x008: 'MPX bounds registers'
+[    0.279249] x86/fpu: Supporting XSAVE feature 0x010: 'MPX CSR'
+[    0.280249] x86/fpu: Supporting XSAVE feature 0x020: 'AVX-512 opmask'
+[    0.281249] x86/fpu: Supporting XSAVE feature 0x040: 'AVX-512 Hi256'
+[    0.282249] x86/fpu: Supporting XSAVE feature 0x080: 'AVX-512 ZMM_Hi256'
+[    0.283250] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[    0.284249] x86/fpu: xstate_offset[3]:  832, xstate_sizes[3]:   64
+[    0.285249] x86/fpu: xstate_offset[4]:  896, xstate_sizes[4]:   64
+[    0.286249] x86/fpu: xstate_offset[5]:  960, xstate_sizes[5]:   64
+[    0.287249] x86/fpu: xstate_offset[6]: 1024, xstate_sizes[6]:  512
+[    0.288249] x86/fpu: xstate_offset[7]: 1536, xstate_sizes[7]: 1024
+[    0.289249] x86/fpu: Enabled xstate features 0xff, context size is 2560 bytes, using 'compacted' format.
+[    0.291798] Freeing SMP alternatives memory: 12K
+[    0.292250] pid_max: default: 32768 minimum: 301
+[    0.293268] Mount-cache hash table entries: 1024 (order: 1, 8192 bytes, linear)
+[    0.294251] Mountpoint-cache hash table entries: 1024 (order: 1, 8192 bytes, linear)
+[    0.296455] smpboot: CPU0: Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz (family: 0x6, model: 0x55, stepping: 0x4)
+[    0.297567] Performance Events: Skylake events, full-width counters, Intel PMU driver.
+[    0.298256] ... version:                2
+[    0.299253] ... bit width:              48
+[    0.300253] ... generic registers:      4
+[    0.301252] ... value mask:             0000ffffffffffff
+[    0.302253] ... max period:             00007fffffffffff
+[    0.303253] ... fixed-purpose events:   3
+[    0.304252] ... event mask:             000000070000000f
+[    0.305403] signal: max sigframe size: 3216
+[    0.306307] rcu: Hierarchical SRCU implementation.
+[    0.307253] rcu: 	Max phase no-delay instances is 400.
+[    0.308502] smp: Bringing up secondary CPUs ...
+[    0.309440] smpboot: x86: Booting SMP configuration:
+[    0.310256] .... node  #0, CPUs:      #1
+[    0.311423] smp: Brought up 1 node, 2 CPUs
+[    0.313253] smpboot: Total of 2 processors activated (8799.99 BogoMIPS)
+[    0.314303] root domain span: 0-1
+[    0.315271] Memory: 489904K/523768K available (6144K kernel code, 975K rwdata, 1276K rodata, 944K init, 772K bss, 31636K reserved, 0K cma-reserved)
+[    0.316493] devtmpfs: initialized
+[    0.317481] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[    0.318349] thermal_sys: Registered thermal governor 'step_wise'
+[    0.318366] cpuidle: using governor ladder
+[    0.320310] kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+[    0.321314] ACPI: Added _OSI(Module Device)
+[    0.326272] ACPI: Added _OSI(Processor Device)
+[    0.331266] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.337265] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.343283] ACPI Error: AE_BAD_PARAMETER, During Region initialization (20240827/tbxfload-52)
+[    0.353265] ACPI: Unable to load the System Description Tables
+[    0.359265] ACPI Error: Could not remove SCI handler (20240827/evmisc-251)
+[    0.368152] clocksource: Switched to clocksource kvm-clock
+[    0.369391] pnp: PnP ACPI: disabled
+[    0.371281] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x1fb63109b96, max_idle_ns: 440795265316 ns
+[    0.371696] Unpacking initramfs...
+[    0.375029] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[    0.381667] workingset: timestamp_bits=56 max_order=17 bucket_order=0
+[    0.385635] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    0.388331] serial8250: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[    0.391538] Freeing initrd memory: 9288K
+[    0.391714] serial8250: ttyS1 at I/O 0x2f8 (irq = 3, base_baud = 115200) is a 16550A
+[    0.398988] serial8250: ttyS2 at I/O 0x3e8 (irq = 4, base_baud = 115200) is a 16550A
+[    0.402248] serial8250: ttyS3 at I/O 0x2e8 (irq = 3, base_baud = 115200) is a 16550A
+[    0.405538] IPI shorthand broadcast: enabled
+[    0.408341] sched_clock: Marking stable (157356046, 250566598)->(471959925, -64037281)
+[    0.413097] Freeing unused kernel image (initmem) memory: 944K
+[    0.414701] Write protecting the kernel read-only data: 8192k
+[    0.416683] Freeing unused kernel image (rodata/data gap) memory: 772K
+[    0.418471] Run /init as init process
+Loading kmod.ko with params: driver=executor isolcpus=nohz,managed_irq,1 rcu_nocbs=1 nohz_full=1 
+[    0.439975] kmod: loading out-of-tree module taints kernel.
+[    0.443760] kmod: unknown parameter 'isolcpus' ignored
+[    0.445167] kmod: unknown parameter 'rcu_nocbs' ignored
+[    0.446592] kmod: unknown parameter 'nohz_full' ignored
+[    0.448811] [92mStarting executor on Linux 6.12.0-rc1-cd9626e9ebc77edec33023fe95dab4b04ffc819d~1[0m
+[    0.459291] [92mDisabled workqueue on CPU 1[0m
+[    0.460654] [92mMoved kthreads to CPU 0[0m
+[    0.461841] [92mWriting /sys/fs/cgroup//cgroup.subtree_control: +cpu +cpuset[0m
+[    0.478128] [92mTraced init_tg_cfs_entry with on_sched_group_alloc[0m
+[    0.480449] executor: custom capacity disabled
+[    0.481668] executor: custom topology disabled
+[    0.482886] executor: custom frequency disabled
+[    0.484873] Topology levels:
+[    0.485708] - SMT  |    0 |    1 | SHARE_CPUCAPACITY, SHARE_LLC
+[    0.487318] - CLS  |    0 |    1 | CLUSTER, SHARE_LLC
+[    0.488707] - MC   |  0-1 |  0-1 | SHARE_LLC
+[    0.489889] - PKG  |  0-1 |  0-1 | 
+[    0.490863] - NODE |  0-1 |  0-1 | 
+[    0.491838] Sched domains:
+[    0.492600] - MC[0]: mask=0-1, groups={0: 1024, 1: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_LLC, PREFER_SIBLING
+[    0.496119] - MC[1]: mask=0-1, groups={1: 1024, 0: 1024}, flags=BALANCE_NEWIDLE, BALANCE_EXEC, BALANCE_FORK, WAKE_AFFINE, SHARE_LLC, PREFER_SIBLING
+[    0.499644] [92mDisabled timer ticks on CPU 1[0m
+[    0.500974] [92mDisabled jiffies update[0m
+[   10.000000] [92mMocked sched clock[0m
+[   10.000000] [92mReset runqueues state[0m
+[   10.000000] [92mReset cpumask[0m
+[   10.000000] [92mReset tasks state[0m
+[   10.000000] [92mRunning driver executor[0m
+[   10.000000] [92mTraced sched_balance_rq with on_sched_balance_enter[0m
+[   10.000000] [92mTraced sched_balance_find_src_group with on_sched_balance_selected[0m
+[   10.000000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.001000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.002000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.003000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.004000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.005000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.006000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.007000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.008000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.009000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.010000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.011000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.012000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.013000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.014000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.015000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.016000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.017000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.018000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.019000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.020000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.021000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.022000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.023000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.024000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.025000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.026000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.027000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.028000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.029000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.030000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.031000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.032000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.033000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.034000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.035000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.036000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.037000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.038000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.039000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.040000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.041000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.042000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.043000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.044000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.045000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.046000] EXECOP: {"op": 10, "a": -1, "b": 0, "c": 0}
+[   10.046000] [92mSet min vruntime to 10000000000 ns on cpu 0[0m
+[   10.046000] [92mSet min vruntime to 10000000000 ns on cpu 1[0m
+[   10.046000] [92mCreated directory /sys/fs/cgroup/cg0[0m
+[   10.046000] [92mWriting /sys/fs/cgroup/cg0/cgroup.subtree_control: +cpu +cpuset[0m
+[   10.046000] [92mWriting /sys/fs/cgroup/cg0/cpuset.cpus: 1-1[0m
+[   10.046000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.046000] EXECOP: {"op": 10, "a": -1, "b": 1, "c": 0}
+[   10.046000] [92mSet min vruntime to 10000000000 ns on cpu 0[0m
+[   10.046000] [92mSet min vruntime to 10000000000 ns on cpu 1[0m
+[   10.046000] [92mCreated directory /sys/fs/cgroup/cg1[0m
+[   10.046000] [92mWriting /sys/fs/cgroup/cg1/cgroup.subtree_control: +cpu +cpuset[0m
+[   10.046000] [92mWriting /sys/fs/cgroup/cg1/cpuset.cpus: 1-1[0m
+[   10.046000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.046000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.046000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.047000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.047000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.047000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.048000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.048000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.048000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.049000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.049000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.049000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.050000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.050000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.050000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.051000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.051000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.051000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.052000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.052000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.052000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.053000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.053000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.053000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.054000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.054000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.054000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.055000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.055000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.055000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.056000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.056000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.056000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.057000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.057000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.057000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.058000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.058000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.058000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.059000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.059000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.059000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.060000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.060000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.060000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.061000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.061000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.061000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.062000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.062000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.062000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.063000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.063000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.063000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.064000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.064000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.064000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.065000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.065000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.065000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.066000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.066000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.066000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.067000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.067000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.067000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.068000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.068000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.068000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.069000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.069000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.069000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.070000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.070000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.070000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.071000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.071000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.071000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.072000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.072000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.072000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.073000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.073000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.073000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.074000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.074000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.074000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.075000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.075000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.075000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.076000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.076000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.076000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.077000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.077000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.077000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.078000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.078000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.078000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.079000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.079000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.079000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.080000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.080000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.080000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.081000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.081000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.081000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.082000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.082000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.082000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.083000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.083000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.083000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.084000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.084000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.084000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.085000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.085000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.085000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.086000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.086000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.086000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.087000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.087000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.087000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.088000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.088000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.088000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.089000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.089000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.089000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.090000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.090000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.090000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.091000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.091000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.091000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.092000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.092000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.092000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.093000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.093000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.093000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.094000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.094000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.094000] EXECOP: {"op": 12, "a": 0, "b": 8354, "c": 0}
+[   10.094000] [92mWriting /sys/fs/cgroup/cg0/cpu.weight: 8354[0m
+[   10.094000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.094000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.094000] EXECOP: {"op": 12, "a": 1, "b": 8309, "c": 0}
+[   10.094000] [92mWriting /sys/fs/cgroup/cg1/cpu.weight: 8309[0m
+[   10.094000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.094000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.094000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.095000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.095000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.095000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.096000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.096000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.096000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.097000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.097000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.097000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.098000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.098000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.098000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.099000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.099000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.099000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.100000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.100000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.100000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.101000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.101000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.101000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.102000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.102000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.102000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.103000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.103000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.103000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.104000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.104000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.104000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.105000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.105000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.105000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.106000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.106000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.106000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.107000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.107000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.107000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.108000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.108000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.108000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.109000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.109000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.109000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.110000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.110000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.110000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.111000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.111000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.111000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.112000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.112000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.112000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.113000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.113000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.113000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.114000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.114000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.114000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.115000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.115000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.115000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.116000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.116000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.116000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.117000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.117000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.117000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.118000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.118000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.118000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.119000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.119000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.119000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.120000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.120000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.120000] EXECOP: {"op": 12, "a": 1, "b": 8879, "c": 0}
+[   10.120000] [92mWriting /sys/fs/cgroup/cg1/cpu.weight: 8879[0m
+[   10.120000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.120000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.120000] EXECOP: {"op": 16, "a": 0, "b": 0, "c": 0}
+[   10.120000] [92mRemoved directory /sys/fs/cgroup/cg0[0m
+[   10.120000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.120000] EXECOP: {"op": 10, "a": 1, "b": 0, "c": 0}
+[   10.120000] [92mSet min vruntime to 10000000000 ns on cpu 0[0m
+[   10.120000] [92mSet min vruntime to 10000000000 ns on cpu 1[0m
+[   10.120000] [92mCreated directory /sys/fs/cgroup/cg1/cg0[0m
+[   10.120000] [92mWriting /sys/fs/cgroup/cg1/cg0/cgroup.subtree_control: +cpu +cpuset[0m
+[   10.120000] [92mWriting /sys/fs/cgroup/cg1/cg0/cpuset.cpus: 1-1[0m
+[   10.120000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.120000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.120000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.121000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.121000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.121000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.122000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.122000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.122000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.123000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.123000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.123000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.124000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.124000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.124000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.125000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.125000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.125000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.126000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.126000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.126000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.127000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.127000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.127000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.128000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.128000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.128000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.129000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.129000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.129000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.130000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.130000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.130000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.131000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.131000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.131000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.132000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.132000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.132000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.133000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.133000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.133000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.134000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.134000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.134000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.135000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.135000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.135000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.136000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.136000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.136000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.137000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.137000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.137000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.138000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.138000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.138000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.139000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.139000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.139000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.140000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.140000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.140000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.141000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.141000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.141000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.142000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.142000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.142000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.143000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.143000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.143000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.144000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.144000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.144000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.145000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.145000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.145000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.146000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.146000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.146000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.147000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.147000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.147000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.148000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.148000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.148000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.149000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.149000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.149000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.150000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.150000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.150000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.151000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.151000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.151000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.152000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.152000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.152000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.153000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.153000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.153000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.154000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.154000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.154000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.155000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.155000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.155000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.156000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.156000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.156000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.157000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.157000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.157000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.158000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.158000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.158000] EXECOP: {"op": 16, "a": 0, "b": 0, "c": 0}
+[   10.158000] [92mRemoved directory /sys/fs/cgroup/cg1/cg0[0m
+[   10.158000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.158000] EXECOP: {"op": 12, "a": 1, "b": 7575, "c": 0}
+[   10.158000] [92mWriting /sys/fs/cgroup/cg1/cpu.weight: 7575[0m
+[   10.158000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.158000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.159000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.159000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.160000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.160000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.161000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.161000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.162000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.162000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.163000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.163000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.164000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.164000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.165000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.165000] EXECOP: {"op": 10, "a": 1, "b": 0, "c": 0}
+[   10.165000] [92mSet min vruntime to 10000000000 ns on cpu 0[0m
+[   10.165000] [92mSet min vruntime to 10000000000 ns on cpu 1[0m
+[   10.165000] [92mCreated directory /sys/fs/cgroup/cg1/cg0[0m
+[   10.165000] [92mWriting /sys/fs/cgroup/cg1/cg0/cgroup.subtree_control: +cpu +cpuset[0m
+[   10.165000] [92mWriting /sys/fs/cgroup/cg1/cg0/cpuset.cpus: 1-1[0m
+[   10.165000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.165000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.165000] EXECOP: {"op": 12, "a": 1, "b": 4989, "c": 0}
+[   10.165000] [92mWriting /sys/fs/cgroup/cg1/cpu.weight: 4989[0m
+[   10.165000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.165000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.165000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.166000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.166000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.166000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.167000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.167000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.167000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.168000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.168000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.168000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.169000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.169000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.169000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.170000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.170000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.170000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.171000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.171000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.171000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.172000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.172000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.172000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.173000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.173000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.173000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.174000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.174000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.174000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.175000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.175000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.175000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.176000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.176000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.176000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.177000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.177000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.177000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.178000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.178000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.178000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.179000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.179000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.179000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.180000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.180000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.180000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.181000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.181000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.181000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.182000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.182000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.182000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.183000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.183000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.183000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.184000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.184000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.184000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.185000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.185000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.185000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.186000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.186000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.186000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.187000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.187000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.187000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.188000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.188000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.188000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.189000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.189000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.189000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.190000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.190000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.190000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.191000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.191000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.191000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.192000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.192000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.192000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.193000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.193000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.193000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.194000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.194000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.194000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.195000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.195000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.195000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.196000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.196000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.196000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.197000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.197000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.197000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.198000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.198000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.198000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.199000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.199000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.199000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.200000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.200000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.200000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.201000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.201000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.201000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.202000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.202000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.202000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.203000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.203000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.203000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.204000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.204000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.204000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.205000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.205000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.205000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.206000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.206000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.206000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.207000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.207000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.207000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.208000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.208000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.208000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.209000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.209000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.209000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.210000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.210000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.210000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.211000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.211000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.211000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.212000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.212000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.212000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.213000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.213000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.213000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.214000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.214000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.214000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.215000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.215000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.215000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.216000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.216000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.216000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.217000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.217000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.217000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.218000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.218000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.218000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.219000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.219000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.219000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.220000] cgroup 0 cg1/cg0: eligible={cpu1=1}
+[   10.220000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.220000] EXECOP: {"op": 16, "a": 0, "b": 0, "c": 0}
+[   10.220000] [92mRemoved directory /sys/fs/cgroup/cg1/cg0[0m
+[   10.220000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.220000] EXECOP: {"op": 10, "a": -1, "b": 0, "c": 0}
+[   10.220000] [92mSet min vruntime to 10000000000 ns on cpu 0[0m
+[   10.220000] [92mSet min vruntime to 10000000000 ns on cpu 1[0m
+[   10.220000] [92mCreated directory /sys/fs/cgroup/cg0[0m
+[   10.220000] [92mWriting /sys/fs/cgroup/cg0/cgroup.subtree_control: +cpu +cpuset[0m
+[   10.220000] [92mWriting /sys/fs/cgroup/cg0/cpuset.cpus: 1-1[0m
+[   10.220000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.220000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.220000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.221000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.221000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.221000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.222000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.222000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.222000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.223000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.223000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.223000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.224000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.224000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.224000] EXECOP: {"op": 0, "a": 0, "b": 0, "c": 0}
+[   10.224000] [92mTask created with pid 39[0m
+[   10.224000] [92mTask 39 is ready[0m
+[   10.224000] [92mPinned task 39 to CPUs 1-1[0m
+[   10.224000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.224000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.224000] cgroup 1 cg1: eligible={cpu1=1}
+[   10.224000] EXECOP: {"op": 16, "a": 1, "b": 0, "c": 0}
+[   10.224000] [92mRemoved directory /sys/fs/cgroup/cg1[0m
+[   10.224000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.224000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.224000] EXECOP: {"op": 10, "a": 0, "b": 1, "c": 0}
+[   10.224000] [92mSet min vruntime to 10000000000 ns on cpu 0[0m
+[   10.224000] [92mSet min vruntime to 10000000000 ns on cpu 1[0m
+[   10.224000] [92mCreated directory /sys/fs/cgroup/cg0/cg1[0m
+[   10.224000] [92mWriting /sys/fs/cgroup/cg0/cg1/cgroup.subtree_control: +cpu +cpuset[0m
+[   10.224000] [92mWriting /sys/fs/cgroup/cg0/cg1/cpuset.cpus: 1-1[0m
+[   10.224000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.224000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.224000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.224000] EXECOP: {"op": 0, "a": 1, "b": 0, "c": 0}
+[   10.224000] [92mTask created with pid 40[0m
+[   10.224000] [92mTask 40 is ready[0m
+[   10.224000] [92mPinned task 40 to CPUs 1-1[0m
+[   10.224000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.224000] Task 1 40: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.224000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.224000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.224000] EXECOP: {"op": 24, "a": 1, "b": 0, "c": 0}
+[   10.224000] [92mFreezing task 40[0m
+[   10.224000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.224000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.224000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.224000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.224000] warn: TASK_FREEZE left task 1 pid=40 in state=0x1 expected=0x8000
+[   10.224000] EXECOP: {"op": 10, "a": 1, "b": 2, "c": 0}
+[   10.224000] [92mSet min vruntime to 10000000000 ns on cpu 0[0m
+[   10.224000] [92mSet min vruntime to 10000000000 ns on cpu 1[0m
+[   10.224000] [92mCreated directory /sys/fs/cgroup/cg0/cg1/cg2[0m
+[   10.224000] [92mWriting /sys/fs/cgroup/cg0/cg1/cg2/cgroup.subtree_control: +cpu +cpuset[0m
+[   10.224000] [92mWriting /sys/fs/cgroup/cg0/cg1/cg2/cpuset.cpus: 1-1[0m
+[   10.224000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.224000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.224000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.224000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.224000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.224000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.225000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.225000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.225000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.225000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.225000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.225000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.226000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.226000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.226000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.226000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.226000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.226000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.227000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.227000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.227000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.227000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.227000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.227000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.228000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.228000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.228000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.228000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.228000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.228000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.229000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.229000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.229000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.229000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.229000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.229000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.230000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.230000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.230000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.230000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.230000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.230000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.231000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.231000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.231000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.231000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.231000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.231000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.232000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.232000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.232000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.232000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.232000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.232000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.233000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.233000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.233000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.233000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.233000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.233000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.234000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.234000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.234000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.234000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.234000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.234000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.235000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.235000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.235000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.235000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.235000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.235000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.236000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.236000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.236000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.236000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.236000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.236000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.237000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.237000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.237000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.237000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.237000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.237000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.238000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.238000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.238000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.238000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.238000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.238000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.239000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.239000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.239000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.239000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.239000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.239000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.240000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.240000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.240000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.240000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.240000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.240000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.241000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.241000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.241000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.241000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.241000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.241000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.242000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.242000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.242000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.242000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.242000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.242000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.243000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.243000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.243000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.243000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.243000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.243000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.244000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.244000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.244000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.244000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.244000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.244000] EXECOP: {"op": 13, "a": 2, "b": 1, "c": 0}
+[   10.244000] [92mWriting /sys/fs/cgroup/cg0/cg1/cg2/cgroup.procs: 40[0m
+[   10.244000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.244000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.244000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.244000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.244000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.244000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.245000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.245000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.245000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.245000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.245000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.245000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.246000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.246000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.246000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.246000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.246000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.246000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.247000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.247000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.247000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.247000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.247000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.247000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.248000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.248000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.248000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.248000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.248000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.248000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.249000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.249000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.249000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.249000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.249000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.249000] EXECOP: {"op": 6, "a": 1, "b": 0, "c": 0}
+[   10.249000] [92mWaked up task 40[0m
+[   10.249000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.249000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=0, eligible=1
+[   10.249000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.249000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.249000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.249000] EXECOP: {"op": 7, "a": 1, "b": -8, "c": 0}
+[   10.249000] [92mSet priority of task 40 to -8[0m
+[   10.249000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.249000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=0, eligible=1
+[   10.249000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.249000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.249000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.249000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.250000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.250000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=20, eligible=1
+[   10.250000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.250000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.250000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.250000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.251000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.251000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=41, eligible=1
+[   10.251000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.251000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.251000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.251000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.252000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.252000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=61, eligible=1
+[   10.252000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.252000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.252000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.252000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.253000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.253000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=81, eligible=1
+[   10.253000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.253000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.253000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.253000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.254000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.254000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=81, eligible=1
+[   10.254000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.254000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.254000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.254000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.255000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.255000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=119, eligible=1
+[   10.255000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.255000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.255000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.255000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.256000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.256000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=137, eligible=1
+[   10.256000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.256000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.256000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.256000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.257000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.257000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=156, eligible=1
+[   10.257000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.257000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.257000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.257000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.258000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.258000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=173, eligible=1
+[   10.258000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.258000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.258000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.258000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.259000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.259000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=191, eligible=1
+[   10.259000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.259000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.259000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.259000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.260000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.260000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=208, eligible=1
+[   10.260000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.260000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.260000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.260000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.261000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.261000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=224, eligible=1
+[   10.261000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.261000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.261000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.261000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.262000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.262000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=241, eligible=1
+[   10.262000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.262000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.262000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.262000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.263000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.263000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=257, eligible=1
+[   10.263000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.263000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.263000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.263000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.264000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.264000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=273, eligible=1
+[   10.264000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.264000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.264000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.264000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.265000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.265000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=288, eligible=1
+[   10.265000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.265000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.265000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.265000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.266000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.266000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=303, eligible=1
+[   10.266000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.266000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.266000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.266000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.267000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.267000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=318, eligible=1
+[   10.267000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.267000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.267000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.267000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.268000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.268000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=332, eligible=1
+[   10.268000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.268000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.268000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.268000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.269000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.269000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=346, eligible=1
+[   10.269000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.269000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.269000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.269000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.270000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.270000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=360, eligible=1
+[   10.270000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.270000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.270000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.270000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.271000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.271000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=374, eligible=1
+[   10.271000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.271000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.271000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.271000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.272000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.272000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=387, eligible=1
+[   10.272000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.272000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.272000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.272000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.273000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.273000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=400, eligible=1
+[   10.273000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.273000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.273000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.273000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.274000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.274000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=413, eligible=1
+[   10.274000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.274000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.274000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.274000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.275000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.275000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=425, eligible=1
+[   10.275000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.275000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.275000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.275000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.276000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.276000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=425, eligible=1
+[   10.276000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.276000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.276000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.276000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.277000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.277000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=450, eligible=1
+[   10.277000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.277000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.277000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.277000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.278000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.278000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=461, eligible=1
+[   10.278000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.278000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.278000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.278000] EXECOP: {"op": 16, "a": 2, "b": 0, "c": 0}
+[   10.278000] [92mMoving task 40 from cgroup 2 to root[0m
+[   10.278000] [92mWriting /sys/fs/cgroup//cgroup.procs: 40[0m
+[   10.278000] [92mPinned task 40 to CPUs 1-1[0m
+[   10.278000] [92mRemoved directory /sys/fs/cgroup/cg0/cg1/cg2[0m
+[   10.278000] Task 0 39: on_cpu=0, state=1, cpu=0, class=0, util_avg=0, eligible=0
+[   10.278000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=461, eligible=1
+[   10.278000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.278000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.278000] EXECOP: {"op": 24, "a": 0, "b": 0, "c": 0}
+[   10.278000] [92mFreezing task 39[0m
+[   10.278000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=0, eligible=1
+[   10.278000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=461, eligible=1
+[   10.278000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.278000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.278000] warn: TASK_FREEZE left task 0 pid=39 in state=0x0 expected=0x8000
+[   10.278000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.279000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=0, eligible=1
+[   10.279000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=472, eligible=0
+[   10.279000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.279000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.279000] EXECOP: {"op": 12, "a": 1, "b": 217, "c": 0}
+[   10.279000] [92mWriting /sys/fs/cgroup/cg0/cg1/cpu.weight: 217[0m
+[   10.279000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=0, eligible=1
+[   10.279000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=472, eligible=0
+[   10.279000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.279000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.279000] EXECOP: {"op": 5, "a": 1, "b": 0, "c": 0}
+[   10.279000] [92mPaused task 40[0m
+[   10.279000] Task 0 39: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.279000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=472, eligible=1
+[   10.279000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.279000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.279000] EXECOP: {"op": 6, "a": 1, "b": 0, "c": 0}
+[   10.279000] [92mWaked up task 40[0m
+[   10.279000] Task 0 39: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.279000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=472, eligible=1
+[   10.279000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.279000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.279000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.280000] Task 0 39: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.280000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=483, eligible=1
+[   10.280000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.280000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.280000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.281000] Task 0 39: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.281000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=483, eligible=1
+[   10.281000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.281000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.281000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.282000] Task 0 39: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.282000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=505, eligible=1
+[   10.282000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.282000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.282000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.283000] Task 0 39: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.283000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=516, eligible=1
+[   10.283000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.283000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.283000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.284000] Task 0 39: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.284000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=526, eligible=1
+[   10.284000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.284000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.284000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.285000] Task 0 39: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.285000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=536, eligible=1
+[   10.285000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.285000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.285000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.286000] Task 0 39: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.286000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=546, eligible=1
+[   10.286000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.286000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.286000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.287000] Task 0 39: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.287000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=556, eligible=1
+[   10.287000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.287000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.287000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.288000] Task 0 39: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.288000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=566, eligible=1
+[   10.288000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.288000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.288000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.289000] Task 0 39: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.289000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=575, eligible=1
+[   10.289000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.289000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.289000] EXECOP: {"op": 13, "a": 1, "b": 0, "c": 0}
+[   10.289000] [92mWriting /sys/fs/cgroup/cg0/cg1/cgroup.procs: 39[0m
+[   10.289000] Task 0 39: on_cpu=0, state=1, cpu=1, class=0, util_avg=0, eligible=1
+[   10.289000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=575, eligible=1
+[   10.289000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.289000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.289000] EXECOP: {"op": 6, "a": 0, "b": 0, "c": 0}
+[   10.289000] [92mWaked up task 39[0m
+[   10.289000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=0, eligible=1
+[   10.289000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=575, eligible=1
+[   10.289000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.289000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.289000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.290000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=0, eligible=1
+[   10.290000] Task 1 40: on_cpu=0, state=0, cpu=1, class=0, util_avg=584, eligible=0
+[   10.290000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.290000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.290000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.291000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=20, eligible=1
+[   10.291000] Task 1 40: on_cpu=0, state=0, cpu=1, class=0, util_avg=584, eligible=1
+[   10.291000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.291000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.291000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.292000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=41, eligible=1
+[   10.292000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=561, eligible=1
+[   10.292000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.292000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.292000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.293000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=41, eligible=1
+[   10.293000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=570, eligible=1
+[   10.293000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.293000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.293000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.294000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=41, eligible=1
+[   10.294000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=579, eligible=1
+[   10.294000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.294000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.294000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.295000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=41, eligible=1
+[   10.295000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=588, eligible=1
+[   10.295000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.295000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.295000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.296000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=41, eligible=1
+[   10.296000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=597, eligible=1
+[   10.296000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.296000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.296000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.297000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=41, eligible=1
+[   10.297000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=606, eligible=1
+[   10.297000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.297000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.297000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.298000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=41, eligible=1
+[   10.298000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=615, eligible=1
+[   10.298000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.298000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.298000] EXECOP: {"op": 10, "a": 1, "b": 2, "c": 0}
+[   10.298000] [92mMoving task 39 from cgroup 1 to root[0m
+[   10.298000] [92mWriting /sys/fs/cgroup//cgroup.procs: 39[0m
+[   10.298000] [92mPinned task 39 to CPUs 1-1[0m
+[   10.298000] [92mSet min vruntime to 10000000000 ns on cpu 0[0m
+[   10.298000] [92mSet min vruntime to 10000000000 ns on cpu 1[0m
+[   10.298000] [92mCreated directory /sys/fs/cgroup/cg0/cg1/cg2[0m
+[   10.298000] [92mWriting /sys/fs/cgroup/cg0/cg1/cg2/cgroup.subtree_control: +cpu +cpuset[0m
+[   10.298000] [92mWriting /sys/fs/cgroup/cg0/cg1/cg2/cpuset.cpus: 1-1[0m
+[   10.298000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=36, eligible=1
+[   10.298000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=615, eligible=1
+[   10.298000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.298000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.298000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.298000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.299000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=36, eligible=1
+[   10.299000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=623, eligible=1
+[   10.299000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.299000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.299000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.299000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.300000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=36, eligible=1
+[   10.300000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=631, eligible=1
+[   10.300000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.300000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.300000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.300000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.301000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=33, eligible=1
+[   10.301000] Task 1 40: on_cpu=0, state=0, cpu=1, class=0, util_avg=639, eligible=0
+[   10.301000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.301000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.301000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.301000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.302000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=54, eligible=0
+[   10.302000] Task 1 40: on_cpu=0, state=0, cpu=1, class=0, util_avg=639, eligible=1
+[   10.302000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.302000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.302000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.302000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.303000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=54, eligible=0
+[   10.303000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=613, eligible=1
+[   10.303000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.303000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.303000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.303000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.304000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=54, eligible=0
+[   10.304000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=622, eligible=1
+[   10.304000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.304000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.304000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.304000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.305000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=54, eligible=0
+[   10.305000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=630, eligible=1
+[   10.305000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.305000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.305000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.305000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.306000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=54, eligible=0
+[   10.306000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=638, eligible=1
+[   10.306000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.306000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.306000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.306000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.307000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=54, eligible=0
+[   10.307000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=646, eligible=1
+[   10.307000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.307000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.307000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.307000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.308000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=54, eligible=0
+[   10.308000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=654, eligible=1
+[   10.308000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.308000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.308000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.308000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.309000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=54, eligible=0
+[   10.309000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=661, eligible=1
+[   10.309000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.309000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.309000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.309000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.310000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=54, eligible=0
+[   10.310000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=669, eligible=1
+[   10.310000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.310000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.310000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.310000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.311000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=54, eligible=0
+[   10.311000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=676, eligible=1
+[   10.311000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.311000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.311000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.311000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.312000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=54, eligible=0
+[   10.312000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=683, eligible=1
+[   10.312000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.312000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.312000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.312000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.313000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=60, eligible=1
+[   10.313000] Task 1 40: on_cpu=0, state=0, cpu=1, class=0, util_avg=690, eligible=0
+[   10.313000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.313000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.313000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.313000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.314000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=79, eligible=0
+[   10.314000] Task 1 40: on_cpu=0, state=0, cpu=1, class=0, util_avg=690, eligible=1
+[   10.314000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.314000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.314000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.314000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.315000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=99, eligible=0
+[   10.315000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=662, eligible=1
+[   10.315000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.315000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.315000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.315000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.316000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=99, eligible=0
+[   10.316000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=669, eligible=1
+[   10.316000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.316000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.316000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.316000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.317000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=99, eligible=0
+[   10.317000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=677, eligible=1
+[   10.317000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.317000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.317000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.317000] EXECOP: {"op": 13, "a": 2, "b": 0, "c": 0}
+[   10.317000] [92mWriting /sys/fs/cgroup/cg0/cg1/cg2/cgroup.procs: 39[0m
+[   10.317000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=95, eligible=1
+[   10.317000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=677, eligible=1
+[   10.317000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.317000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.317000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.317000] EXECOP: {"op": 5, "a": 1, "b": 0, "c": 0}
+[   10.317000] [92mPaused task 40[0m
+[   10.317000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=95, eligible=1
+[   10.317000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=677, eligible=1
+[   10.317000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.317000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.317000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.317000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.318000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=113, eligible=1
+[   10.318000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=677, eligible=1
+[   10.318000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.318000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.318000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.318000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.319000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=113, eligible=1
+[   10.319000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=677, eligible=1
+[   10.319000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.319000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.319000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.319000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.320000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=150, eligible=1
+[   10.320000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=677, eligible=1
+[   10.320000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.320000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.320000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.320000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.321000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=168, eligible=1
+[   10.321000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=677, eligible=1
+[   10.321000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.321000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.321000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.321000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.322000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=186, eligible=1
+[   10.322000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=677, eligible=1
+[   10.322000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.322000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.322000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.322000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.323000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=203, eligible=1
+[   10.323000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=677, eligible=1
+[   10.323000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.323000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.323000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.323000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.324000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=220, eligible=1
+[   10.324000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=677, eligible=1
+[   10.324000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.324000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.324000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.324000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.325000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=236, eligible=1
+[   10.325000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=677, eligible=1
+[   10.325000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.325000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.325000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.325000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.326000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=252, eligible=1
+[   10.326000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=677, eligible=1
+[   10.326000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.326000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.326000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.326000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.327000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=268, eligible=1
+[   10.327000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=677, eligible=1
+[   10.327000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.327000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.327000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.327000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.328000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=284, eligible=1
+[   10.328000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=677, eligible=1
+[   10.328000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.328000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.328000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.328000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.329000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=299, eligible=1
+[   10.329000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=677, eligible=1
+[   10.329000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.329000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.329000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.329000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.330000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=314, eligible=1
+[   10.330000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=677, eligible=1
+[   10.330000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.330000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.330000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.330000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.331000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=328, eligible=1
+[   10.331000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=677, eligible=1
+[   10.331000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.331000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.331000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.331000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.332000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=342, eligible=1
+[   10.332000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=677, eligible=1
+[   10.332000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.332000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.332000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.332000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.333000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=356, eligible=1
+[   10.333000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=677, eligible=1
+[   10.333000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.333000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.333000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.333000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.334000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=370, eligible=1
+[   10.334000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=677, eligible=1
+[   10.334000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.334000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.334000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.334000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.335000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=383, eligible=1
+[   10.335000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=677, eligible=1
+[   10.335000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.335000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.335000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.335000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.336000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=396, eligible=1
+[   10.336000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=677, eligible=1
+[   10.336000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.336000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.336000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.336000] EXECOP: {"op": 6, "a": 1, "b": 0, "c": 0}
+[   10.336000] [92mWaked up task 40[0m
+[   10.336000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=396, eligible=1
+[   10.336000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=457, eligible=1
+[   10.336000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.336000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.336000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.336000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.337000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=396, eligible=1
+[   10.337000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=468, eligible=0
+[   10.337000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.337000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.337000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.337000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.338000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=380, eligible=1
+[   10.338000] Task 1 40: on_cpu=0, state=0, cpu=1, class=0, util_avg=480, eligible=0
+[   10.338000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.338000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.338000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.338000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.339000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=393, eligible=1
+[   10.339000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=470, eligible=1
+[   10.339000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.339000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.339000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.339000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.340000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=393, eligible=1
+[   10.340000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=481, eligible=1
+[   10.340000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.340000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.340000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.340000] EXECOP: {"op": 5, "a": 1, "b": 0, "c": 0}
+[   10.340000] [92mPaused task 40[0m
+[   10.340000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=393, eligible=1
+[   10.340000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=481, eligible=1
+[   10.340000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.340000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.340000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.340000] EXECOP: {"op": 6, "a": 1, "b": 0, "c": 0}
+[   10.340000] [92mWaked up task 40[0m
+[   10.340000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=393, eligible=1
+[   10.340000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=481, eligible=1
+[   10.340000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.340000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.340000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.340000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.341000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=393, eligible=1
+[   10.341000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=492, eligible=1
+[   10.341000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.341000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.341000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.341000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.342000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=393, eligible=1
+[   10.342000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=503, eligible=1
+[   10.342000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.342000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.342000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.342000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.343000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=362, eligible=1
+[   10.343000] Task 1 40: on_cpu=0, state=0, cpu=1, class=0, util_avg=514, eligible=0
+[   10.343000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.343000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.343000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.343000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.344000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=376, eligible=1
+[   10.344000] Task 1 40: on_cpu=0, state=0, cpu=1, class=0, util_avg=514, eligible=1
+[   10.344000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.344000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.344000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.344000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.345000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=389, eligible=1
+[   10.345000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=493, eligible=1
+[   10.345000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.345000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.345000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.345000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.346000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=389, eligible=1
+[   10.346000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=493, eligible=1
+[   10.346000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.346000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.346000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.346000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.347000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=389, eligible=1
+[   10.347000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=515, eligible=1
+[   10.347000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.347000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.347000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.347000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.348000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=389, eligible=1
+[   10.348000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=525, eligible=1
+[   10.348000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.348000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.348000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.348000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.349000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=389, eligible=1
+[   10.349000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=535, eligible=1
+[   10.349000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.349000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.349000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.349000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.350000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=389, eligible=1
+[   10.350000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=545, eligible=1
+[   10.350000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.350000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.350000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.350000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.351000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=389, eligible=1
+[   10.351000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=555, eligible=1
+[   10.351000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.351000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.351000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.351000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.352000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=389, eligible=1
+[   10.352000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=565, eligible=1
+[   10.352000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.352000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.352000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.352000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.353000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=389, eligible=1
+[   10.353000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=574, eligible=1
+[   10.353000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.353000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.353000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.353000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.354000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=389, eligible=1
+[   10.354000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=583, eligible=1
+[   10.354000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.354000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.354000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.354000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.355000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=389, eligible=1
+[   10.355000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=592, eligible=1
+[   10.355000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.355000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.355000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.355000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.356000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=389, eligible=1
+[   10.356000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=601, eligible=1
+[   10.356000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.356000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.356000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.356000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.357000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=303, eligible=1
+[   10.357000] Task 1 40: on_cpu=0, state=0, cpu=1, class=0, util_avg=610, eligible=0
+[   10.357000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.357000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.357000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.357000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.358000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=318, eligible=1
+[   10.358000] Task 1 40: on_cpu=0, state=0, cpu=1, class=0, util_avg=610, eligible=1
+[   10.358000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.358000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.358000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.358000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.359000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=333, eligible=1
+[   10.359000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=585, eligible=1
+[   10.359000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.359000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.359000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.359000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.360000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=333, eligible=1
+[   10.360000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=594, eligible=1
+[   10.360000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.360000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.360000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.360000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.361000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=333, eligible=1
+[   10.361000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=603, eligible=1
+[   10.361000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.361000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.361000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.361000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.362000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=333, eligible=1
+[   10.362000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=611, eligible=1
+[   10.362000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.362000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.362000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.362000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.363000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=333, eligible=1
+[   10.363000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=620, eligible=1
+[   10.363000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.363000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.363000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.363000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.364000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=333, eligible=1
+[   10.364000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=628, eligible=1
+[   10.364000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.364000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.364000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.364000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.365000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=333, eligible=1
+[   10.365000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=636, eligible=1
+[   10.365000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.365000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.365000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.365000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.366000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=333, eligible=1
+[   10.366000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=644, eligible=1
+[   10.366000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.366000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.366000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.366000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.367000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=333, eligible=1
+[   10.367000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=644, eligible=1
+[   10.367000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.367000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.367000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.367000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.368000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=333, eligible=1
+[   10.368000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=660, eligible=1
+[   10.368000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.368000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.368000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.368000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.369000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=333, eligible=1
+[   10.369000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=667, eligible=1
+[   10.369000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.369000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.369000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.369000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.370000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=333, eligible=1
+[   10.370000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=674, eligible=1
+[   10.370000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.370000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.370000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.370000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.371000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=259, eligible=1
+[   10.371000] Task 1 40: on_cpu=0, state=0, cpu=1, class=0, util_avg=681, eligible=0
+[   10.371000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.371000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.371000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.371000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.372000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=275, eligible=1
+[   10.372000] Task 1 40: on_cpu=0, state=0, cpu=1, class=0, util_avg=681, eligible=1
+[   10.372000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.372000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.372000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.372000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.373000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=290, eligible=1
+[   10.373000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=654, eligible=1
+[   10.373000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.373000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.373000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.373000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.374000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=290, eligible=1
+[   10.374000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=661, eligible=1
+[   10.374000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.374000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.374000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.374000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.375000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=290, eligible=1
+[   10.375000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=669, eligible=1
+[   10.375000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.375000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.375000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.375000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.376000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=290, eligible=1
+[   10.376000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=676, eligible=1
+[   10.376000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.376000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.376000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.376000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.377000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=290, eligible=1
+[   10.377000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=683, eligible=1
+[   10.377000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.377000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.377000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.377000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.378000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=290, eligible=1
+[   10.378000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=690, eligible=1
+[   10.378000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.378000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.378000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.378000] EXECOP: {"op": 10, "a": -1, "b": 3, "c": 0}
+[   10.378000] [92mSet min vruntime to 10000000000 ns on cpu 0[0m
+[   10.378000] [92mSet min vruntime to 10000000000 ns on cpu 1[0m
+[   10.378000] [92mCreated directory /sys/fs/cgroup/cg3[0m
+[   10.378000] [92mWriting /sys/fs/cgroup/cg3/cgroup.subtree_control: +cpu +cpuset[0m
+[   10.378000] [92mWriting /sys/fs/cgroup/cg3/cpuset.cpus: 1-1[0m
+[   10.378000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=290, eligible=1
+[   10.378000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=690, eligible=1
+[   10.378000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.378000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.378000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.378000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.378000] EXECOP: {"op": 5, "a": 1, "b": 0, "c": 0}
+[   10.378000] [92mPaused task 40[0m
+[   10.378000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=262, eligible=1
+[   10.378000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=690, eligible=1
+[   10.378000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.378000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.378000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.378000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.378000] EXECOP: {"op": 6, "a": 1, "b": 0, "c": 0}
+[   10.378000] [92mWaked up task 40[0m
+[   10.378000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=262, eligible=1
+[   10.378000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=690, eligible=1
+[   10.378000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.378000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.378000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.378000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.378000] EXECOP: {"op": 5, "a": 1, "b": 0, "c": 0}
+[   10.378000] [92mPaused task 40[0m
+[   10.378000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=262, eligible=1
+[   10.378000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=690, eligible=1
+[   10.378000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.378000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.378000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.378000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.378000] EXECOP: {"op": 7, "a": 0, "b": -15, "c": 0}
+[   10.378000] [92mSet priority of task 39 to -15[0m
+[   10.378000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=262, eligible=1
+[   10.378000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=690, eligible=1
+[   10.378000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.378000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.378000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.378000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.378000] EXECOP: {"op": 6, "a": 1, "b": 0, "c": 0}
+[   10.378000] [92mWaked up task 40[0m
+[   10.378000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=262, eligible=1
+[   10.378000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=690, eligible=1
+[   10.378000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.378000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.378000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.378000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.378000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.379000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=262, eligible=1
+[   10.379000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=697, eligible=1
+[   10.379000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.379000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.379000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.379000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.379000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.380000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=262, eligible=1
+[   10.380000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=704, eligible=1
+[   10.380000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.380000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.380000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.380000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.380000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.381000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=262, eligible=1
+[   10.381000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=710, eligible=1
+[   10.381000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.381000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.381000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.381000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.381000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.382000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=262, eligible=1
+[   10.382000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=717, eligible=1
+[   10.382000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.382000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.382000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.382000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.382000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.383000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=262, eligible=1
+[   10.383000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=723, eligible=1
+[   10.383000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.383000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.383000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.383000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.383000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.384000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=262, eligible=1
+[   10.384000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=729, eligible=1
+[   10.384000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.384000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.384000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.384000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.384000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.385000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=227, eligible=1
+[   10.385000] Task 1 40: on_cpu=0, state=0, cpu=1, class=0, util_avg=735, eligible=0
+[   10.385000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.385000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.385000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.385000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.385000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.386000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=243, eligible=1
+[   10.386000] Task 1 40: on_cpu=0, state=0, cpu=1, class=0, util_avg=735, eligible=1
+[   10.386000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.386000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.386000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.386000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.386000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.387000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=259, eligible=1
+[   10.387000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=705, eligible=1
+[   10.387000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.387000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.387000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.387000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.387000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.388000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=259, eligible=1
+[   10.388000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=712, eligible=1
+[   10.388000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.388000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.388000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.388000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.388000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.389000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=259, eligible=1
+[   10.389000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=712, eligible=1
+[   10.389000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.389000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.389000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.389000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.389000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.390000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=259, eligible=1
+[   10.390000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=724, eligible=1
+[   10.390000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.390000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.390000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.390000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.390000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.391000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=259, eligible=1
+[   10.391000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=731, eligible=1
+[   10.391000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.391000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.391000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.391000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.391000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.392000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=259, eligible=1
+[   10.392000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=737, eligible=1
+[   10.392000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.392000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.392000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.392000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.392000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.393000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=259, eligible=1
+[   10.393000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=742, eligible=1
+[   10.393000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.393000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.393000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.393000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.393000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.394000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=259, eligible=1
+[   10.394000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=748, eligible=1
+[   10.394000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.394000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.394000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.394000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.394000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.395000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=259, eligible=1
+[   10.395000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=754, eligible=1
+[   10.395000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.395000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.395000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.395000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.395000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.396000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=259, eligible=1
+[   10.396000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=759, eligible=1
+[   10.396000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.396000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.396000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.396000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.396000] EXECOP: {"op": 10, "a": 3, "b": 4, "c": 0}
+[   10.396000] [92mSet min vruntime to 10000000000 ns on cpu 0[0m
+[   10.396000] [92mSet min vruntime to 10000000000 ns on cpu 1[0m
+[   10.396000] [92mCreated directory /sys/fs/cgroup/cg3/cg4[0m
+[   10.396000] [92mWriting /sys/fs/cgroup/cg3/cg4/cgroup.subtree_control: +cpu +cpuset[0m
+[   10.396000] [92mWriting /sys/fs/cgroup/cg3/cg4/cpuset.cpus: 1-1[0m
+[   10.396000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=259, eligible=1
+[   10.396000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=759, eligible=1
+[   10.396000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.396000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.396000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.396000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.396000] cgroup 4 cg3/cg4: eligible={cpu1=1}
+[   10.396000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.397000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=259, eligible=1
+[   10.397000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=765, eligible=1
+[   10.397000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.397000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.397000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.397000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.397000] cgroup 4 cg3/cg4: eligible={cpu1=1}
+[   10.397000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.398000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=259, eligible=1
+[   10.398000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=770, eligible=1
+[   10.398000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.398000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.398000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.398000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.398000] cgroup 4 cg3/cg4: eligible={cpu1=1}
+[   10.398000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.399000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=202, eligible=1
+[   10.399000] Task 1 40: on_cpu=0, state=0, cpu=1, class=0, util_avg=775, eligible=0
+[   10.399000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.399000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.399000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.399000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.399000] cgroup 4 cg3/cg4: eligible={cpu1=1}
+[   10.399000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.400000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=219, eligible=1
+[   10.400000] Task 1 40: on_cpu=0, state=0, cpu=1, class=0, util_avg=775, eligible=1
+[   10.400000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.400000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.400000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.400000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.400000] cgroup 4 cg3/cg4: eligible={cpu1=1}
+[   10.400000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.401000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=235, eligible=1
+[   10.401000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=744, eligible=1
+[   10.401000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.401000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.401000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.401000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.401000] cgroup 4 cg3/cg4: eligible={cpu1=1}
+[   10.401000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.402000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=235, eligible=1
+[   10.402000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=750, eligible=1
+[   10.402000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.402000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.402000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.402000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.402000] cgroup 4 cg3/cg4: eligible={cpu1=1}
+[   10.402000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.403000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=235, eligible=1
+[   10.403000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=755, eligible=1
+[   10.403000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.403000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.403000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.403000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.403000] cgroup 4 cg3/cg4: eligible={cpu1=1}
+[   10.403000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.404000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=235, eligible=1
+[   10.404000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=761, eligible=1
+[   10.404000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.404000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.404000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.404000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.404000] cgroup 4 cg3/cg4: eligible={cpu1=1}
+[   10.404000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.405000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=235, eligible=1
+[   10.405000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=766, eligible=1
+[   10.405000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.405000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.405000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.405000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.405000] cgroup 4 cg3/cg4: eligible={cpu1=1}
+[   10.405000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.406000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=235, eligible=1
+[   10.406000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=771, eligible=1
+[   10.406000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.406000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.406000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.406000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.406000] cgroup 4 cg3/cg4: eligible={cpu1=1}
+[   10.406000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.407000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=235, eligible=1
+[   10.407000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=777, eligible=1
+[   10.407000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.407000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.407000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.407000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.407000] cgroup 4 cg3/cg4: eligible={cpu1=1}
+[   10.407000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.408000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=235, eligible=1
+[   10.408000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=782, eligible=1
+[   10.408000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.408000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.408000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.408000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.408000] cgroup 4 cg3/cg4: eligible={cpu1=1}
+[   10.408000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.409000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=235, eligible=1
+[   10.409000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=787, eligible=1
+[   10.409000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.409000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.409000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.409000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.409000] cgroup 4 cg3/cg4: eligible={cpu1=1}
+[   10.409000] EXECOP: {"op": 8, "a": 0, "b": 0, "c": 0}
+[   10.410000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=235, eligible=1
+[   10.410000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=791, eligible=1
+[   10.410000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.410000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.410000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.410000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.410000] cgroup 4 cg3/cg4: eligible={cpu1=1}
+[   10.410000] EXECOP: {"op": 12, "a": 0, "b": 5947, "c": 0}
+[   10.410000] [92mWriting /sys/fs/cgroup/cg0/cpu.weight: 5947[0m
+[   10.410000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=235, eligible=1
+[   10.410000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=791, eligible=1
+[   10.410000] cgroup 0 cg0: eligible={cpu1=0}
+[   10.410000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.410000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.410000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.410000] cgroup 4 cg3/cg4: eligible={cpu1=1}
+[   10.410000] EXECOP: {"op": 13, "a": 4, "b": 1, "c": 0}
+[   10.410000] [92mWriting /sys/fs/cgroup/cg3/cg4/cgroup.procs: 40[0m
+[   10.410000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=235, eligible=1
+[   10.410000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=791, eligible=1
+[   10.410000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.410000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.410000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.410000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.410000] cgroup 4 cg3/cg4: eligible={cpu1=1}
+[   10.410000] EXECOP: {"op": 12, "a": 1, "b": 2624, "c": 0}
+[   10.410000] [92mWriting /sys/fs/cgroup/cg0/cg1/cpu.weight: 2624[0m
+[   10.410000] Task 0 39: on_cpu=0, state=0, cpu=1, class=0, util_avg=235, eligible=1
+[   10.410000] Task 1 40: on_cpu=1, state=0, cpu=1, class=0, util_avg=791, eligible=1
+[   10.410000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.410000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.410000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.410000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.410000] cgroup 4 cg3/cg4: eligible={cpu1=1}
+[   10.410000] EXECOP: {"op": 5, "a": 1, "b": 0, "c": 0}
+[   10.410000] [92mPaused task 40[0m
+[   10.410000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=195, eligible=1
+[   10.410000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=791, eligible=1
+[   10.410000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.410000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.410000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.410000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.410000] cgroup 4 cg3/cg4: eligible={cpu1=1}
+[   10.410000] EXECOP: {"op": 24, "a": 1, "b": 0, "c": 0}
+[   10.410000] [92mFreezing task 40[0m
+[   10.410000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=195, eligible=1
+[   10.410000] Task 1 40: on_cpu=0, state=0, cpu=1, class=0, util_avg=791, eligible=1
+[   10.410000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.410000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.410000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.410000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.410000] cgroup 4 cg3/cg4: eligible={cpu1=1}
+[   10.410000] warn: TASK_FREEZE left task 1 pid=40 in state=0x0 expected=0x8000
+[   10.410000] EXECOP: {"op": 10, "a": 3, "b": 5, "c": 0}
+[   10.410000] [92mSet min vruntime to 10000000000 ns on cpu 0[0m
+[   10.410000] [92mSet min vruntime to 10000000000 ns on cpu 1[0m
+[   10.410000] [92mCreated directory /sys/fs/cgroup/cg3/cg5[0m
+[   10.410000] [92mWriting /sys/fs/cgroup/cg3/cg5/cgroup.subtree_control: +cpu +cpuset[0m
+[   10.410000] [92mWriting /sys/fs/cgroup/cg3/cg5/cpuset.cpus: 1-1[0m
+[   10.410000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=195, eligible=1
+[   10.410000] Task 1 40: on_cpu=0, state=0, cpu=1, class=0, util_avg=791, eligible=1
+[   10.410000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.410000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.410000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.410000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.410000] cgroup 4 cg3/cg4: eligible={cpu1=1}
+[   10.410000] cgroup 5 cg3/cg5: eligible={cpu1=1}
+[   10.410000] EXECOP: {"op": 7, "a": 0, "b": -20, "c": 0}
+[   10.410000] [92mSet priority of task 39 to -20[0m
+[   10.410000] Task 0 39: on_cpu=1, state=0, cpu=1, class=0, util_avg=195, eligible=1
+[   10.410000] Task 1 40: on_cpu=0, state=0, cpu=1, class=0, util_avg=791, eligible=1
+[   10.410000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.410000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.410000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.410000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.410000] cgroup 4 cg3/cg4: eligible={cpu1=1}
+[   10.410000] cgroup 5 cg3/cg5: eligible={cpu1=1}
+[   10.410000] EXECOP: {"op": 5, "a": 0, "b": 0, "c": 0}
+[   10.410000] [92mPaused task 39[0m
+[   10.410000] Task 0 39: on_cpu=0, state=1, cpu=1, class=0, util_avg=195, eligible=1
+[   10.410000] Task 1 40: on_cpu=0, state=1, cpu=1, class=0, util_avg=791, eligible=1
+[   10.410000] cgroup 0 cg0: eligible={cpu1=1}
+[   10.410000] cgroup 1 cg0/cg1: eligible={cpu1=1}
+[   10.410000] cgroup 2 cg0/cg1/cg2: eligible={cpu1=1}
+[   10.410000] cgroup 3 cg3: eligible={cpu1=1}
+[   10.410000] cgroup 4 cg3/cg4: eligible={cpu1=1}
+[   10.410000] cgroup 5 cg3/cg5: eligible={cpu1=1}
+[   10.510000] [92mExiting driver executor on Linux 6.12.0-rc1-cd9626e9ebc77edec33023fe95dab4b04ffc819d~1[0m
+[   10.510000] reboot: Restarting system
+[   10.510000] reboot: machine restart
