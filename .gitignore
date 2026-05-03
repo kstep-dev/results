@@ -1,3 +1,5 @@
-repro_*/*.log
 *.cov
 *.signal
+*.log
+tmp_*
+latest
